@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="../image/logo2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>2021_A</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option value="../index.html">Years</option>                      
+                            <option value="2025S.html">2025_S</option>
+                            <option value="2025A.html">2025_A</option>
+                            <option value="2024S.html">2024_S</option>
+                            <option value="2024A.html">2024_A</option>
+                            <option value="2023S.html">2023_S</option>
+                            <option value="2023A.html">2023_A</option>
+                            <option value="2022S.html">2022_S</option>
+                            <option value="2022A.html">2022_A</option>
+                            <option value="2021S.html">2021_S</option>
+                            <option value="2021A.html" selected>2021_A</option>
+                            <option value="2020S.html">2020_S</option>
+                            <option value="2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured">
+                        <label for="featured"><a href="m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest"><a href="n.html">NetWork</a></label>
+
+                     
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="container2">
+            <div id="quiz-root"></div>
+            <div id="results">
+                <div class="score" id="score-text">0/0</div>
+                <h2 style="margin-bottom: 24px;">Test Result</h2>
+                <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    const DATA = {
+      "title": "Fundamental IT Engineer Examination (Morning) - October/November 2021",
+      "description": "ITPEC Fundamental Information Technology Engineer Examination Morning Paper from October/November 2021, covering topics in computer science, hardware, software, networks, security, databases, and management.",
+      "questions": [
+      {
+          "id": 1,
+          "question": "What is the octal equivalent value of the hexadecimal number 7B5?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "735"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "3665"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "7551"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "7561"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Convert Hex 7B5 to binary: 0111 1011 0101. Group bits by 3 for octal: 011 (3), 110 (6), 110 (6), 101 (5). Result is 3665."
+      },
+      {
+          "id": 2,
+          "question": "For a non-negative integer x, which of the following gives the remainder after division of x by 8 as a result?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Performing a bitwise AND operation on x and 7"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Performing a bitwise AND operation on x and 248"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Performing a bitwise OR operation on x and 8"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Performing a bitwise OR operation on x and 15"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The remainder of division by 8 (2^3) corresponds to the lowest 3 bits of the number. The number 7 in binary is 000...0111. Performing a bitwise AND with 7 extracts these last 3 bits."
+      },
+      {
+          "id": 3,
+          "question": "For three sets A, B and C, which of the following equalities holds? Here, U and ∩ are the union and intersection symbols, respectively.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "(A ∪ B) ∩ (A ∩ C) = B ∩ (A ∪ C)"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "(A ∪ B) ∩ C = (A ∪ C) ∩ (B ∪ C)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "(A ∩ C) ∪ (B ∩ A) = (A ∩ B) ∪ (B ∩ C)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "(A ∩ C) ∪ (B ∩ C) = (A ∪ B) ∩ C"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "This is the distributive law of intersection over union: (A ∪ B) ∩ C is equivalent to (A ∩ C) ∪ (B ∩ C). Option (d) states this equality."
+      },
+      {
+          "id": 4,
+          "question": "An adjacency matrix is used to indicate which vertices of a directed or undirected graph are adjacent to each other. Which of the following is an appropriate matrix that represents the directed graph below?",
+          image :"../image/2021a/img1.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Matrix A"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Matrix B"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Matrix C"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Matrix D"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": ""
+      },
+      {
+          "id": 5,
+          "question": "When sorting an array of n elements by using a randomized version of the quicksort algorithm, where the pivot is selected randomly, which of the following shows the average-case and the worst-case time complexities?",
+          image :"../image/2021a/img2.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Quicksort has an average time complexity of O(n log n). However, in the worst case (e.g., pivot is always the smallest or largest element), it degrades to O(n^2), even with randomization (though the probability is very low)."
+      },
+      {
+          "id": 6,
+          "question": "For an automaton with input and output symbols {0, 1} and a state transition diagram shown below, which of the following is the output string for the input string 0011001110?",
+          image :"../image/2021a/img3.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0001000110"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "0001001110"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "0010001000"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "0011111110"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Tracing the states: S1(0/0)->S1(0/0)->S1(1/0)->S2(1/1)->S3(0/0)->S2(0/0)->S1(1/0)->S2(1/1)->S3(1/1)->S3(0/0)->S2. The outputs are 0,0,0,1,0,0,0,1,1,0."
+      },
+      {
+          "id": 7,
+          "question": "After the procedure shown below has been executed in the listed order, which value will be stored in variable y?",
+          image :"../image/2021a/img4.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "1"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "2"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "3"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "4"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Trace: enq(1), enq(2) -> Q[1,2]. push(3) -> S[3]. push(deq()) -> deq returns 1, S[3,1]. enq(4) -> Q[2,4]. push(deq()) -> deq returns 2, S[3,1,2]. y=pop() -> returns 2."
+      },
+      {
+          "id": 8,
+          "question": "Which of the following is the name for the tree depicted below? Here, the number in each node represents the key of the node.",
+          image :"../image/2021a/img5.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Balanced tree"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Binary search tree"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Max heap"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Min heap"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The tree satisfies the Binary Search Tree property where for every node, all keys in the left subtree are smaller and all keys in the right subtree are larger (e.g., 2<3<4, 6<7<9)."
+      },
+      {
+          "id": 9,
+          "question": "When the function M(n) is defined as shown below, what is the value of M(97)?",
+          image :"../image/2021a/img6.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "81"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "86"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "91"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "96"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "This is the McCarthy 91 function. For any integer n <= 101, M(n) equals 91."
+      },
+      {
+          "id": 10,
+          "question": "Which of the following is an appropriate description of XML?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "An exclusive editor is required to produce XML documents."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is an integration of the logical structure and document style."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is based on HTML and offers more extended functions."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The attributes and logical structure of a document can be defined with user-defined tags."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "XML (Extensible Markup Language) allows users to define their own tags to describe the logical structure and attributes of data."
+      },
+      {
+          "id": 11,
+          "question": "Which of the following is an appropriate term for a special register that contains the address of the next instruction to be fetched?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Accumulator"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Instruction register"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Program counter"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Status register"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The Program Counter (PC) is the register that holds the memory address of the next instruction to be executed."
+      },
+      {
+          "id": 12,
+          "question": "In memory systems, when data is detected in the cache, it is known as a hit. When data is not detected in the cache, it is read from the main memory and is known as a miss. Which of the following is the approximate hit ratio for the specifications in the table below? Here, effective access time is calculated as the weighted average of hit time and miss time, and other overhead is ignored.",
+          image :"../image/2021a/img7.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.25"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "0.35"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "0.73"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "0.81"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Using the formula EAT = H*Tc + (1-H)*Tm (assuming sequential access logic often implied in these questions, or EAT = H*Tc + (1-H)*(Tc+Tm) depending on architecture). Using simple weighted average EAT = H*Tc + (1-H)*Tm: 250 = 100H + 900(1-H) => 250 = 900 - 800H => 800H = 650 => H = 0.8125."
+      },
+      {
+          "id": 13,
+          "question": "Which of the following is a computer architecture where each instruction is divided into multiple stages (e.g., fetch, decode, and execute) in the processor and multiple functional units execute two or more instructions in parallel by slightly shifting execution stages of the instructions?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Multicore"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Pipeline"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "RISC"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "VLIW"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The description of dividing instructions into stages and executing them in parallel by shifting stages is the definition of Pipelining."
+      },
+      {
+          "id": 14,
+          "question": "Which of the following is a connection method that is referred to as a daisy chain?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A keyboard, a mouse, and a printer are connected to a USB hub, and the USB hub is connected to a PC."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A PC and a measuring device are connected with RS-232C, and the PC and a printer are connected by USB."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A PC is connected from its own Thunderbolt connection port with a cable to one of the two (2) 4K displays... and the display is connected to the other display with a cable."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Several network cameras and PCs are connected to a network hub."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Daisy chaining involves connecting devices in a series (Device A to Device B to Device C). Option (c) describes this topology with Thunderbolt displays."
+      },
+      {
+          "id": 15,
+          "question": "Which of the following is the appropriate description of RAID 5?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Bit-level striping with a dedicated parity disk"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Block-level striping with a dedicated parity disk"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Block-level striping with distributed parity disks"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Byte-level striping with a dedicated parity disk"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "RAID 5 uses block-level striping with parity data distributed across all member disks."
+      },
+      {
+          "id": 16,
+          "question": "In the time-chart of a system shown below, the shaded parts represent the normal working hours of the system, and the white parts represent the time when the system is not available due to failure. The numbers inside each part indicate the start and end hours of each state. Which of the following is the availability of the system?",
+          image :"../image/2021a/img8.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.10"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "0.82"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "0.90"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "0.98"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Total time = 300. Working time = (60-0) + (145-70) + (240-150) + (300-255) = 60 + 75 + 90 + 45 = 270. Availability = 270/300 = 0.90."
+      },
+      {
+          "id": 17,
+          "question": "In Round Robin scheduling, the CPU-time is shared among processes on the basis of the predefined time slot. There are four processes, namely P1, P2, P3, and P4, and their corresponding CPU-execution times are shown in the table below. All four (4) processes arrive at time 0, in the given order, and waiting time is the total time for which a process has to wait before it obtains its time slice for execution. Each time slot is 10 milliseconds. Which of the following is the average waiting time in milliseconds for the processes to be executed in Round Robin?",
+          image :"../image/2021a/img9.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "10.75"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "14.25"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "15.00"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "16.75"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Wait times: P1=0. P2 waits 10 (for P1) + 10 (for P3+P4 while P2 is suspended) = 20. P3 waits 20. P4 waits 27. Average = (0+20+20+27)/4 = 16.75."
+      },
+      {
+          "id": 18,
+          "question": "There exist methods to obtain backup files for the purpose of recovering files and managing generations. Which of the following is an appropriate description for those methods or procedures?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A differential backup contains all files that are modified following the last full backup, while an incremental backup saves all files that are modified after the last full, differential, or incremental backup."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A differential backup may take longer to restore files than an incremental backup, because the most recent versions of files are spread across a larger number of backup sets."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A multiplexed backup is used as a mixed combination of a full backup, differential backup, and incremental backup."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "An incremental backup tends to take longer to backup files than a differential backup because more files are copied during each backup."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "This accurately describes the difference: Differential is cumulative changes since Full; Incremental is changes since any last backup."
+      },
+      {
+          "id": 19,
+          "question": "A processor takes 15 seconds to run an application compiled with an old compiler. A new compiler was released. The same application compiled with the new compiler executes fewer instructions by 40%, but the average clock cycles per instruction (CPI) is increased by 10%. How many seconds does it take for the same processor to run the same application compiled with the new compiler?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "4.125"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "6.6"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "9.09"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "9.9"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Time = InstructionCount * CPI / ClockRate. New Instructions = 0.6 * Old. New CPI = 1.1 * Old. New Time = (0.6 * 1.1) * Old Time = 0.66 * 15 = 9.9 seconds."
+      },
+      {
+          "id": 20,
+          "question": "Which of the following is an appropriate explanation of an actuator?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It amplifies weak electrical signals sent from microphones, sensors, and so on."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It compares a given target value and a controlled value..."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It converts the power from an energy source into rotation, translational motion, or other movements based on the control signals."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It detects position, angle, velocity, acceleration... and converts them into electric information."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "An actuator is a component of a machine that is responsible for moving and controlling a mechanism or system, converting control signals into physical action."
+      },
+      {
+          "id": 21,
+          "question": "Which of the following is a logical expression that is equivalent to the logic circuit shown below?",
+          image :"../image/2021a/img10.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A AND B"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A AND (A OR B)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A OR B"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "B AND (A OR B)"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": ""
+      },
+      {
+          "id": 22,
+          "question": "A device, which operates using a 100V household power supply and through which a current of 10 A flows during operation, is operated from 0 minutes to 120 minutes as shown in the figure below. How much electrical energy, in watt-hour, is consumed during this time? Here, the value of the voltage and current is the effective value, no current flows when the device stops, and the power factor is 1.",
+          image :"../image/2021a/img11.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "1,000"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "1,200"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "1,500"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "2,000"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Power = 100V * 10A = 1000W. The device operates for 0-30m, 60-90m, and 90-120m. Total time = 30 + 30 + 30 = 90 minutes = 1.5 hours. Energy = 1000W * 1.5h = 1500Wh."
+      },
+      {
+          "id": 23,
+          "question": "According to ISO 9241-11: 2018, which of the following is defined as the “extent to which a system... can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction...”?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Accessibility"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Adaptability"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Availability"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Usability"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "This is the formal definition of Usability."
+      },
+      {
+          "id": 24,
+          "question": "Which of the following is an explanation of clipping in 3D graphics processing?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a process that applies shading..."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a process that defines a window within the image display area, removes the area outside the window, and cuts out the section visible within the window."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a process that is performed in the last phase of CG video production..."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a process to hide the jaggies..."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Clipping is the process of removing objects or parts of objects that are outside the viewing volume (frustum) or window."
+      },
+      {
+          "id": 25,
+          "question": "When the relationships between continent and country, and between country and city are shown in the class diagram below, which of the following is an appropriate combination of multiplicities that are to be inserted into blank A through blank D? Here, there are no cross continental countries. Each continent has at least one country, and each country has at least one city.",
+          image :"../image/2021a/img12.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A continent has many countries (1..*), a country belongs to one continent (1..1). A country has many cities (1..*), a city belongs to one country (1..1). The blanks A, B, C, D correspond to these positions."
+      },
+      {
+          "id": 26,
+          "question": "Tables Course and Section were created to record the course and section information of a university, respectively, as shown below; the primary keys are underlined.<br> <br> Course (cid, title, credits) <br> Section (cid, secid, semester, year)  <br> <br>The current status of those tables are shown below.",
+          image :"../image/2021a/img13.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Table with Null title"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Table with 3 titles"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Table with 4 titles"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Table with title 'Electrical Circuits I'"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "The query selects titles of courses that have exactly 1 section in the year 2019. EEE101 has exactly one section (Spring 2019) in 2019."
+      },
+      {
+          "id": 27,
+          "question": "Which of the following is an appropriate explanation of an E-R diagram?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A relationship is expressed by describing the related entity name in the entity type."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The relationship between entity types is expressed by an arrow from the referencing side in the direction of the referenced side."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "There are no attributes in the entity type, but the relationship type has attributes."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "There are several kinds of relationships between entity types such as one-to-many or many-to-many."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "E-R diagrams fundamentally model entities and relationships, where relationships can be one-to-one, one-to-many, or many-to-many."
+      },
+      {
+          "id": 28,
+          "question": "Which of the following is the main purpose of transaction support in a database management system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To ensure that either all the updates corresponding to a given transaction are made or none of them are made"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To ensure that only authorized users can access the database"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To help users update data by providing a graphical user interface"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To provide an accessible catalog in which descriptions of data items are stored"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Transaction support enforces ACID properties, particularly Atomicity, ensuring all operations in a transaction complete or none do."
+      },
+      {
+          "id": 29,
+          "question": "Which of the following is an appropriate description of distributed databases?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Access to a database server is shared among a globally distributed userbase so that everyone can access the database."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a database that is distributed to all interested researchers and other users worldwide so that everyone can benefit."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a NoSQL database instead of a Relational Database Management System (RDBMS)."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It stores different parts of a database in different locations, and its processing is distributed across those parts."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A distributed database physically stores data across multiple sites/computers but appears as a single database to users."
+      },
+      {
+          "id": 30,
+          "question": "In the OSI basic reference model, which of the following is a network device that operates at the network layer?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Access point"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Bridge"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Routers operate at the Network Layer (Layer 3) to forward packets based on IP addresses."
+      },
+      {
+          "id": 31,
+          "question": "Which of the following is a mechanism that enables multiple terminals to have private addresses different from each other to connect to the Internet by sharing a single global IP address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "DNS"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "NAPT"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "RADIUS"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NAPT (Network Address Port Translation) or NAT allows multiple devices on a private network to share a single public IP address."
+      },
+      {
+          "id": 32,
+          "question": "Which of the following is a data link layer function that enables a receiver to control the amount of data a sender transmits?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Congestion control"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Error control"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Flow control"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Media access control"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Flow control prevents a fast sender from overwhelming a slow receiver."
+      },
+      {
+          "id": 33,
+          "question": "In TCP/IP, which of the following is an application layer protocol that enables a server to automatically configure its clients with network information such as IP addresses, the subnet mask, and the default gateway address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "DHCP"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "DNS"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "NSLOOKUP"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) assigns dynamic IP addresses and configuration to clients."
+      },
+      {
+          "id": 34,
+          "question": "Which of the following is an appropriate explanation of Software-Defined Networking (SDN) that uses OpenFlow?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a network technology that logically separates data forwarding and network control, and it is implemented with a combination of network devices specialized for data forwarding function, and a network control software."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a software technology for business operation analysis and visualization that uses data flow diagrams and activity diagrams to discover problems in business processes and make improvements."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is an Internet of Things (IoT) technology that uses RFID, and it is a software architecture that optimizes distribution networks."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is an optimum deployment method for servers on a network that was developed to efficiently stream a range of content over the Internet."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "SDN separates the control plane (software) from the data plane (hardware forwarding)."
+      },
+      {
+          "id": 35,
+          "question": "Which of the following is an appropriate description of a Trojan horse?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A brute force attack software tool"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A malicious computer program that presents itself as a legitimate one"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A malicious user that steals private information from a system"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "A software tool to decrypt an encrypted password"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A Trojan horse is malware that disguises itself as legitimate software to trick users into installing it."
+      },
+      {
+          "id": 36,
+          "question": "Which of the following properties for information security defined in ISO/IEC 27000:2018 refers to a guarantee that the message data received is the same as the message data sent?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Availability"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Confidentiality"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Integrity"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Non-repudiation"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Integrity ensures data is not altered or tampered with."
+      },
+      {
+          "id": 37,
+          "question": "Which of the following is an example of ransomware?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A range of different types of software including adware, spyware, and freeware"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Malicious software blocking access to a victimized computer and demanding money to unblock it"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Software that assigns randomized MAC addresses to PCs to ensure user privacy on the Internet"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Software that assigns randomized MAC addresses to PCs to ensure user privacy on the Internet"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Ransomware locks access to data or systems and demands payment for the release."
+      },
+      {
+          "id": 38,
+          "question": "A typical example of security threats is information leakage when a sender sends data containing important information to a receiver. Which of the following is the most appropriate measure to prevent information leakage?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The data is encrypted with a private key before being sent to the receiver via email. In a separate email, the private key is sent to the receiver so that the receiver can decrypt the data."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The data is password-locked, and it is attached in an email that includes the password in the text part of the email. Before the email is sent, the receiver address is checked to make sure that the email is sent to the correct address."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The receiver creates a pair of public/private keys and sends the public key to the sender. The data is encrypted with the public key and sent to the receiver via email. The receiver then decrypts the data with the private key."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The sender compresses the data on a USB memory as much as possible before giving the USB memory to the receiver so that the receiver can utilize the rest of the memory space effectively."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Public key encryption (as described in option c) is the standard method for secure transmission where only the receiver with the private key can decrypt the data."
+      },
+      {
+          "id": 39,
+          "question": "Which of the following is a type of malware that embeds itself within a program and inserts its copy into other programs?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Backdoor"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Trojan horse"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Virus"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Worm"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A Virus infects other programs by inserting its code, unlike worms which are standalone."
+      },
+      {
+          "id": 40,
+          "question": "According to ISO/IEC 27000:2018 (Information security management systems - Overview and vocabulary), which of the following is the definition of “level of risk”?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Magnitude of a risk expressed in terms of the combination of consequences and their likelihood"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Terms of reference for evaluating the significance of a risk"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The priority order assigned to the risks to be handled"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Weakness of an asset or control that can be exploited by threats"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Risk is typically defined as the combination of the probability of an event and its consequence."
+      },
+      {
+          "id": 41,
+          "question": "Which of the following is dynamic analysis of malware?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Malware is identified by calculating the hash value of the subject for analysis and crosschecking it against a list of known malware hash values that are registered in an online database."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "On the basis of the file extensions and content of file headers on a hard disk, malicious program files with false extensions are detected."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The subject for analysis is extracted from communication data on a network and reverse compiled, and the functions of the subject for analysis are investigated from the code obtained."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The subject for analysis is run in a sandbox, and its behavior and external communication are observed."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Dynamic analysis involves observing the malware while it is running (usually in a sandbox), as opposed to static analysis which examines the code without running it."
+      },
+      {
+          "id": 42,
+          "question": "Which of the following technologies is the most suitable to divide the whole company network into networks by department?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "DMZ (DeMilitarized Zone)"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "NAT (Network Address Translation)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "VLAN (Virtual Local Area Network)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "VPN (Virtual Private Network)"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "VLANs allow network administrators to logically segment a LAN into different broadcast domains (e.g., by department)."
+      },
+      {
+          "id": 43,
+          "question": "An SQL injection attack caused the SQL statement below to be executed. Which of the following does the SQL statement do? Here, the accounts table contains account information in each row",
+          image :"../image/2021a/img14.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It creates a new user ‘1’."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It creates a pop-up box that shows the first username in the “accounts” table."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It selects all the records in the “accounts” table and deletes the “accounts” table from the database."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It selects one record from the “accounts” table and drops the rest of the records in the table."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The condition '1'='1' is always true, so SELECT * returns all records. The semicolon allows a second command DROP TABLE to execute, deleting the table."
+      },
+      {
+          "id": 44,
+          "question": "To provide a guarantee to its online customers that all credit card information is protected when transferred between their PC and the web service over public networks, which of the following technologies should be used?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "S/MIME"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "SSH"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "TLS"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "VPN"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TLS (Transport Layer Security) is the standard protocol for securing communications over a computer network (like HTTPS for web services)."
+      },
+      {
+          "id": 45,
+          "question": "Which of the following UML diagrams is used to represent the user interactions with the system and the functions of the system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Activity diagram"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Class diagram"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Sequence diagram"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Use case diagram"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Use case diagrams capture functional requirements by showing interactions between actors (users) and the system."
+      },
+      {
+          "id": 46,
+          "question": "Which of the following is an appropriate description of an acceptance test?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is conducted by developers to verify response time and other performance items."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is conducted by testers to ensure that the interfaces and linkages between different software parts work properly."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is conducted by the project manager to verify whether users’ functional requirements are met or not."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is conducted by users to confirm that the software is complete and meets the business needs that prompted the software to be developed."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Acceptance testing is the final phase where end users verify the system meets their requirements before accepting it."
+      },
+      {
+          "id": 47,
+          "question": "In the development process, which of the following is an activity that should be performed in software architectural design?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Analyzing the requirements in incremental steps by arranging them in the form of a chart"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Describing the specifications so that the program is clarified on a line-by-line basis"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Obtaining the opinion of the customer and deciding the specifications"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Transforming the requirements for the software into a design that describes its top-level structure and identifies the software components"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Software architectural design defines the high-level structure and components of the system."
+      },
+      {
+          "id": 48,
+          "question": "Which of the following is an appropriate description concerning test data for black box testing?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Test data is created based on branch coverage."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Test data is created based on condition coverage."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Test data is created based on external specifications."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Test data is created based on program structures."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Black box testing focuses on inputs and outputs based on specifications without knowing the internal code structure."
+      },
+      {
+          "id": 49,
+          "question": "In an agile software development project, when can the customer review the first piece of working software?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "After the completion of the first epic"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "After the completion of the first few releases"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "After the completion of the first iteration"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "After the completion of the whole project"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Agile methodologies emphasize delivering working software at the end of every iteration (or sprint)."
+      },
+      {
+          "id": 50,
+          "question": "According to the Capability Maturity Model Integration, which of the following is the final and highest level of maturity?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Auditable"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Custom"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Optimizing"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Quantitatively Managed"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "CMMI Level 5 is 'Optimizing', focused on continuous process improvement."
+      },
+      {
+          "id": 51,
+          "question": "Which of the following is one of the major responsibilities of a project manager?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Coding programs and debugging errors"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Evaluating the quality of project deliverables"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Organizing project members to achieve a planned result within a budget and schedule"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Providing the user requirements at the beginning of the project"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The Project Manager is responsible for leading the team to meet project goals within constraints like budget and schedule."
+      },
+      {
+          "id": 52,
+          "question": "A project is planned to complete in 12 months and the budget is $100,000. After six months, $60,000 was spent, but only 40% of the work is completed. If CPI is not changed, what is the estimated amount required to complete the remaining tasks?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "40,000"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "60,000"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "90,000"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "150,000"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Earned Value (EV) = 40% of 100,000 = 40,000. Actual Cost (AC) = 60,000. CPI = EV/AC = 0.666. Remaining work = 100,000 - 40,000 = 60,000. Estimate to Complete = Remaining / CPI = 60,000 / (2/3) = 90,000."
+      },
+      {
+          "id": 53,
+          "question": "In project time management, which of the following is the amount of time that the start of a successor activity requires to be delayed after the finish of a predecessor activity?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Free float"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Lag"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Lead"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Total float"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Lag is the delay between the finish of one activity and the start of a successor."
+      },
+      {
+          "id": 54,
+          "question": "The activities and nodes of a project are shown in the arrow diagram below. Which of the following is the effect of extending the duration of activity C by 3 days?",
+          image :"../image/2021a/img15.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The project duration is not affected."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The project duration is extended by 1 day."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The project duration is extended by 2 days."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The project duration is extended by 3 days."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": ""
+      },
+      {
+          "id": 55,
+          "question": "Which of the following corresponds to benchmarking in process improvement of service management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The availability, reliability, and performance are measured at the service level, and a report is sent to the customers."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The current status of IT service management is analyzed from the viewpoint of strengths, weaknesses, opportunities, and threats."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The performance of IT services is measured from the viewpoint of finance, customers, internal processes, and learning and growth, and strategic activities are supported."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The service quality and performance level are evaluated in comparison with the best practices within and outside the industry."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Benchmarking involves comparing one's business processes and performance metrics to industry bests or best practices."
+      },
+      {
+          "id": 56,
+          "question": "Which of the following is the appropriate description for a system migration plan?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A system migration plan must describe the decision criteria for restoring the old system in case the migration fails."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Operating the new system and the old system in parallel reduces the cost of migration"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Sharing a part of the environment between the new system and the old system makes it easier to verify the migration status."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The greater the amount of data to be migrated, the more appropriate it would be to migrate the data in a single batch immediately before the system is switched."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A robust migration plan must include a contingency/fallback plan (restoring the old system) if the migration fails."
+      },
+      {
+          "id": 57,
+          "question": "For servers, the total cost of ownership (TCO) is calculated over a period of 5 years. The purchase price of the servers is $120,500 and the other annual costs are listed as below. What is the TCO of the servers (in dollars)?",
+          image :"../image/2021a/img16.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "28,100"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "120,500"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "140,500"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "622,500"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TCO = Purchase Price + (Annual Cost * Years) = 120,500 + (2030+1000+700+270)*5 = 120,500 + 4,000*5 = 120,500 + 20,000 = 140,500."
+      },
+      {
+          "id": 58,
+          "question": "In the event of a disk failure, which of the following is a method for recovering a database by restoring a full backup data onto a disk from a tape, and then reflecting, from logs, postupdate copies after the full backup was taken?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Checkpoint restart"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Reboot"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Roll forward"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Rollback"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Roll forward recovery applies changes from the transaction logs to the restored full backup to bring the database to its most recent state."
+      },
+      {
+          "id": 59,
+          "question": "Which of the following is the most appropriate point to be checked in the audit of a system test?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The test cases were created comprehensively."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The test plan was approved only by the responsible person on the user’s side."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The test was performed in an environment where the actual business operations are performed."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The test was performed only by the person in charge on the user’s side."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "An audit checks for completeness and quality, such as ensuring test cases cover all requirements comprehensively."
+      },
+      {
+          "id": 60,
+          "question": "The director requested a system auditor to audit the operating status of an accounting system that was developed by the information systems department and is operated by the accounting department. Which of the following is the most appropriate description concerning the system auditor for this audit?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The system auditor must be a certified public accountant because the accounting system must conform to the various standards of business accounting"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The system auditor must be a person who belongs to neither the information systems department nor the accounting department to guarantee independence."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The system auditor must report directly to the accounting department manager because the accounting system handles highly confidential information."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The system auditor must report directly to the information systems department manager to perform system audits efficiently"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Independence is a core principle of auditing. The auditor should not be affiliated with the departments being audited."
+      },
+      {
+          "id": 61,
+          "question": "Which of the following is an appropriate feasibility evaluation when checking whether the lifetime benefits of the proposed information system is greater than its lifetime costs?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Economic feasibility"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Operational feasibility"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Scheduling feasibility"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Technical feasibility"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Economic feasibility (Cost-Benefit Analysis) evaluates the financial viability of a project."
+      },
+      {
+          "id": 62,
+          "question": "In an evaluation of an IT investment, a preliminary evaluation, an interim evaluation, and a posteriori evaluation are conducted in accordance with the planning, execution, and completion of individual projects. Which of the following is a description of the preliminary evaluation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A variance between the plan and results as well as its cause are analyzed in detail, and it is determined whether a change is required in the investment amount or the effect goal."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "An effect goal is set on the basis of the investment purpose, and the information that is required to make a decision on whether it is possible to execute is provided to higher level management."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Milestones when the investment effect should be attained and the data collection method that is required for the evaluation are planned in advance, and an evaluation is made at the times of those milestones."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The achievement status of the effect goal that was set in advance is evaluated, and improvement measures for achieving the objective is considered when required."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Preliminary evaluation occurs before the project, setting goals and providing data for the go/no-go decision."
+      },
+      {
+          "id": 63,
+          "question": "Which of the following is a description of BPO?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It refers to a company not having its own server and operating a system by renting a part of the processing capability or the storage capacity of a server that is owned by a communication service provider."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It refers to a company not having its own software and using functions of software that an external specialized vendor provides via a network."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It refers to the outsourcing of a whole business process of a specific department of the company, such as the administration department or the call center, together with the operation of a business system to an external specialized vendor."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It refers to utilizing employees from a staffing company with lower personnel expenditures than those of the company to reduce the cost of software development."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "BPO (Business Process Outsourcing) is the contracting of a specific business task (like payroll or customer support) to a third-party service provider."
+      },
+      {
+          "id": 64,
+          "question": "In computerization investment, which of the following is a technique that is used to create categories on the basis of the similarities of risks and investment values and perform optimum resource allocation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "3C analysis"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Benchmarking"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Enterprise architecture"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "IT portfolio"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "IT Portfolio Management categorizes investments (often by risk and value) to manage them strategically, similar to a financial portfolio."
+      },
+      {
+          "id": 65,
+          "question": "Which of the following is an activity that is performed when non-functional requirements are defined?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Clarifying the flows of information (i.e., data) between the functions that constitute business operations"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Creating technical requirements of development standard according to the programming language used in system development"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Defining the scope to be implemented as system functions"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Specifying the interface for exchanging information with other systems"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Non-functional requirements relate to quality attributes (maintainability, reliability, etc.). Development standards relate to maintainability, whereas the others relate to system functions/interfaces."
+      },
+      {
+          "id": 66,
+          "question": "Which of the following is a technique that is used to identify and evaluate the internal and external factors that are helpful or harmful to the objectives of business organizations or projects?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Five forces analysis"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "PPM analysis"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "SWOT analysis"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Value chain analysis"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "SWOT analysis examines Strengths, Weaknesses (Internal) and Opportunities, Threats (External)."
+      },
+      {
+          "id": 67,
+          "question": "The sales prices of products are decided according to different sales price setting methods. Which of the following approaches sets a high sales price by using the consumer psychology that high quality equals to high price?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Cost plus pricing"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Differential pricing"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Marketing price following pricing"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Prestige pricing"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Prestige pricing (or premium pricing) is the practice of keeping prices high to create an impression of high quality or exclusivity."
+      },
+      {
+          "id": 68,
+          "question": "Company T sells three (3) products: A, B, and C. Currently, products A, B, and C have 10,000, 20,000, and 80,000 purchasers every month, respectively. There is a plan to change the product line and sell four (4) new products, P, Q, R, and S, from next year. Accordingly, a trial calculation was made on the proportion of existing customers that will purchase the new products and the number of new customers. Which of the following is an appropriate conclusion from the trial calculation? Here, numerical values up to one (1) decimal point in each line of the table below represent the proportion of people who will change to the new product from the corresponding old product.",
+          image :"../image/2021a/img17.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Among the purchasers of product A, 1,000 people are estimated to purchase the new product Q."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Of the prospective purchasers of the new product P, 50% are estimated to be purchasers of product A."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The number of new customers of the new product S are estimated to be fewer than the number of people who will purchase the new product S among the purchasers of product C."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The purchasers of product B are estimated to purchase any one (1) of the new products P, Q, R, and S."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Calculations: New customers for S = 23,000. Purchasers of S from C = 80,000 * 0.3 = 24,000. Since 23,000 < 24,000, option (c) is correct."
+      },
+      {
+          "id": 69,
+          "question": "Which of the following is the appropriate explanation for product innovation in the management of technology?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Acquiring business profits through achievements of the development of technology"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Developing new products or products that enable differentiation from other companies"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Making innovative reforms in business processes"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Strategically managing business with technology as the core"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Product innovation refers to the development of new or improved products (as opposed to process innovation)."
+      },
+      {
+          "id": 70,
+          "question": "Among the different business systems supported by technology, which of the following analyzes routes of distribution, tracking and load tendency?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "LMS"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "OMS"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "TMS"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "WMS"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TMS (Transportation Management System) manages distribution routes, tracking, and carrier selection."
+      },
+      {
+          "id": 71,
+          "question": "Which of the following is a product that can take advantage of the cell production system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A product that needs to be produced in large quantities to improve productivity"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A product that requires a division of labor on the basis of standardization, simplification, and specialization"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A product that requires a variety of types and needs flexible production"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "A product whose specifications do not change over a long period of time"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Cell production is suitable for high-mix, low-volume production (variety and flexibility) compared to assembly lines."
+      },
+      {
+          "id": 72,
+          "question": "Which of the following performs its processing according to steps (1) through (3)?",
+          image :"../image/2021a/img18.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "CAD (Computer Aided Design)"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "CRP (Capacity Requirements Planning)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "JIT (Just In Time)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "MRP (Material Requirements Planning)"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "This describes the logic of MRP (Material Requirements Planning)."
+      },
+      {
+          "id": 73,
+          "question": "Which of the following is an appropriate description of Initial Coin Offering (ICO)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A crowd-funding method in which backers contribute money toward an idea or a startup and get rewards like physical products"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A fundraising method that is mainly used by a financially stable company which wants to expand and develop to the public"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A popular fundraising method that is used primarily by a startup, normally through utilizing cryptocurrency"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "A process of offering shares of a private corporation to the public in a new stock issuance"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "ICO is a fundraising mechanism using cryptocurrency, typically for startups."
+      },
+      {
+          "id": 74,
+          "question": "Which of the following is an appropriate example of utilizing machine learning at a production site?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Instead of programming the working method for the production robot in the factory, the robot itself learns, thus improving the efficiency of work."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The causes for the occurrence of defects in a factory are decomposed and arranged in a tree shape so that analysts can statistically look for the cause and solution."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The production equipment in a factory is connected through high-speed communication so that the host computer can be controlled in real time."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The productivity of employees in the factory improves each time the cumulative production volume doubles, and the unit cost reduces at a fixed percentage."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Machine learning involves systems (like robots) learning and improving from data/experience without explicit programming."
+      },
+      {
+          "id": 75,
+          "question": "Which of the following is a management organization that creates a cross-functional team between project and functional organizations to flexibly respond to changes in the business environment?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Divisional organization"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Line and staff organization"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Matrix organization"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Project organization"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A Matrix organization structure involves employees reporting to both a functional manager and a project manager."
+      },
+      {
+          "id": 76,
+          "question": "Which of the following is an example of Green IT?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Development of a powerful in-house data center"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Development of efficient in-house software"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Using a desktop PC instead of a thin client laptop"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Using web conferencing instead of travelling to meetings"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Green IT involves reducing environmental impact. Reducing travel via web conferencing significantly lowers carbon emissions."
+      },
+      {
+          "id": 77,
+          "question": "Which of the following is a description of a CIO?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The chief executive that governs the planning and execution of strategies in the area of finances, such as fund-raising or financial reporting"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The chief executive that governs the planning and execution of strategies regarding information management and information systems"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The chief executive that governs the planning and execution of technological strategies and R&D plans of the company"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The chief executive that governs the planning of business strategies and the execution of business"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "CIO stands for Chief Information Officer, responsible for information management and systems."
+      },
+      {
+          "id": 78,
+          "question": "Which of the following is the appropriate description concerning creation and operation of a Business Continuity Plan (BCP)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "In addition to natural disasters, device failure in information systems and malware infections are also included in the scope of examination."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The planning contents are important matters... only senior managers are notified."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The planning contents are restricted to those activities performed by the company."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The recovery of business processes dependent on IT is prioritized according to technical easiness of recovery"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "BCP covers various risks to business continuity, including technical failures and cyber attacks, not just natural disasters."
+      },
+      {
+          "id": 79,
+          "question": "Company A has two media plans. One plan is for a series of 30-second radio advertisements (ads) and the other is for 60-second TV ads. Exposure is rated in points. The company is considering an exposure of at least 60 points in the city and at most 40 points outside the city. The table below shows the cost and exposure of both TV and radio ads. Which of the following is the set of expressions that can determine the number of media ads to minimize the total cost?",
+          image :"../image/2021a/img19.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Conditions 8x + 6y ≤ 60, 10x + 3y ≤ 40, x ≥ 0, y ≥ 0 <br>Objective function 2000x + 800y --> minimize"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Conditions 8x + 6y ≥ 60, 10x + 3y ≤ 40, x ≥ 0, y ≥ 0 <br>Objective function 2000x + 800y --> minimize"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Conditions 8x + 10y ≤ 60, 6x + 3y ≤ 40, x ≥ 0, y ≥ 0 <br>Objective function 2000x + 800y --> minimize"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Conditions 8x + 10y ≥ 60, 6x + 3y ≤ 40, x ≥ 0, y ≥ 0<br> Objective function 2000x + 800y --> minimize"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "City points: 8x + 10y >= 60. Outside points: 6x + 3y <= 40. Cost: 2000x + 800y. Option (d) matches these expressions."
+      },
+      {
+          "id": 80,
+          "question": "Which of the following is an appropriate description of the scope of software protection under WTO’s Agreement on Trade-Related Aspects of Intellectual Property Rights (TRIPS)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Algorithms and programming languages are protected."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Application programs are protected but system programs such as an OS are not, as the value of the right is included in the hardware cost."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Both source programs and object programs are protected."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Documents that describe algorithms are protected, but programs created by using the algorithms are not."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The TRIPS agreement (Article 10) stipulates that computer programs, whether in source or object code, shall be protected as literary works."
+      }
+      ]
+};
+const ANSWERS = {};
+
+function render() {
+    const root = document.getElementById('quiz-root');
+    DATA.questions.forEach((q) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.innerHTML = `
+        <div class="q-head">
+        <span class="q-num">Question ${q.id}</span>
+        <div class="q-title">${q.question}</div>
+        ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+        </div>
+        <div class="options" id="opts-${q.id}"></div>
+        <div class="explanation" id="exp-${q.id}">
+        <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+        ${q.explanation || "Correct response determined from source."}
+        </div>
+        `;
+        root.appendChild(card);
+        
+        const optBox = document.getElementById(`opts-${q.id}`);
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.innerHTML = `
+            <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+            <div class="opt-txt">${opt.text}</div>
+            `;
+            btn.onclick = () => {
+                ANSWERS[q.id] = opt.id;
+                Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+            };
+            optBox.appendChild(btn);
+        });
+    });
+}
+
+function submit() {
+    let score = 0;
+    DATA.questions.forEach(q => {
+        const box = document.getElementById(`opts-${q.id}`);
+        const exp = document.getElementById(`exp-${q.id}`);
+        exp.style.display = 'block';
+
+        Array.from(box.children).forEach((btn, idx) => {
+            const optId = q.options[idx].id;
+            btn.onclick = null;
+            btn.classList.remove('active');
+
+            if (optId === q.correctAnswerId) btn.classList.add('correct');
+            if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+        });
+
+        if (ANSWERS[q.id] === q.correctAnswerId) score++;
+    });
+
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+document.querySelector('.genre').addEventListener('change', function() {
+    const selectedURL = this.value;
+    if (selectedURL) {
+        window.location.href = selectedURL;
+    }
+});
+render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

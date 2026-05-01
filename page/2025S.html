@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../image/logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>2025_S</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option value="../index.html">Years</option>                      
+                            <option value="2025A.html">2025_A</option>
+                            <option value="2025S.html"selected>2025_S</option>
+                            <option value="2024S.html">2024_S</option>
+                            <option value="2024A.html">2024_A</option>
+                            <option value="2023S.html">2023_S</option>
+                            <option value="2023A.html">2023_A</option>
+                            <option value="2022S.html">2022_S</option>
+                            <option value="2022A.html">2022_A</option>
+                            <option value="2021S.html">2021_S</option>
+                            <option value="2021A.html">2021_A</option>
+                            <option value="2020S.html">2020_S</option>
+                            <option value="2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured">
+                        <label for="featured"><a href="m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest"><a href="n.html">NetWork</a></label>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="container2">
+            <div id="quiz-root"></div>
+            <div id="results">
+                <div class="score" id="score-text">0/0</div>
+                <h2 style="margin-bottom: 24px;">Test Result</h2>
+                <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+  
+    const ANSWERS = {};
+
+    function render() {
+        const root = document.getElementById('quiz-root');
+        DATA.questions.forEach((q) => {
+            const card = document.createElement('div');
+            card.className = 'q-card';
+            card.innerHTML = `
+            <div class="q-head">
+            <span class="q-num">Question ${q.id}</span>
+            <div class="q-title">${q.question}</div>
+            ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+            </div>
+            <div class="options" id="opts-${q.id}"></div>
+            <div class="explanation" id="exp-${q.id}">
+            <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+            ${q.explanation || "Correct response determined from source."}
+            </div>
+            `;
+            root.appendChild(card);
+            
+            const optBox = document.getElementById(`opts-${q.id}`);
+            q.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'opt-btn';
+                btn.innerHTML = `
+                <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+                <div class="opt-txt">${opt.text}</div>
+                `;
+                btn.onclick = () => {
+                    ANSWERS[q.id] = opt.id;
+                    Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                    btn.classList.add('active');
+                };
+                optBox.appendChild(btn);
+            });
+        });
+    }
+
+    function submit() {
+        let score = 0;
+        DATA.questions.forEach(q => {
+            const box = document.getElementById(`opts-${q.id}`);
+            const exp = document.getElementById(`exp-${q.id}`);
+            exp.style.display = 'block';
+
+            Array.from(box.children).forEach((btn, idx) => {
+                const optId = q.options[idx].id;
+                btn.onclick = null;
+                btn.classList.remove('active');
+
+                if (optId === q.correctAnswerId) btn.classList.add('correct');
+                if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+            });
+
+            if (ANSWERS[q.id] === q.correctAnswerId) score++;
+        });
+
+        document.getElementById('footer').style.display = 'none';
+        document.getElementById('results').style.display = 'block';
+        document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+    document.querySelector('.genre').addEventListener('change', function() {
+        const selectedURL = this.value;
+        if (selectedURL) {
+            window.location.href = selectedURL;
+        }
+    });
+    render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="../image/logo2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>Algorithm and DataStructure</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option value="../index.html"selected>Years</option>                      
+                            <option value="2025A.html">2025_A</option>
+                            <option value="2025S.html">2025_S</option>
+                            <option value="2024S.html">2024_S</option>
+                            <option value="2024A.html">2024_A</option>
+                            <option value="2023S.html">2023_S</option>
+                            <option value="2023A.html">2023_A</option>
+                            <option value="2022S.html">2022_S</option>
+                            <option value="2022A.html">2022_A</option>
+                            <option value="2021S.html">2021_S</option>
+                            <option value="2021A.html">2021_A</option>
+                            <option value="2020S.html">2020_S</option>
+                            <option value="2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured">
+                        <label for="featured"><a href="m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular" checked>
+                        <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest"><a href="n.html">NetWork</a></label>
+
+                        <div class="checked-radio-bg"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="container2">
+            <div id="quiz-root"></div>
+            <div id="results">
+                <div class="score" id="score-text">0/0</div>
+                <h2 style="margin-bottom: 24px;">Test Result</h2>
+                <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    
+ const DATA = {
+  "title": "2024 – A",
+  "description": "Fundamental Information Technology Engineer Examination Questions",
+  "questions": [
+  {
+      "id": 1,
+      "question": "What is the value of the postfix expression below? Here, A, B, C, and D are operands\nwhose values are 4, 3, 5, and 6, respectively. Symbols “+”, “−”, “×”, and “÷” are arithmetic\noperators for addition, subtraction, multiplication, and division, respectively.\nA B 2 × + D B ÷ C × −",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "−3"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "0"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "3"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "40/3"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Substituting the values: 4 3 2 × + 6 3 ÷ 5 × −. Calculating: 3 2 × = 6; 4 6 + = 10; 6 3 ÷ = 2; 2 5 × = 10; 10 10 − = 0."
+  },
+  {
+      "id": 2,
+      "question": "Which of the following is the computational complexity of the Heapsort algorithm? Here,\nn is the number of elements to be sorted, and all comparisons, swaps, and other needed\noperations can proceed in constant time.",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "O (log n)"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "O (n)"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "O (n2 )"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "O (n log n)"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Heapsort has a worst-case and average-case time complexity of O(n log n) as it involves building the heap O(n) and then extracting n elements, each taking O(log n) time."
+  },
+  {
+      "id": 3,
+      "question": "The presence of an edge between nodes is represented by an adjacent matrix. When the\nadjacent matrix of an undirected graph is as below, which of the following is its graph\nrepresentation? Here, the nodes correspond with the rows and columns of the adjacent\nmatrix. If there is an edge between nodes, this is indicated with 1, and if there is no edge,\nthis is indicated with 0",
+      image:"../image/2024a/img1.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "Graph a)"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Graph b)"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "Graph c)"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Graph d)"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": ""
+  },
+  {
+      "id": 4,
+      "question": "What is the value of the arithmetic expression resulting from an in-order traversal of the\nbinary tree below?",
+      image:"../image/2024a/img2.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "11"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "20"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "27"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "45"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "In-order traversal yields the expression (((2+3)*10)-10)/2. Calculation: 2+3=5; 5*10=50; 50-10=40; 40/2=20."
+  },
+  {
+      "id": 5,
+      "question": "The function f (n) is recursively defined in terms of the natural number n as below. Which\nof the following is the value of f (5)? <br> <br> f (n): if n≦1 then return 1 else return n + f (n−1)",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "6"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "9"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "15"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "25"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "f(1)=1, f(2)=2+1=3, f(3)=3+3=6, f(4)=4+6=10, f(5)=5+10=15."
+  },
+  {
+      "id": 6,
+      "question": "Which of the following is the appropriate description of the “selection sort” algorithm?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "An intermediate reference value is determined, and then the elements are divided into\ntwo groups of “larger” values and “smaller” values. This operation is recursively repeated."
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Each set of elements extracted at regular intervals is sorted, and then the interval is\nfurther decreased. The operation is repeatedly performed until the interval becomes 1."
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "The element with the largest value is determined and swapped for the last element, \nand then the largest value of the unsorted elements is determined and swapped for the second to-the-last element. This operation is repeated in the same way."
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Two adjacent elements are repeatedly compared and swapped if the first element is\nlarger than the second. This operation is repeated until all elements are arranged in an orderly \nfashion."
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Option a describes Quick Sort, b describes Shell Sort, d describes Bubble Sort. Option c describes Selection Sort."
+  },
+  {
+      "id": 7,
+      "question": "The expression below is represented in postfix (reverse Polish) notation. What is the\nresulting value of this expression? Here, the numbers are in decimal, and the symbols ‘+’, ‘−’,\n‘*’, and ‘/’ represent addition, subtraction, multiplication, and division operators, respectively.<br><br>100 5 6 2 + * 12 4 / − − 36 −",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "5"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "18"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "21"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "27"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Calculation: 6 2 + = 8; 5 8 * = 40; 12 4 / = 3; 40 3 - = 37; 100 37 - = 63; 63 36 - = 27."
+  },
+  {
+      "id": 8,
+      "question": "Which of the following is an appropriate explanation of feedback control?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "It performs control in a predetermined order."
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "It performs control to keep the output in line with the target value."
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "It performs control to prevent external disturbances from affecting the output."
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "It performs control without using the output."
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Feedback control involves measuring the output and adjusting the input to maintain the output at a desired target value."
+  },
+  {
+      "id": 9,
+      "question": "Which of the following represents the post-order traversal of the tree below?",
+      image:"../image/2024s/img1.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "2, 3, 4, 7, 8, 10, 13, 15,18"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "2, 4, 8, 7, 3, 15, 18, 13, 10"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "10, 3, 2, 7, 4, 8, 13, 18,15"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "10, 3, 13, 2, 7, 18, 4, 8, 15"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Post-order traverses Left subtree, Right subtree, then Root. Left subtree of 10 gives 2, 4, 8, 7, 3. Right subtree gives 15, 18, 13. Root is 10."
+  },
+  {
+      "id": 10,
+      "question": "The flowchart below shows an algorithm that determines the sum (i.e. “1 +3+ 5+ … +\n(2N-1)”) of the first N odd integers from 1 through 2N-1 (where N ≥ 1) and inserts the\nresult into variable x. Which of the following is an expression to be inserted in blank A ?",
+      image:"../image/2024s/img2.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "i ≥ 2N – 1"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "i ≥ 2N + 1"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "x ≥ 2N – 1"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "x ≥ 2N + 1"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "The loop must process odd numbers up to 2N-1. Since the check is at the beginning and the increment is at the end, the loop should terminate when i exceeds 2N-1, i.e., i >= 2N+1."
+  },
+  {
+      "id": 11,
+      "question": "How many swaps are required in bubble sort when N elements in the array are already\nsorted in reverse order?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "N(N-1) ÷ 2"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "N 2 ÷ 2"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "N(N-1)"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "N 2"
+      }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "For a reverse-sorted array, bubble sort performs the maximum number of swaps, which is the sum of integers from 1 to N-1, equal to N(N-1)/2."
+  },
+  {
+      "id": 12,
+      "question": "Which of the following expressions in postfix notation is equivalent to the expression\n2+5×3+4 in infix notation? Here, the operator “×” has higher precedence than “+”.",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "2 5 3 4 × + +"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "2 5 + 3 4 × +"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "2 5 3 + × 4 +"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "2 5 3 × + 4 +"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "2 + (5×3) + 4 converts to 2 5 3 × + 4 + in postfix notation."
+  },
+  {
+      "id": 13,
+      "question": "There is communication data that consists of five characters “A”, “B”, “C”, “D”, and “E”\nthat have different appearance frequencies, and in order to compress the data by using\nHuffman coding, the code table shown below is created. Which of the following is an\nappropriate code that should be inserted in the blank?",
+      image:"../image/2023a/img1.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "001"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "010"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "101"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "110"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Given the codes for A(00), B(01), C(10) and E(111), and frequencies implying E and D are the least frequent and grouped together, D shares the prefix '11' with E and must be '110'."
+  },
+  {
+      "id": 14,
+      "question": "When the series of stack operations below is performed on an empty stack, which of the\nfollowing is the data that is read out by the last READ operation? Here, “PUSH x” is the\noperation to put data x in the stack, “POP” is used to retrieve data from the stack, and\n“READ” is used to read data from the top of the stack without removing the original data.\nPUSH 2 → READ → PUSH 3 → PUSH 6 → POP → READ → PUSH 4\n→READ → PUSH 7 → PUSH 5→ POP → POP → READ",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "2"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "3"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "4"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "6"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Tracing the stack: [2] -> [2,3,6] -> POP(6) -> [2,3] -> PUSH(4) -> [2,3,4] -> PUSH(7) -> [2,3,4,7] -> PUSH(5) -> [2,3,4,7,5] -> POP(5) -> POP(7) -> [2,3,4]. Last READ reads top: 4."
+  },
+  {
+      "id": 15,
+      "question": "In the binary search tree below, when a new node of value 11 is inserted, where will this\ninsertion be made?",
+      image:"../image/2023a/img3.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "Left child of 16"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Left child of 23"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "Right child of 3"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Right child of 10"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Comparing 11: 11 < 14 (Left), 11 > 7 (Right), 11 < 12 (Left), 11 > 10 (Right). It becomes the Right child of 10."
+  },
+  {
+      "id": 16,
+      "question": "Which of the following is the pre-order traversal of the tree below?",
+      image:"../image/2023s/img3.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "1, 3, 4, 6, 7, 9, 10, 13, 14"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "1, 4, 7, 6, 3, 13, 14, 10, 9"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "9, 3, 1, 6, 4, 7, 10, 14, 13"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "9, 3, 10, 1, 6, 14, 4, 7, 13"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Pre-order traversal is Root, Left, Right. Root is 9. Left subtree root is 3. Right subtree root is 10. Sequence starts with 9, 3, 1... Matches option c."
+  },
+  {
+      "id": 17,
+      "question": "The operations for a queue are defined as below.<br><br> ENQ n: This operation appends data n to the queue.<br>DEQ: This operation removes data from the queue.<br>On an empty queue, the operations<br>ENQ 1, ENQ 2, ENQ 3, DEQ, ENQ 4, ENQ 5, DEQ, ENQ 6, DEQ, DEQ are performed.\nAfter that, when DEQ is performed, what is the value that is removed?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "1"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "2"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "5"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "6"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Queue sequence: [1,2,3] -> remove 1 -> [2,3] -> add 4,5 -> [2,3,4,5] -> remove 2 -> [3,4,5] -> add 6 -> [3,4,5,6] -> remove 3 -> remove 4 -> [5,6]. Next DEQ removes 5."
+  },
+  {
+      "id": 18,
+      "question": "A five-digit number a1 a2 a3 a4 a5 needs to be stored in an array by means of hashing. When\nthe hash function is mod (a1+a2+a3+a4+a5, 13) and the number is stored in the array element\nat the position corresponding to the calculated hash value, which of the following is the\nposition where 54321 is stored in the array? Here, the value of mod (x, 13) is the remainder\nafter dividing x by 13.",
+      image:"../image/2023s/img4.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "1"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "2"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "7"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "11"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Sum of digits: 5+4+3+2+1 = 15. 15 mod 13 = 2."
+  },
+  {
+      "id": 19,
+      "question": "What is the value of the following arithmetic expression in reverse Polish notation?\n9 2 1 + – 3 ×",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "0"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "4"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "10"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "18"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Calculation: 2 1 + = 3; 9 3 - = 6; 6 3 * = 18."
+  },
+  {
+      "id": 20,
+      "question": "When a two-dimensional array A(5,5) is mapped to computer memory (i.e. a one\ndimensional array) in row-major (row-directional) order or column-major (column\ndirectional) order, how many elements occupy the same memory addresses in both cases?\nHere, the first element A(1,1) is mapped to the same starting memory address in either case.",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "2"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "3"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "4"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "5"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Elements on the diagonal (i=j) have the same offset in both row-major and column-major mappings for a square matrix. There are 5 diagonal elements."
+  },
+  {
+      "id": 21,
+      "question": "Which of the following characterizes the hash method in table search?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "It determines the storage location using a function of a key."
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "It is a method that avoids collisions among storage locations."
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "It is one of the methods that use a binary tree."
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "It takes time almost proportional to the table size for searching."
+      }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Hashing uses a hash function to compute the index (storage location) from the key."
+  },
+  {
+      "id": 22,
+      "question": "Which of the following is an expression in reverse Polish notation that has the same value as \nthe expression below when evaluated? Here, numbers are given as decimals, and the symbols − \nand × are subtraction and multiplication operators, respectively.\n3 4 − 5 ×",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "3 4 5 × −"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "4 5 − 3 ×"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "5 3 4 − ×"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "5 4 3 − ×"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "3 4 - 5 × evaluates to (3-4)*5 = -5. Option c: 5 3 4 - × evaluates to 5*(3-4) = -5."
+  },
+  {
+      "id": 23,
+      "question": "For two-dimensional integer array A, whose (i, j)-th element A[i, j] is 2 × i + j, what is the\nvalue of element A[A[1, 1] × 2, A[2, 2] + 1]?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "12"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "13"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "18"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "19"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "A[1,1] = 3. A[2,2] = 6. Target is A[3*2, 6+1] = A[6,7]. Value = 2*6 + 7 = 19."
+  },
+  {
+      "id": 24,
+      "question": "For two non-negative integers x and y, which of the following is the result of the procedure\nshown in the flowchart below?\n[Flowchart uses subtraction to find quotient and remainder]",
+      image:"../image/2022s/img2.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": ""
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": ""
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": ""
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": ""
+      }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "The flowchart subtracts y from x repeatedly (counting in q) until the remainder r is less than y. q becomes the quotient, r the remainder."
+  },
+  {
+      "id": 25,
+      "question": "Which of the following is an appropriate description of a binary search?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "A binary search is always faster than a linear search."
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "In a binary search, searching starts from the beginning of the data."
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "The data upon which the binary search is to be performed must be sorted."
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "The number of comparisons that need to be performed during the search is proportional \nto log 2 N, where N is the number of data items."
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "While d describes the complexity, c is the fundamental prerequisite (sorted data) for the algorithm to work."
+  },
+  {
+      "id": 26,
+      "question": "When the Bubble sort algorithm is used, how many exchange operations are required to sort \nthe numbers in ascending order?\n9, 2, 13, 21, 3, 0",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "7"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "8"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "9"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "10"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Counting inversions or simulating bubble sort swaps results in 9 swaps."
+  },
+  {
+      "id": 27,
+      "question": "When a storage location is calculated from a key value, which of the following is the\nmethod that can produce the same calculation results from different key values?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "B+ tree index"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Bitmap index"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "Hash index"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Inverted index"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Hashing involves mapping keys to indices, where different keys can map to the same index (collision)."
+  },
+  {
+      "id": 28,
+      "question": "An adjacency matrix is used to indicate which vertices of a directed or undirected graph are\nadjacent to each other. Which of the following is an appropriate matrix that represents the\ndirected graph below?",
+      image:"../image/2021a/img1.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "Matrix a)"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Matrix b)"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "Matrix c)"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Matrix d)"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Based on the interpretation that C is a sink (no outgoing edges in matrix d) or the graph connectivity A-B-C, option d is the most plausible match among the choices."
+  },
+  {
+      "id": 29,
+      "question": "When sorting an array of n elements by using a randomized version of the quicksort\nalgorithm, where the pivot is selected randomly, which of the following shows the average\ncase and the worst-case time complexities? Here, big-O notation, O(x), is used to denote the\ngrowth rate.",
+      image:"../image/2021a/img2.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": ""
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": ""
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": ""
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": ""
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Randomized Quicksort has O(n log n) average time complexity, but worst case remains O(n²) if pivots are poorly chosen."
+  },
+  {
+      "id": 30,
+      "question": "After the procedure shown below has been executed in the listed order, which value will be\nstored in variable y? Here, the stack and queue structures are initially empty, and the four types\nof operations are defined as shown below.<br><br?[Operations]<br>push(x): Add the value of x onto the top of the stack.<br>pop(): Remove a value from the top of the stack, then return the value.<br>enq(x): Add the value of x into the rear of the queue.<br>deq(): Remove a value from the front of the queue, then return the value.<br>[Procedure]<br>enq(1)<br>enq(2)<br>push(3)<br>push(deq())<br>enq(4)<br>push(deq())<br>y ← pop()",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "1"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "2"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "3"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "4"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Tracing: Queue [1,2]. Stack [3]. push(deq(1)) -> Stack [3,1]. Queue [2]. enq(4) -> Queue [2,4]. push(deq(2)) -> Stack [3,1,2]. pop() returns 2."
+  },
+  {
+      "id": 31,
+      "question": "Which of the following is the name for the tree depicted below? Here, the number in each\nnode represents the key of the node.",
+      image:"../image/2021a/img5.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "Balanced tree"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Binary search tree"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "Max heap"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Min heap"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "The tree satisfies the Binary Search Tree property where for every node, left child < node < right child."
+  },
+  {
+      "id": 32,
+      "question": "When the function M(n) is defined as shown below, what is the value of M (97)?",
+      image:"../image/2021a/img6.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "81"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "86"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "91"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "96"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "This is the McCarthy 91 function, which returns 91 for all n ≤ 100."
+  },
+  {
+      "id": 33,
+      "question": "The GCD (Greatest Common Divisor) of two positive integers, x0 and x1 (x0 > x1), is\ncomputed by the procedure below. When x0 = 175 and x1 = 77, how many times should step\n(2) of this procedure be executed before it stops? Here, “A ← B” indicates that B is substituted\nfor A.<br><br>[Procedure]<br>(1) i ← 2<br>(2) xi ← remainder of xi−2 divided by xi−1<br>(3) if xi = 0, stop with xi−1 as the GCD<br>(4) i ← i + 1<br>(5) return to step (2)",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "3"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "4"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "6"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "7"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Sequence of remainders: 175, 77 -> 21 (step 1) -> 14 (step 2) -> 7 (step 3) -> 0 (step 4). Step (2) runs 4 times."
+  },
+  {
+      "id": 34,
+      "question": "When a sequence of data, A, B, C, D, arrives in this order, which of the following is a\npossible sequence that can be produced using a single stack?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "A, D, B, C"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "B, D, A, C"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "C, B, D, A"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "D, C, A, B"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Option c is possible: Push A, Push B, Push C, Pop C, Pop B, Push D, Pop D, Pop A."
+  },
+  {
+      "id": 35,
+      "question": "The in-order traversal of a binary tree is a procedure that visits all nodes of the tree. For a\nnon-empty binary tree T, it performs the following operations in order.",
+      image:"../image/2021s/img5.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "1, 2, 4, 7, 8, 5, 3, 6, 9"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "6, 9, 3, 1, 5, 2, 8, 4, 7"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "7, 4, 8, 2, 5, 1, 3, 9, 6"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "7, 8, 4, 5, 2, 9, 6, 3, 1"
+      }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Traversing the tree in-order (Left-Root-Right) yields the sequence 7, 4, 8, 2, 5, 1, 3, 9, 6."
+  },
+  {
+      "id": 36,
+      "question": "Which of the following explains the objective of a recursive call?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "To allow a function to use itself from within its body"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "To execute processes in an event-driven way rather than in a predetermined order"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "To retain a function in memory for reuse after its execution"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "To undo an execution of a process when it fails"
+      }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "A recursive call is defined as a function calling itself."
+  },
+  {
+      "id": 37,
+      "question": "Which of the following is a binary search tree? Here, the number in each node represents its\nvalue.",
+      image:"../image/2020a/img2.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "Tree a)"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "Tree b)"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "Tree c)"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "Tree d)"
+      }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Tree b satisfies the BST property where left descendants < root < right descendants for all nodes."
+  },
+  {
+      "id": 38,
+      "question": "Which of the following is a description of quicksort algorithm?",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "It repeats the process of comparing and swapping each pair of adjacent elements so that \nsmaller elements are gradually moved towards the end."
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "It repeats the process of finding the minimum element of the data, followed by its\nremoval."
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "It repeats the process of inserting each element of data into the correct position of a\nsorted sequence."
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "It repeats the process of selecting an element as a pivot and partitions the data so that\nsmaller elements appear before the pivot, and larger elements appear afterwards."
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Quicksort uses partitioning around a pivot."
+  },
+  {
+      "id": 39,
+      "question": "The flowchart below calculates the greatest common divisor of two (2) numbers, A and B,\nusing the Euclidean algorithm with repeated subtraction. When A is 876 and B is 204, how\nmany comparisons are required to obtain the result?",
+      image:"../image/2020a/img3.png",
+      "options": [
+      {
+          "id": "a",
+          "label": "a",
+          "text": "4"
+      },
+      {
+          "id": "b",
+          "label": "b",
+          "text": "9"
+      },
+      {
+          "id": "c",
+          "label": "c",
+          "text": "10"
+      },
+      {
+          "id": "d",
+          "label": "d",
+          "text": "11"
+      }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "Following the flowchart, the subtraction steps are 4 (for 876->60), 1 (60<204), 3 (204->60), 1 (60>24), 1 (36>24), 1 (12=12). Total comparisons = 11."
+  }
+  ]
+};
+const ANSWERS = {};
+
+function render() {
+    const root = document.getElementById('quiz-root');
+    DATA.questions.forEach((q) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.innerHTML = `
+        <div class="q-head">
+        <span class="q-num">Question ${q.id}</span>
+        <div class="q-title">${q.question}</div>
+        ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+        </div>
+        <div class="options" id="opts-${q.id}"></div>
+        <div class="explanation" id="exp-${q.id}">
+        <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+        ${q.explanation || "Correct response determined from source."}
+        </div>
+        `;
+        root.appendChild(card);
+        
+        const optBox = document.getElementById(`opts-${q.id}`);
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.innerHTML = `
+            <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+            <div class="opt-txt">${opt.text}</div>
+            `;
+            btn.onclick = () => {
+                ANSWERS[q.id] = opt.id;
+                Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+            };
+            optBox.appendChild(btn);
+        });
+    });
+}
+
+function submit() {
+    let score = 0;
+    DATA.questions.forEach(q => {
+        const box = document.getElementById(`opts-${q.id}`);
+        const exp = document.getElementById(`exp-${q.id}`);
+        exp.style.display = 'block';
+
+        Array.from(box.children).forEach((btn, idx) => {
+            const optId = q.options[idx].id;
+            btn.onclick = null;
+            btn.classList.remove('active');
+
+            if (optId === q.correctAnswerId) btn.classList.add('correct');
+            if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+        });
+
+        if (ANSWERS[q.id] === q.correctAnswerId) score++;
+    });
+
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+document.querySelector('.genre').addEventListener('change', function() {
+    const selectedURL = this.value;
+    if (selectedURL) {
+        window.location.href = selectedURL;
+    }
+});
+render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

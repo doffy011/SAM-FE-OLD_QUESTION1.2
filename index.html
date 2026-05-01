@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="image/logo2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>SAM FE OLD_QUESTION</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="image/logo.png" alt="logo">
+                </a>
+
+                <nav class="navbarr">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                    
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option selected>Years</option>
+                            <option value="page/2025A.html">2025_A</option>
+                            <option value="page/2025S.html">2025_S</option>
+                            <option value="page/2024S.html">2024_S</option>
+                            <option value="page/2024A.html">2024_A</option>
+                            <option value="page/2023S.html">2023_S</option>
+                            <option value="page/2023A.html">2023_A</option>
+                            <option value="page/2022S.html">2022_S</option>
+                            <option value="page/2022A.html">2022_A</option>
+                            <option value="page/2021S.html">2021_S</option>
+                            <option value="page/2021A.html">2021_A</option>
+                            <option value="page/2020S.html">2020_S</option>
+                            <option value="page/2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured">
+                        <label for="featured"><a href="page/m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular"><a href="page/m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest"><a href="page/n.html">NetWork</a></label>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section class="about-itpec" id="about">
+        <div class="about-text">
+            <h2>What is ITPEC Exam?</h2>
+            <p>The <strong>Information Technology Professional Examination Council (ITPEC)</strong> is an organization that conducts a standardized IT examination across several Asian countries, including Myanmar.</p>
+            <p>This exam is based on the Japanese Information-Technology Engineers Examination and is internationally recognized, helping engineers validate their skills in Technology, Management, and Strategy.</p>
+            <p>Whether you are a student or a professional, passing ITPEC exams like <strong>IP</strong> or <strong>FE</strong> opens doors to global career opportunities, especially in the Japanese IT market.</p>
+        </div>
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <img src="image/itpec.png" alt="">
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title">Why Study With Us?</h2>
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Smart Quiz System</h3>
+                <p>No more flipping through hundreds of PDF pages. Practice official past questions in a modern, interactive quiz format that works perfectly on both mobile and desktop.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Topic-Based Mastery</h3>
+                <p>Focus your efforts where they matter most. You can choose to practice by specific domains: Technology, Management, or Strategy.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comment-dots"></i>
+                <h3>Instant Feedback</h3>
+                <p>Get your scores immediately after finishing a set. Our system highlights correct answers and provides explanations to help you learn from your mistakes instantly.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

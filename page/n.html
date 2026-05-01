@@ -1,0 +1,3030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="icon" type="image/png" href="../image/logo2.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+   <title>Network</title>
+   <link rel="stylesheet" href="../css/page.css">
+   <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option value="../index.html"selected>Years</option>                      
+                            <option value="2025A.html">2025_A</option>
+                            <option value="2025S.html">2025_S</option>
+                            <option value="2024S.html">2024_S</option>
+                            <option value="2024A.html">2024_A</option>
+                            <option value="2023S.html">2023_S</option>
+                            <option value="2023A.html">2023_A</option>
+                            <option value="2022S.html">2022_S</option>
+                            <option value="2022A.html">2022_A</option>
+                            <option value="2021S.html">2021_S</option>
+                            <option value="2021A.html">2021_A</option>
+                            <option value="2020S.html">2020_S</option>
+                            <option value="2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured">
+                        <label for="featured"><a href="m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest" checked>
+                        <label for="newest"><a href="n.html">NetWork</a></label>
+
+                        <div class="checked-radio-bg"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="container2">
+            <div id="quiz-root"></div>
+            <div id="results">
+                <div class="score" id="score-text">0/0</div>
+                <h2 style="margin-bottom: 24px;">Test Result</h2>
+                <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    const DATA = {
+      "title": "FE Morning Questions for Network 2018 to 2023",
+      "description": "AMA Network",
+      "questions": [
+      {
+          "id": 1,
+          "question": "Which of the following is a role of DNS in a TCP/IP network?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "A private IP address is translated into a global IP address in order to access the Internet."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "A program in a server can be invoked only by its name without taking the server’s IP address into consideration."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Domain names, host names, and other such information are mapped to IP addresses."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "In response to an assignment request for an IP address from a PC or a printer, an unused address is chosen from the addresses registered in the server."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "DNS (Domain Name System) is responsible for mapping human-readable domain names and hostnames to their corresponding IP addresses."
+      },
+      {
+          "id": 2,
+          "question": "In the same subnet, which of the following is the devices that will receive the data when the destination address is set to 255.255.255.255?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All devices in the same subnet"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "All devices using the same DNS server"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Only the default gateway of the subnet"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Only the device sending the data to itself"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The IP address 255.255.255.255 is the broadcast address for the local network, which means data sent to this address is received by all devices within the same subnet."
+      },
+      {
+          "id": 3,
+          "question": "How many host addresses are there in the network 192.168.10.0/26?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "30"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "62"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "126"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "254"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A /26 subnet mask leaves 6 bits for host addresses (32 - 26 = 6). The number of valid host addresses is 2^6 - 2 = 64 - 2 = 62."
+      },
+      {
+          "id": 4,
+          "question": "In a TCP/IP network, which of the following is a protocol used to match the clocks of the server and the client?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NTP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RIP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NTP (Network Time Protocol) is used to synchronize the clocks of computers over a network."
+      },
+      {
+          "id": 5,
+          "question": "As for the use of e-mails over the Internet, which of the following is a standard that extends the header field and can handle not only text but also audio and images?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "MHS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "MIME (Multipurpose Internet Mail Extensions) is the standard that extends email to support non-ASCII text, audio, video, and other multimedia content."
+      },
+      {
+          "id": 6,
+          "question": "Which of the following is the most appropriate information for a router to determine the destination of an incoming packet?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Destination IP address"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Destination MAC address"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Source IP address"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Source MAC address"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Routers operate at Layer 3 (Network Layer) and make forwarding decisions based on the destination IP address contained in the packet header."
+      },
+      {
+          "id": 7,
+          "question": "When a PC connected to a LAN is starting up, which of the following protocols is used to automatically assign an IP address to the PC?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DNS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "FTP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "PPP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) is the protocol used to automatically assign IP addresses and other network configuration parameters to devices on a network."
+      },
+      {
+          "id": 8,
+          "question": "In telecommunication, which of the following is a standard for wireless broadband communication for mobile devices and data terminals?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "IEEE 802.11"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "LTE"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NFC"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "UWB"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "LTE (Long-Term Evolution) is a standard for high-speed wireless communication for mobile devices and data terminals."
+      },
+      {
+          "id": 9,
+          "question": "Which of the following is a multicast IPv4 address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "10.1.1.1"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.0.2.0"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "203.0.113.4"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "224.0.0.5"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "IPv4 multicast addresses are in the range 224.0.0.0 through 239.255.255.255. 224.0.0.5 is a specific multicast address used by OSPF."
+      },
+      {
+          "id": 10,
+          "question": "In IPv4, what is the maximum number of IP addresses that can be assigned to hosts in the network of 172.16.64.0/23? Here, the decimal number after the slash (/) is the number of bits used for the network prefix.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "254"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "256"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "510"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "512"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A /23 subnet mask uses 23 bits for the network, leaving 9 bits for hosts (32 - 23 = 9). The total number of addresses is 2^9 = 512. Subtracting the network and broadcast addresses gives 512 - 2 = 510 usable host addresses."
+      },
+      {
+          "id": 11,
+          "question": "Which of the following is the broadcast address of the network with the address 192.168.128.0/26? Here, the decimal number after the slash (/) is the number of bits used for the network prefix.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "192.168.128.63"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.168.128.127"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "192.168.128.252"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.128.255"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "For the network 192.168.128.0/26, the subnet size is 64 addresses. The range starts at .0, so it ends at .63. The last address in the range is the broadcast address, which is 192.168.128.63."
+      },
+      {
+          "id": 12,
+          "question": "Which of the following is an Internet standard that is used to convert IP addresses to the corresponding MAC addresses?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "RARP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RIP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "ARP (Address Resolution Protocol) is responsible for resolving a known IP address to its corresponding MAC address."
+      },
+      {
+          "id": 13,
+          "question": "In an IP network consisting of four (4) hosts, two (2) L2 switches, and a router shown below, a packet is transmitted from PC01 to PC03. Which of the following is an appropriate combination of the source and destination addresses of this packet when it leaves Switch1?",
+          image:"../image/n/img1.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "When leaving Switch1, the packet is moving from PC01 to the Router (default gateway). The Source MAC is PC01's MAC (aa:...) and the Destination MAC is the Router's interface MAC (cc:...). The IP addresses (Source IP 192.168.1.31 and Destination IP 192.168.2.31) remain unchanged end-to-end."
+      },
+      {
+          "id": 14,
+          "question": "Which of the following is a TCP/IP protocol that is used to find the corresponding MAC address from an IP address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "IP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RARP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "ARP (Address Resolution Protocol) is used to map an IP address to a physical machine address (MAC address) on a local network."
+      },
+      {
+          "id": 15,
+          "question": "Which of the following is the subnet mask corresponding to an IP address in slash notation, 192.168.22.31/27?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "255.255.255.192"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "255.255.255.224"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "255.255.255.248"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "255.255.255.252"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A /27 prefix length corresponds to the subnet mask 255.255.255.224 (where the last octet has 3 bits set: 128 + 64 + 32 = 224)."
+      },
+      {
+          "id": 16,
+          "question": "Which of the following protocol supports the congestion control feature?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "TCP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "UDP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TCP (Transmission Control Protocol) is a connection-oriented protocol that includes mechanisms for congestion control."
+      },
+      {
+          "id": 17,
+          "question": "Which of the following is a global IPv4 address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "10.10.10.10"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "129.10.9.7"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "172.16.1.5"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.20.3"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "10.x.x.x, 172.16.x.x - 172.31.x.x, and 192.168.x.x are private IP address ranges. 129.10.9.7 is a global (public) IP address."
+      },
+      {
+          "id": 18,
+          "question": "Which of the following is an appropriate transmission operation of a node connected to a CSMA/CD LAN?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All nodes are connected in a ring topology, where a special frame is circulated around to control transmission rights. Only the node that has the special frame can transmit data."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Each node is logically ordered, a transmission right is passed along in order, and only the node that has received the right can transmit data."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Each node waits for the medium to be idle before transmitting data. When collision occurs, it waits for a random backoff time before retransmission."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Only the node that has a time slot assigned can transmit data."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) works by listening for an idle channel before transmitting and using a random backoff algorithm if a collision is detected."
+      },
+      {
+          "id": 19,
+          "question": "In a TCP/IP environment, which of the following is a protocol for synchronizing the clocks of multiple computers with that of a time server?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "FTP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "NNTP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NTP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NTP (Network Time Protocol) is the standard protocol used for clock synchronization between computer systems over packet-switched, variable-latency data networks."
+      },
+      {
+          "id": 20,
+          "question": "Which of the following is an appropriate explanation of DHCP?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is a protocol for accessing a directory service."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is a protocol for automatically assigning an IP address."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is a protocol for converting a private IP address to a global IP address."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is a protocol for forwarding an e-mail."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and other network settings to devices."
+      },
+      {
+          "id": 21,
+          "question": "In the OSI basic reference model, which of the following is a network device that operates at the network layer?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Access point"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Bridge"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Routers operate at the Network Layer (Layer 3) of the OSI model to route packets between different networks."
+      },
+      {
+          "id": 22,
+          "question": "Which of the following is a mechanism that enables multiple terminals to have private addresses different from each other to connect to the Internet by sharing a single global IP address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DNS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NAPT"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RADIUS"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NAPT (Network Address Port Translation), often just called NAT or PAT, allows multiple devices on a private network to share a single public IP address."
+      },
+      {
+          "id": 23,
+          "question": "Which of the following is a data link layer function that enables a receiver to control the amount of data a sender transmits?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Congestion control"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Error control"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Flow control"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Media access control"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Flow control is a function (often at Layer 2 and Layer 4) that prevents a sender from overwhelming a receiver with too much data at once."
+      },
+      {
+          "id": 24,
+          "question": "In TCP/IP, which of the following is an application layer protocol that enables a server to automatically configure its clients with network information such as IP addresses, the subnet mask, and the default gateway address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DHCP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "DNS"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "NSLOOKUP"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP is an application layer protocol used to automatically configure network devices with IP addresses and other parameters."
+      },
+      {
+          "id": 25,
+          "question": "Which device performs protocol conversion between different types of networks, functioning at the layers of transport and above in the OSI basic reference model?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bridge"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Gateway"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A Gateway connects networks with different protocols and operates at the Transport layer and above."
+      },
+      {
+          "id": 26,
+          "question": "Which of the following is an appropriate characteristic of IPv6 addresses?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All addresses are global."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "An address consists of 96 bits."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "There are several address representations, one of which uses a hexadecimal string with every four digits (i.e., 16 bits) separated by a colon “ : ” ."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "There is a one-to-one correspondence between all IPv6 addresses and all IPv4 addresses."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "IPv6 addresses are 128 bits long and are typically represented as eight groups of four hexadecimal digits separated by colons."
+      },
+      {
+          "id": 27,
+          "question": "There is a PC whose IP address and subnet mask are shown below. Which of the following is the network address of this PC?<br><br>IP address: 10.170.70.19<br>Subnet mask: 255.255.255.240",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "10.170.70.0"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "10.170.70.16"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "10.170.70.31"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "10.170.70.255"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The subnet mask 255.255.255.240 (/28) has a block size of 16. The IP 10.170.70.19 falls in the range 16 to 31. Therefore, the network address is 10.170.70.16."
+      },
+      {
+          "id": 28,
+          "question": "Which of the following is an Internet standard that extends the format of email messages to support non-ASCII text as well as audio, video, and images?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "MHS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "MIME (Multipurpose Internet Mail Extensions) allows email to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs."
+      },
+      {
+          "id": 29,
+          "question": "Which of the following is a device that connects multiple LANs by relaying data through the protocol information of the data link layer of the OSI basic reference model?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bridge"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Gateway"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Bridges operate at the Data Link Layer (Layer 2) to connect LAN segments."
+      },
+      {
+          "id": 30,
+          "question": "Which of the following is a role played by a DNS in a TCP/IP network?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It assigns an unused IP address from the pool of addresses in response to a request from a PC or a printer."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It associates domain or host names with IP addresses."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It converts private IP addresses used within a company into global IP addresses, and it enables access to the Internet."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It enables a program in a server to be called by only specifying the program name without being aware of the IP address of the server."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DNS (Domain Name System) is used to resolve (associate) domain names or hostnames into IP addresses."
+      },
+      {
+          "id": 31,
+          "question": "What is the broadcast address of a network to which the IP address 192.168.57.123/22 belongs?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "192.168.55.255"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.168.57.255"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "192.168.59.255"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.63.255"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A /22 mask (255.255.252.0) has a block size of 4 in the third octet. The range containing 57 is 56-59. The broadcast address is the last address in this range, which is 192.168.59.255."
+      },
+      {
+          "id": 32,
+          "question": "Which of the following is an Internet standard that extends the format of email header fields to handle not only text messages but also audio and image files?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "MHS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "MIME (Multipurpose Internet Mail Extensions) extends the email format to support non-text attachments."
+      },
+      {
+          "id": 33,
+          "question": "In IPv4, which of following describes the NAT function of a router that connects some computers to the Internet?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It caches the Internet access to speed up the connections when revisiting the same websites."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It converts between private and global IP addresses."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It inspects the IP packets in a transmission to detect possible attacks and intrusions from the Internet."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It only passes the IP packets intended for specific terminals."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "NAT (Network Address Translation) translates private IP addresses used within a local network to a global IP address for Internet access."
+      },
+      {
+          "id": 34,
+          "question": "Which of the following is a feature of a switching hub (layer 2 switch) network device?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It breaks a received packet into smaller pieces (fragments) in the network layer."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It dynamically allocates an IP address for a terminal connected to its LAN port."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It forwards a received packet only to its LAN port connected to a device with the packet’s destination MAC address."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It forwards a received packet to all its LAN ports (broadcast)."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A Layer 2 switch learns MAC addresses and forwards frames only to the specific port where the destination MAC address resides, unlike a hub which broadcasts to all ports."
+      },
+      {
+          "id": 35,
+          "question": "Which of the following is the network routing and addressing mechanism that is used in IPv6 but not in IPv4?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Anycast"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Broadcast"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Multicast"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Unicast"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Anycast is an addressing method natively integrated into IPv6 where a packet is delivered to the nearest interface identified by that address. While possible in IPv4 via routing tricks (BGP), it is a core feature of IPv6 architecture. (Note: IPv6 also eliminated Broadcast in favor of Multicast)."
+      },
+      {
+          "id": 36,
+          "question": "In an IPv4 network with subnet mask 255.255.255.224, what is the maximum number of host addresses assigned?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "14"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "20"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "26"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "30"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A subnet mask of 255.255.255.224 corresponds to a /27 prefix. This leaves 5 bits for host addresses (32 - 27 = 5). The maximum number of hosts is 2^5 - 2 = 32 - 2 = 30."
+      },
+      {
+          "id": 37,
+          "question": "Which of the following is a protocol that uses TCP as its transport layer protocol?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "SNMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "TELNET"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "TFTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Telnet uses TCP (typically port 23). DHCP, SNMP, and TFTP typically use UDP."
+      },
+      {
+          "id": 38,
+          "question": "Which of the following is the device that operates only at the physical layer of the OSI model?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bridge"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Repeater"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Router"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Switch"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Repeaters operate at the Physical Layer (Layer 1) to regenerate signals."
+      },
+      {
+          "id": 39,
+          "question": "Which of the following is the maximum theoretical data rate (in Mbps) achievable in the IEEE 802.11n network?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "11"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "54"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "248"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "600"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "IEEE 802.11n has a maximum theoretical data rate of 600 Mbps using 4 spatial streams and 40 MHz channel width."
+      },
+      {
+          "id": 40,
+          "question": "Which of the following is an architecture that decouples the network control and forwarding functions, enabling the network control to become directly programmable and the underlying infrastructure to be abstracted for applications and network services?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Cloud computing"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Internet of things"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Network function virtualization"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Software-defined networking"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "SDN (Software-Defined Networking) is characterized by the separation of the control plane (network control) from the data plane (forwarding functions)."
+      },
+      {
+          "id": 41,
+          "question": "In telecommunication, which of the following is a standard for wireless broadband communication for mobile devices and data terminals?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "IEEE 802.11"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "LTE"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NFC"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "UWB"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "LTE (Long-Term Evolution) is the standard for wireless broadband communication for mobile devices."
+      },
+      {
+          "id": 42,
+          "question": "Which of the following is an e-mail header field that is removed during the message transfer using SMTP?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bcc"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Date"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Received"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "X-Mailer"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The Bcc (Blind Carbon Copy) field is used to send copies of an email to recipients without revealing their addresses to other recipients. This header is removed by the mail server before the message is delivered."
+      },
+      {
+          "id": 43,
+          "question": "Which of the following TCP/IP protocols is used to assign IP addresses dynamically?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DHCP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "RIP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) allows for the dynamic assignment of IP addresses."
+      },
+      {
+          "id": 44,
+          "question": "In a TCP/IP network hierarchical model, what is the name for Equipment A that connects two LAN segments at the Internet Layer?",
+          image:"../image/n/img2.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bridge"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Repeater hub"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Router"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Switching hub"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The diagram and text describe Equipment A operating at the Internet Layer (Layer 3). Routers connect networks at the Internet Layer."
+      },
+      {
+          "id": 45,
+          "question": "Which of the following is a pair of IP addresses belonging to the same subnet, when the subnet mask is 255.255.255.240?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "192.168.1.14 and 192.168.1.17"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.168.1.17 and 192.168.1.29"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "192.168.1.29 and 192.168.1.33"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.1.33 and 192.168.1.49"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The subnet mask 255.255.255.240 (/28) creates subnets with a block size of 16. The ranges are 0-15, 16-31, 32-47, etc. 192.168.1.17 and 192.168.1.29 both fall within the 16-31 range."
+      },
+      {
+          "id": 46,
+          "question": "Which of the following delivery models does an ARP response use?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Anycast"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Broadcast"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Multicast"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Unicast"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "While ARP requests are broadcast, ARP responses are unicast, sent directly back to the requester."
+      },
+      {
+          "id": 47,
+          "question": "Which of the following is the most appropriate information for a router to determine the destination of an incoming packet?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Destination IP address"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Destination MAC address"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Source IP address"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Source MAC address"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Routers make forwarding decisions based on the destination IP address located in the packet header."
+      },
+      {
+          "id": 48,
+          "question": "In the OSI basic reference model, which of the following is the layer where bridges operate?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Application layer"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Network layer"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Datalink layer"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Transport layer"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Bridges and Layer 2 switches operate at the Data Link Layer."
+      },
+      {
+          "id": 49,
+          "question": "In TCP/IP, which of the following is an application layer protocol that enables a server to automatically configure its clients with network information such as IP addresses, the subnet mask and the default gateway address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DHCP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "DNS"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "NSLOOKUP"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) is the application layer protocol used for automatic network configuration."
+      },
+      {
+          "id": 50,
+          "question": "Which of the following is an appropriate explanation of SDN (Software-Defined Networking) that uses OpenFlow?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is a business analysis and visualization software technology that uses visual means such as data flow diagrams and activity diagrams to discover problems in business processes."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is a network technology that logically decouples the functions for data transfer and route control, and is implemented with a combination of network devices specialized for data transfer and software-based route control."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is an Internet of Things (IoT) technology that uses RFID, and is a software architecture for the optimization of logistics networks."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is an optimum relocation of servers on a network in order to efficiently deliver a range of software content such as music, videos, and online games over the Internet."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "SDN is defined by the separation (decoupling) of the data plane (data transfer) from the control plane (route control), often using protocols like OpenFlow."
+          
+      },
+      {
+          "id": 51,
+          "question": "Which of the following is a role of DNS in a TCP/IP network?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "A private IP address is translated into a global IP address in order to access the Internet."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "A program in a server can be invoked only by its name without taking the server’s IP address into consideration."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Domain names, host names, and other such information are mapped to IP addresses."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "In response to an assignment request for an IP address from a PC or a printer, an unused address is chosen from the addresses registered in the server."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "DNS (Domain Name System) is responsible for resolving domain names and hostnames to their corresponding IP addresses."
+      },
+      {
+          "id": 52,
+          "question": "In the same subnet, which of the following is the devices that will receive the data when the destination address is set to 255.255.255.255?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All devices in the same subnet"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "All devices using the same DNS server"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Only the default gateway of the subnet"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Only the device sending the data to itself"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "255.255.255.255 is the broadcast address for the local network segment, meaning the data is sent to all devices within the same subnet."
+      },
+      {
+          "id": 53,
+          "question": "How many host addresses are there in the network 192.168.10.0/26?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "30"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "62"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "126"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "254"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A /26 subnet mask leaves 6 bits for hosts. 2^6 = 64. Subtracting the network and broadcast addresses (64 - 2) gives 62 usable host addresses."
+      },
+      {
+          "id": 54,
+          "question": "In a TCP/IP network, which of the following is a protocol used to match the clocks of the server and the client?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NTP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RIP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NTP (Network Time Protocol) is used to synchronize the clocks of computers over a network."
+      },
+      {
+          "id": 55,
+          "question": "As for the use of e-mails over the Internet, which of the following is a standard that extends the header field and can handle not only text but also audio and images?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "MHS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "MIME (Multipurpose Internet Mail Extensions) extends the email format to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs."
+      },
+      {
+          "id": 56,
+          "question": "A packet filtering firewall is installed at the connection point of an internal network and the Internet. Which of the following is the appropriate combination of filtering rules that enables PCs on the internal network to access a web server on the Internet (port number 80)?",
+          image:"../image/n/img3.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "When a PC accesses a web server, the request is sent from a random ephemeral port (usually 1024 or higher) to the server's standard HTTP port (80). The return traffic comes from the server's port 80 back to the PC's ephemeral port."
+      },
+      {
+          "id": 57,
+          "question": "When a sender from domain A sends an e-mail to a recipient in domain B, which of the following is used by the mail server in domain A for authenticating the sender?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "APOP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "POP3S"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "S/MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP-AUTH"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "SMTP-AUTH (SMTP Authentication) is an extension of the SMTP protocol that allows the client to log in using an authentication mechanism (like a username and password) before sending email."
+      },
+      {
+          "id": 58,
+          "question": "Which of the following is the most appropriate information for a router to determine the destination of an incoming packet?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Destination IP address"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Destination MAC address"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Source IP address"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Source MAC address"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Routers operate at the Network Layer (Layer 3) and make forwarding decisions based on the destination IP address of the packet."
+      },
+      {
+          "id": 59,
+          "question": "Which of the following is a feature of a switching hub (layer 2 switch) network device?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It breaks a received packet into smaller pieces (fragments) in the network layer."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It dynamically allocates an IP address for a terminal connected to its LAN port."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It forwards a received packet only to its LAN port connected to a device with the packet’s destination MAC address."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It forwards a received packet to all its LAN ports (broadcast)."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A Layer 2 switch learns MAC addresses and forwards frames only to the specific port where the destination MAC address is located, unlike a hub which broadcasts to all ports."
+      },
+      {
+          "id": 60,
+          "question": "When a PC connected to a LAN is starting up, which of the following protocols is used to automatically assign an IP address to the PC?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DNS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "FTP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "PPP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) is used to automatically assign IP addresses and other network configuration parameters to devices."
+      },
+      {
+          "id": 61,
+          "question": "In telecommunication, which of the following is a standard for wireless broadband communication for mobile devices and data terminals?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "IEEE 802.11"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "LTE"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NFC"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "UWB"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "LTE (Long Term Evolution) is a standard for wireless broadband communication for mobile devices and data terminals, often referred to as 4G."
+      },
+      {
+          "id": 62,
+          "question": "Which of the following is a multicast IPv4 address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "10.1.1.1"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.0.2.0"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "203.0.113.4"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "224.0.0.5"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "IPv4 multicast addresses are in the Class D range, from 224.0.0.0 to 239.255.255.255. 224.0.0.5 is a well-known multicast address (used by OSPF)."
+      },
+      {
+          "id": 63,
+          "question": "Companies usually provide a means for their mobile workforce to access the corporate network securely over the Internet through insecure channels such as open wireless networks in hotels or coffee shops. Which of the following is the appropriate technology that can be used for this purpose?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DMZ (DeMilitarized Zone)"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "SNMP (Simple Network Management Protocol)"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "VoIP (Voice over Internet Protocol)"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "VPN (Virtual Private Network)"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "VPN (Virtual Private Network) technology establishes a secure, encrypted tunnel over a public network (like the Internet), allowing secure remote access to a corporate network."
+      },
+      {
+          "id": 64,
+          "question": "Multiple PCs are connected to the Internet with FTTH. The WAN interface of device A has a single global IP address allocated to it. Which of the following is the function of device A that enables these PCs to connect to the Internet by sharing the global IP address?",
+          image:"../image/n/img4.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "NAPT (IP masquerade)"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Packet filtering"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "PPPoE"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "NAPT (Network Address Port Translation), also known as IP masquerading, allows multiple devices on a private network to share a single public (global) IP address for Internet access."
+      },
+      {
+          "id": 65,
+          "question": "In IPv4, what is the maximum number of IP addresses that can be assigned to hosts in the network of 172.16.64.0/23? Here, the decimal number after the slash (/) is the number of bits used for the network prefix.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "254"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "256"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "510"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "512"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A /23 mask leaves 9 bits for host addresses (32 - 23 = 9). 2^9 = 512. Subtracting the network address and broadcast address (512 - 2) results in 510 usable host addresses."
+      },
+      {
+          "id": 66,
+          "question": "Which of the following is the broadcast address of the network with the address 192.168.128.0/26? Here, the decimal number after the slash (/) is the number of bits used for the network prefix.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "192.168.128.63"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.168.128.127"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "192.168.128.252"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.128.255"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "With a /26 prefix, the network block size is 64. The range starts at .0 and ends at .63. Therefore, .63 is the broadcast address for the 192.168.128.0/26 network."
+      },
+      {
+          "id": 67,
+          "question": "Which of the following is an Internet standard that is used to convert IP addresses to the corresponding MAC addresses?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "RARP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RIP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "ARP (Address Resolution Protocol) is responsible for resolving a known IP address to its corresponding MAC (hardware) address."
+      },
+      {
+          "id": 68,
+          "question": "There is a network that is divided into three (3) segments, namely an external segment, a DMZ, and an internal segment, by one (1) firewall. In this network, a service for users is published on the Internet using a system comprising a web server and a database server that contains critical data. Which of the following is the most appropriate server installation method for protecting critical data from unauthorized access via the Internet? Here, the web server performs front end processing for the database server, and the firewall allows only a specific protocol for communication between the external segment and the DMZ as well as between the DMZ and the internal segment. Direct communication between the external segment and the internal segment is not allowed.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The web server and the database server are installed in the DMZ."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The web server and the database server are installed in the internal segment."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The web server is installed in the DMZ and the database server is installed in the internal segment."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The web server is installed in the external segment and the database server is installed in the DMZ."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The standard security practice is to place the web server (which needs public access) in the DMZ, while keeping the database server (containing critical data) in the more secure internal network, allowing the web server to access the database only through tightly controlled firewall rules."
+      },
+      {
+          "id": 69,
+          "question": "Which of the following is a system or network that is intentionally made vulnerable in order to investigate the behavior of an intruder or malware?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Botnet"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DMZ"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Honey pot"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SIEM"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A honeypot is a decoy system or network designed to attract potential attackers to study their behavior and detect vulnerabilities."
+      },
+      {
+          "id": 70,
+          "question": "In an IP network consisting of four (4) hosts, two (2) L2 switches, and a router shown below, a packet is transmitted from PC01 to PC03. Which of the following is an appropriate combination of the source and destination addresses of this packet when it leaves Switch1?",
+          image:"../image/n/img1.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Destination MAC: cc:cc:cc:cc:cc:cc, Source MAC: aa:aa:aa:aa:aa:aa, Destination IP: 192.168.1.11, Source IP: 192.168.1.31"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Destination MAC: cc:cc:cc:cc:cc:cc, Source MAC: aa:aa:aa:aa:aa:aa, Destination IP: 192.168.2.31, Source IP: 192.168.1.31"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Destination MAC: ee:ee:ee:ee:ee:ee, Source MAC: aa:aa:aa:aa:aa:aa, Destination IP: 192.168.1.11, Source IP: 192.168.1.31"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Destination MAC: ee:ee:ee:ee:ee:ee, Source MAC: aa:aa:aa:aa:aa:aa, Destination IP: 192.168.2.31, Source IP: 192.168.1.31"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "When the packet leaves Switch1 towards the router, the Source IP is PC01 and Destination IP is PC03 (IPs remain end-to-end). The MAC addresses are hop-by-hop; thus, Source MAC is PC01 (aa...) and Destination MAC is the router's interface (cc...)."
+      },
+      {
+          "id": 71,
+          "question": "Which of the following is a TCP/IP protocol that is used to find the corresponding MAC address from an IP address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "IP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RARP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "ARP (Address Resolution Protocol) maps a known IP address to a MAC address."
+      },
+      {
+          "id": 72,
+          "question": "Which of the following is the subnet mask corresponding to an IP address in slash notation, 192.168.22.31/27?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "255.255.255.192"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "255.255.255.224"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "255.255.255.248"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "255.255.255.252"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A /27 subnet mask has 27 bits set to 1. In the last octet, this is 3 bits (128+64+32 = 224). Thus, the mask is 255.255.255.224."
+      },
+      {
+          "id": 73,
+          "question": "Which of the following protocol supports the congestion control feature?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "TCP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "UDP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TCP (Transmission Control Protocol) is a connection-oriented protocol that includes mechanisms for congestion control."
+      },
+      {
+          "id": 74,
+          "question": "Which of the following is a global IPv4 address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "10.10.10.10"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "129.10.9.7"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "172.16.1.5"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.20.3"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "10.x.x.x, 172.16.x.x-172.31.x.x, and 192.168.x.x are private IP address ranges. 129.10.9.7 falls outside these ranges and is a public (global) IP address."
+      },
+      {
+          "id": 75,
+          "question": "Which of the following is an appropriate transmission operation of a node connected to a CSMA/CD LAN?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All nodes are connected in a ring topology, where a special frame is circulated around to control transmission rights. Only the node that has the special frame can transmit data."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Each node is logically ordered, a transmission right is passed along in order, and only the node that has received the right can transmit data."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Each node waits for the medium to be idle before transmitting data. When collision occurs, it waits for a random backoff time before retransmission."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Only the node that has a time slot assigned can transmit data."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) operates by listening to the medium (Carrier Sense); if idle, it transmits. If a collision is detected, it backs off for a random time before retrying."
+      },
+      {
+          "id": 76,
+          "question": "In a TCP/IP environment, which of the following is a protocol for synchronizing the clocks of multiple computers with that of a time server?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "FTP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "NNTP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NTP"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NTP (Network Time Protocol) is designed to synchronize the clocks of computers over a network."
+      },
+      {
+          "id": 77,
+          "question": "Which of the following is an appropriate explanation of DHCP?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is a protocol for accessing a directory service."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is a protocol for automatically assigning an IP address."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is a protocol for converting a private IP address to a global IP address."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is a protocol for forwarding an e-mail."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration to devices."
+      },
+      {
+          "id": 78,
+          "question": "In the OSI basic reference model, which of the following is a network device that operates at the network layer?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Access point"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Bridge"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Routers operate at the Network Layer (Layer 3) of the OSI model."
+      },
+      {
+          "id": 79,
+          "question": "Which of the following is a mechanism that enables multiple terminals to have private addresses different from each other to connect to the Internet by sharing a single global IP address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DNS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NAPT"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "RADIUS"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "NAPT (Network Address Port Translation), often just called NAT, allows multiple private IP addresses to share a single public IP address."
+      },
+      {
+          "id": 80,
+          "question": "Which of the following is a data link layer function that enables a receiver to control the amount of data a sender transmits?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Congestion control"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Error control"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Flow control"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Media access control"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Flow control is the process of managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver. This is a function of the Data Link Layer (and Transport Layer)."
+      },
+      {
+          "id": 81,
+          "question": "In TCP/IP, which of the following is an application layer protocol that enables a server to automatically configure its clients with network information such as IP addresses, the subnet mask, and the default gateway address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "DHCP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "DNS"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "NSLOOKUP"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DHCP operates at the Application Layer of the TCP/IP stack to provide configuration information to clients."
+      },
+      {
+          "id": 82,
+          "question": "Which of the following is an appropriate explanation of Software-Defined Networking (SDN) that uses OpenFlow?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is a network technology that logically separates data forwarding and network control, and it is implemented with a combination of network devices specialized for data forwarding function, and a network control software."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is a software technology for business operation analysis and visualization that uses data flow diagrams and activity diagrams to discover problems in business processes and make improvements."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is an Internet of Things (IoT) technology that uses RFID, and it is a software architecture that optimizes distribution networks."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is an optimum deployment method for servers on a network that was developed to efficiently stream a range of content over the Internet."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "SDN separates the control plane (software) from the data plane (hardware forwarding), often using protocols like OpenFlow."
+      },
+      {
+          "id": 83,
+          "question": "Which of the following technologies is the most suitable to divide the whole company network into networks by department?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DMZ (DeMilitarized Zone)"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "NAT (Network Address Translation)"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "VLAN (Virtual Local Area Network)"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "VPN (Virtual Private Network)"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "VLANs (Virtual LANs) allow network administrators to partition a physical network into multiple logical networks, ideal for separating departments."
+      },
+      {
+          "id": 84,
+          "question": "To provide a guarantee to its online customers that all credit card information is protected when transferred between their PC and the web service over public networks, which of the following technologies should be used?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "S/MIME"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "SSH"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "TLS"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "VPN"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TLS (Transport Layer Security) is the standard protocol for encrypting communication between web browsers and web servers (HTTPS)."
+      },
+      {
+          "id": 85,
+          "question": "Which device performs protocol conversion between different types of networks, functioning at the layers of transport and above in the OSI basic reference model?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bridge"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Gateway"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A gateway operates at higher layers (up to Application) and can translate between completely different protocols/architectures."
+      },
+      {
+          "id": 86,
+          "question": "Locations A and B, both on the ground, communicate via a geostationary satellite at an altitude of about 36,000 km. When the distance between each location and the satellite is 37,500 km, and the delay caused by the relay at the satellite is 10 milliseconds, what is the total delay in seconds for the data sent from A to arrive at B? Here, the propagation speed of radio waves is 3×10^8 m per second.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "0.13"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "0.26"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "0.35"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "0.52"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Total distance = 37,500 km * 2 = 75,000 km = 75,000,000 m. Propagation delay = 75,000,000 m / 300,000,000 m/s = 0.25 s. Total delay = Propagation (0.25 s) + Relay (0.01 s) = 0.26 s."
+      },
+      {
+          "id": 87,
+          "question": "Which of the following is an appropriate characteristic of IPv6 addresses?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All addresses are global."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "An address consists of 96 bits."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "There are several address representations, one of which uses a hexadecimal string with every four digits (i.e., 16 bits) separated by a colon “ : ” ."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "There is a one-to-one correspondence between all IPv6 addresses and all IPv4 addresses."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "IPv6 addresses are 128-bit, represented as eight groups of four hexadecimal digits separated by colons."
+      },
+      {
+          "id": 88,
+          "question": "There is a PC whose IP address and subnet mask are shown below. Which of the following is the network address of this PC?\nIP address: 10.170.70.19\nSubnet mask: 255.255.255.24",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "10.170.70.0"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "10.170.70.16"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "10.170.70.31"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "10.170.70.255"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Assuming the mask '255.255.255.24' is a typo for '255.255.255.240' (/28) or '255.255.255.248' (/29) based on the options, the IP 10.170.70.19 falls into the subnet 10.170.70.16. (16 to 31 range for /28, 16 to 23 range for /29)."
+      },
+      {
+          "id": 89,
+          "question": "Which of the following is an Internet standard that extends the format of email messages to support non-ASCII text as well as audio, video, and images?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "MHS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "MIME (Multipurpose Internet Mail Extensions) allows email to support multimedia and non-ASCII characters."
+      },
+      {
+          "id": 90,
+          "question": "Which of the following is a device that connects multiple LANs by relaying data through the protocol information of the data link layer of the OSI basic reference model?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bridge"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Gateway"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeater"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Router"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A bridge connects LAN segments at the Data Link Layer (Layer 2) and filters/forwards based on MAC addresses."
+      },
+      {
+          "id": 91,
+          "question": "Which of the following is a role played by a DNS in a TCP/IP network?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It assigns an unused IP address from the pool of addresses in response to a request from a PC or a printer."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It associates domain or host names with IP addresses."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It converts private IP addresses used within a company into global IP addresses, and it enables access to the Internet."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It enables a program in a server to be called by only specifying the program name without being aware of the IP address of the server."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "DNS (Domain Name System) translates domain names into IP addresses."
+      },
+      {
+          "id": 92,
+          "question": "What is the broadcast address of a network to which the IP address 192.168.57.123/22 belongs?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "192.168.55.255"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "192.168.57.255"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "192.168.59.255"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "192.168.63.255"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The /22 mask means the interval in the 3rd octet is 4 (256-252). The ranges are 0-3, 4-7... 56-59. The IP 57 falls in the 192.168.56.0 - 192.168.59.255 range. The broadcast address is the last address: 192.168.59.255."
+      },
+      {
+          "id": 93,
+          "question": "Which of the following is an Internet standard that extends the format of email header fields to handle not only text messages but also audio and image files?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "MHS"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "MIME"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "SMTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "MIME extends email capabilities to include multimedia content."
+      },
+      {
+          "id": 94,
+          "question": "When a packet-filtering firewall is to be installed at the point of connection between a company’s internal network and the Internet, and PCs on the internal network are to be allowed to access port 80 of a web server on the Internet, which of the following is an appropriate combination of rules of filters for allowing traffic?",
+          image:"../image/n/img5.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Standard web traffic originates from a high ephemeral port (1024+) on the client to port 80 on the server. Return traffic originates from port 80 on the server to the high port on the client."
+      },
+      {
+          "id": 95,
+          "question": "In IPv4, which of following describes the NAT function of a router that connects some computers to the Internet?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It caches the Internet access to speed up the connections when revisiting the same websites."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It converts between private and global IP addresses."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It inspects the IP packets in a transmission to detect possible attacks and intrusions from the Internet."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It only passes the IP packets intended for specific terminals."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "NAT (Network Address Translation) translates between private IP addresses used on the local network and public (global) IP addresses used on the Internet."
+      },
+      {
+          "id": 96,
+          "question": "Which of the following is a feature of a switching hub (layer 2 switch) network device?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It breaks a received packet into smaller pieces (fragments) in the network layer."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It dynamically allocates an IP address for a terminal connected to its LAN port."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It forwards a received packet only to its LAN port connected to a device with the packet’s destination MAC address."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It forwards a received packet to all its LAN ports (broadcast)."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A switch intelligently forwards frames to the specific port associated with the destination MAC address."
+      },
+      {
+          "id": 97,
+          "question": "Which of the following is the network routing and addressing mechanism that is used in IPv6 but not in IPv4?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Anycast"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Broadcast"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Multicast"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Unicast"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "While IPv4 supports unicast, multicast, and broadcast, IPv6 replaces broadcast with multicast and formally introduces 'Anycast' as a distinct addressing type in the protocol specification."
+      },
+      {
+          "id": 98,
+          "question": "In an IPv4 network with subnet mask 255.255.255.224, what is the maximum number of host addresses assigned?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "14"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "20"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "26"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "30"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A 224 mask corresponds to /27. There are 5 host bits ($32-27=5$). $2^5 - 2 = 30$ usable hosts."
+      },
+      {
+          "id": 99,
+          "question": "Which of the following is a protocol that uses TCP as its transport layer protocol?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "DHCP"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "SNMP"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "TELNET"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "TFTP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TELNET uses TCP. DHCP, SNMP, and TFTP typically use UDP."
+      },
+      {
+          "id": 100,
+          "question": "In telecommunication, which of the following is a standard for wireless broadband communication for mobile devices and data terminals?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "IEEE 802.11"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "LTE"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "NFC"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "UWB"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "LTE (Long Term Evolution) is the standard for high-speed wireless communication for mobile phones and data terminals."
+      }
+      ]
+};
+const ANSWERS = {};
+
+function render() {
+    const root = document.getElementById('quiz-root');
+    DATA.questions.forEach((q) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.innerHTML = `
+        <div class="q-head">
+        <span class="q-num">Question ${q.id}</span>
+        <div class="q-title">${q.question}</div>
+        ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+        </div>
+        <div class="options" id="opts-${q.id}"></div>
+        <div class="explanation" id="exp-${q.id}">
+        <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+        ${q.explanation || "Correct response determined from source."}
+        </div>
+        `;
+        root.appendChild(card);
+        
+        const optBox = document.getElementById(`opts-${q.id}`);
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.innerHTML = `
+            <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+            <div class="opt-txt">${opt.text}</div>
+            `;
+            btn.onclick = () => {
+                ANSWERS[q.id] = opt.id;
+                Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+            };
+            optBox.appendChild(btn);
+        });
+    });
+}
+
+function submit() {
+    let score = 0;
+    DATA.questions.forEach(q => {
+        const box = document.getElementById(`opts-${q.id}`);
+        const exp = document.getElementById(`exp-${q.id}`);
+        exp.style.display = 'block';
+
+        Array.from(box.children).forEach((btn, idx) => {
+            const optId = q.options[idx].id;
+            btn.onclick = null;
+            btn.classList.remove('active');
+
+            if (optId === q.correctAnswerId) btn.classList.add('correct');
+            if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+        });
+
+        if (ANSWERS[q.id] === q.correctAnswerId) score++;
+    });
+
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+document.querySelector('.genre').addEventListener('change', function() {
+    const selectedURL = this.value;
+    if (selectedURL) {
+        window.location.href = selectedURL;
+    }
+});
+render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

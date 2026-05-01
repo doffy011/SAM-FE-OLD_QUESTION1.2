@@ -1,0 +1,3544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="../image/logo2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>Management</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option value="../index.html"selected>Years</option>                      
+                            <option value="2025A.html">2025_A</option>
+                            <option value="2025S.html">2025_S</option>
+                            <option value="2024S.html">2024_S</option>
+                            <option value="2024A.html">2024_A</option>
+                            <option value="2023S.html">2023_S</option>
+                            <option value="2023A.html">2023_A</option>
+                            <option value="2022S.html">2022_S</option>
+                            <option value="2022A.html">2022_A</option>
+                            <option value="2021S.html">2021_S</option>
+                            <option value="2021A.html">2021_A</option>
+                            <option value="2020S.html">2020_S</option>
+                            <option value="2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured" checked>
+                        <label for="featured"><a href="m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest"><a href="n.html">NetWork</a></label>
+
+                        <div class="checked-radio-bg"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="container2">
+            <div id="quiz-root"></div>
+            <div id="results">
+                <div class="score" id="score-text">0/0</div>
+                <h2 style="margin-bottom: 24px;">Test Result</h2>
+                <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    const DATA = {
+      "title": "Information Technology Engineers Examination Questions",
+      "description": "A collection of questions from the Fundamental Information Technology Engineer Examination (FE) or Applied Information Technology Engineer Examination (AP), covering topics such as Software Engineering, Project Management, Systems Architecture, and IT Service Management.",
+      "questions": [
+      {
+          "id": 1,
+          "question": "The diagram below is an example of a DFD that is used in the structured analysis method. Which of the following is represented by a “O” in the diagram below?",
+          image :"../image/m/img1.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Activity"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Data flow"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Data store"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Process"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "In Data Flow Diagrams (DFD), a circle (or oval) typically represents a Process, which transforms input data into output data."
+      },
+      {
+          "id": 2,
+          "question": "Among the definitions of software quality characteristics, which of the following characteristics refers to the ease of modifying a program for a certain computer so that it can run on a different architecture?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Changeability"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Interoperability"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Portability"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Usability"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Portability is the capability of software to be transferred from one environment to another, such as running on a different architecture."
+      },
+      {
+          "id": 3,
+          "question": "In the error embedding method, when the number of embedded errors is S, the number of discovered errors from the embedded errors is m, the number of latent errors before the start of testing not including embedded errors is T, and the total number of discovered errors is n, which of the following expresses the relationship of S, T, m, and n?",
+          image :"../image/m/img2.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The error embedding method assumes that the ratio of discovered embedded errors (m) to total embedded errors (S) is equal to the ratio of discovered latent errors (n - m) to total latent errors (T). Thus, m/S = (n - m)/T."
+      },
+      {
+          "id": 4,
+          "question": "Which of the following is an appropriate test case when a test is to be performed with decision condition coverage (branch coverage) on the section of a program shown in the figure below? (Condition is A OR B)",
+          image :"../image/m/img3.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Branch coverage requires the decision to evaluate to both True and False outcomes. For 'A OR B', (False, False) results in False, and (True, True) results in True, satisfying the requirement."
+      },
+      {
+          "id": 5,
+          "question": "Which of the following is the appropriate term for referring to activities such as creating a class diagram in UML from a program?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Backtracking"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Forward engineering"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Reengineering"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Reverse engineering"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Reverse engineering is the process of analyzing a system to identify its components and their interrelationships and creating representations of the system in another form (e.g., code to design)."
+      },
+      {
+          "id": 6,
+          "question": "As for software development activities, which of the following is refactoring?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "In order to improve the maintainability of a program, its internal structure is modified without any change to the external specifications."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "In order to improve the quality of a program, two programmers cooperate to perform the coding of a single program."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "In order to obtain feedback from users, the prototype of a program to be provided is created at an early stage."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "In order to promptly develop a program to be operated, test cases are set in advance and the program is then coded."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Refactoring involves restructuring existing computer code without changing its external behavior to improve nonfunctional attributes like maintainability."
+      },
+      {
+          "id": 7,
+          "question": "Which of the following is an appropriate description of the stakeholders involved in a project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Some stakeholders receive the project result advantageously and others disadvantageously."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The stakeholders are individually identified people, such as project managers."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The stakeholders belong within the organization and do not exist outside of it."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The stakeholders participate directly in the project; they are not limited to indirect involvement."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Stakeholders are individuals or organizations who are actively involved in the project or whose interests may be positively or negatively affected by the performance or completion of the project."
+      },
+      {
+          "id": 8,
+          "question": "In project management, which of the following is the subject group that includes processes having Purpose 1 and those having Purpose 2? <br> <br> [Purposes] <br> [Purpose 1: To clarify the objectives, deliverables, requirements, and boundaries of the project. <br> Purpose 2: To maximize the positive impacts to the project and minimize the negative impacts, both of which occur as a result of changes in the objectives and deliverables of the project.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Communication"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Procurement"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Risk"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Scope"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Scope management involves defining what is and is not included in the project (boundaries, deliverables) and controlling changes to the scope."
+      },
+      {
+          "id": 9,
+          "question": "A project was planned to be completed in six months. After six months, the project is behind schedule. The actual cost of Activity A is $100,000. The planned value of Activity A is $80,000. Activity A is only 75% complete. What is the schedule performance index and cost performance index of the project?",
+          image :"../image/m/img4.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "EV = PV * %Complete = 80,000 * 0.75 = 60,000. SPI = EV/PV = 60,000/80,000 = 0.75. CPI = EV/AC = 60,000/100,000 = 0.6."
+      },
+      {
+          "id": 10,
+          "question": "Which of the following is an appropriate explanation of the Function Point method for creating an estimate for software development?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a method for estimating the overall workload, where the development work is broken down into units of work items. The cumulative total of the workload for each item is then calculated based on a predefined standard value for the workload that is applied to each individual work item."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a method for estimating the person-hours and development duration, on the assumption that the development scale is known. It can be applied to all fields, not just to the business field"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a method for estimating the scale and person-hours of development based on some past experience of similar software, where similarities and differences of software are analyzed while past data is used for the similarities and past experience for the differences."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a method for estimating the scale of software, where the functions of the software are quantitatively measured using elements such as the number of I/O data items and the number of files, and an adjustment is performed based on the complexity."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Function Point Analysis estimates software size by quantifying functionality provided to the user based on logical design components like inputs, outputs, files, etc."
+      },
+      {
+          "id": 11,
+          "question": "When an IT service is discontinued, it is important to comprehensively identify the assets that were used and appropriately remove or free surplus assets. Which of the following is an event that may occur due to mistaken removal of assets that should remain, but does not occur because of the removal of assets that should be removed?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Occurrence of incidents involving other IT services that share assets with the discontinued IT service"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Overpaying software or hardware maintenance charges"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Wasting money on software licenses"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Wasting space that becomes unused on magnetic disks"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "If shared assets are mistakenly removed, other services relying on them will fail. The other options result from *failing* to remove assets."
+      },
+      {
+          "id": 12,
+          "question": "As for activities in capacity management to estimate a service’s capacity, capability, and performance, which of the following is trend analysis?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "As the first phase of modeling, creating a model that accurately reflects the current performance"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Generating simulated transactions and predicting the response time and throughput of a service"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Understanding the chronological usage of a specific resource and predicting usage changes in the future"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Using mathematical techniques, such as queueing theory, and predicting the response time and throughput of a service"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Trend analysis involves analyzing historical data over time (chronological usage) to predict future behavior."
+      },
+      {
+          "id": 13,
+          "question": "Which of the following is an appropriate description concerning system operation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Disconnecting failed components to continue the system’s more important functions is called fall back operation."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Re-executing a program using data recorded at a checkpoint is called rebooting."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Recording transactions for the purpose of restoring a database to its condition prior to changes is called data logging."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Regularly saving files to another recording media for the purpose of restoration in the event of failure is called restoring."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Fall back (or degraded) operation refers to continuing operation with reduced functionality or capacity after a failure of some components."
+      },
+      {
+          "id": 14,
+          "question": "In the system design phase, when an audit is performed on the control to reduce the risk of user requirements not being met, which of the following is a point to be checked?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Whether programming is performed in accordance with the specified conventions and standards"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Whether the program specifications are created based on the system design documents"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Whether the test plan is created based on the system test requirements, and the manager’s approval of the system operations department is obtained"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Whether the user department participates in the review of the system design documents"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "User participation in design reviews is a key control to ensure that user requirements are correctly understood and met."
+      },
+      {
+          "id": 15,
+          "question": "Which of the following is a description concerning a decision table that is one of the design techniques used in system development?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It represents a combination of conditions and the corresponding operations."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It represents entities by rectangles and their relationship through connecting lines."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It represents the flow of controls, such as a process or selection, by straight lines or arrows."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It represents the flow of data between an external interface, processes, and data store."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A decision table maps combinations of conditions (inputs) to specific actions or operations."
+      },
+      {
+          "id": 16,
+          "question": "The integration test for software composed of modules arranged in a hierarchical structure is performed from a high-level module. In such a case, which of the following is a test module that is used as a substitute for a low-level module?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Driver"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Emulator"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Simulator"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Stub"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "In top-down integration testing, stubs are used to simulate the behavior of lower-level modules that have not yet been integrated."
+      },
+      {
+          "id": 17,
+          "question": "Which of the following is the most appropriate feature of polymorphism in object-oriented programming?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Developers are allowed to define classes incrementally by reusing classes defined previously as the basis for new classes."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Only the information required to use a software module is published to the module user."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The processes and data are combined into a single object."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The same message can be interpreted differently by different classes of objects."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Polymorphism allows objects of different classes to respond to the same message (method call) in different ways appropriate to their specific class."
+      },
+      {
+          "id": 18,
+          "question": "Which of the following is approved by the customer when the external design of a system is completed?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Physical database specification"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Program flowchart"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Screen layout"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "System development plan"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "External design defines the user interface and visible behavior, such as screen layouts, which the customer can review and approve."
+      },
+      {
+          "id": 19,
+          "question": "Which of the following is an appropriate description of an extreme programming (XP) practice?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "After the code is created, and it is confirmed that it can be integrated, test cases are created."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Integration of the code and testing are continuously repeated."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The code that passed the tests is not refactored until the next iteration."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The customer is responsible for the specification of unit tests."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "XP emphasizes Continuous Integration, where code changes are integrated and tested frequently (often multiple times a day)."
+      },
+      {
+          "id": 20,
+          "question": "Which of the following is a method that uses a modeling tool to create a design document described with E-R diagrams or other representations from the definition information in an active database?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Concurrent engineering"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Forward engineering"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Reverse engineering"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Social engineering"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Reverse engineering involves analyzing an existing system (like a database) to create a higher-level representation (like an E-R diagram)."
+      },
+      {
+          "id": 21,
+          "question": "The ten members of a project team hold meetings with each other with the conditions below. If two (2) members are to be added to the team, how many additional meetings will be held compared to if there were ten members? <br> <br> [Conditions] <br> * Meetings are held one-on-one. <br> * Each member holds one meeting with every other member.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "12"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "21"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "22"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "42"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Channels = N(N-1)/2. For N=10, 45. For N=12, 66. Difference = 66 - 45 = 21."
+      },
+      {
+          "id": 22,
+          "question": "In order to determine the quality condition in a test process, it is necessary to analyze and evaluate the relationship between the number of completed test items and the cumulative number of bugs. Which of the following is a graph that indicates that the quality is becoming stable?",
+          image :"../image/m/img5.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A flattening curve (concave down) indicates that fewer bugs are being found as testing progresses, suggesting the quality is stabilizing."
+      },
+      {
+          "id": 23,
+          "question": "When the number of programs composing the system and the number of person-days required for coding per program are as shown in the table below, what is the minimum number of staff members required to develop the system in 95 days? Here, in addition to coding, the activities of design and testing are also necessary to develop the system, and those activities require eight times as many person-days as coding.",
+          image :"../image/m/img6.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "8"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "9"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "12"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "13"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Total coding = (20*1 + 10*3 + 5*9) = 95 PD. Total effort = 95 + 8*95 = 855 PD. Staff = 855 / 95 = 9."
+      },
+      {
+          "id": 24,
+          "question": "Which of the following is a critical path of the project activities shown in the arrow diagram below? (Diagram with nodes A-L)",
+          image :"../image/m/img7.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A -> B -> E -> I -> L"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A -> C -> D -> E -> H -> K"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A -> C -> F -> I -> L"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "A -> C -> G -> J -> L"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": ""
+      },
+      {
+          "id": 25,
+          "question": "Which of the following is an appropriate policy for creating an SLA?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Setting a compensation as a penalty for every item that has a service level"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Setting a service level for every item that can be taken into consideration"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Setting a service level that is maintained into the future without any changes"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Setting a service level under the cost and needs of a service provider and its customers"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "SLAs should be balanced based on business needs and the cost of providing the service."
+      },
+      {
+          "id": 26,
+          "question": "Which of the following is the most appropriate characteristic of the “big bang” or all-at-once migration method that is one of the system migration methods?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Additional operational costs are incurred because of parallel operations."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "An additional application is required for connecting the old and new systems."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The old and new systems operate in parallel, and migration to the new system is performed at a particular point of time."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The problems that occur during migration to the new system have a big impact."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Big Bang migration involves switching from the old to the new system instantly. If it fails, operations stop, causing high impact."
+      },
+      {
+          "id": 27,
+          "question": "In IT service management, which of the following is a problem management activity that is performed proactively?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Analyzing the occurrence trend of incidents and proposing measures that prevent an incident from occurring in the future"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Classifying problems that have been detected and recorded, and setting the response priority"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Evaluating the effectiveness of a resolution to a critical problem"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Monitoring whether an incident occurs again or not for a certain period of time after the problem is resolved"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Proactive problem management identifies trends or risks to prevent incidents before they happen."
+      },
+      {
+          "id": 28,
+          "question": "Which of the following is a method that restores the system to its initial state and restarts it when a system failure occurs, that does not accompany preprocessing of a copy before/after an update, and that is also called initial program load?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Cold start"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Rollback"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Rollforward"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Warm start"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A Cold Start involves restarting the computer system from a powered-off state or reloading the operating system (IPL), resetting the system state."
+      },
+      {
+          "id": 29,
+          "question": "Among UML 2.x (including 2.0 and later versions) diagrams, which of the following is the most appropriate diagram that gives a graphic overview of the actors involved in a system, the different functions those actors need to perform, and how these different functions interact?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Activity diagram"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Communication diagram"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Interaction overview diagram"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Use case diagram"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Use case diagrams show actors and their interactions with the system's use cases (functions)."
+      },
+      {
+          "id": 30,
+          "question": "Which of the following is an appropriate explanation of encapsulation in object orientation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Abstraction and grouping of several objects that have common properties"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Bundling of data and the procedures operating on the data as a single object and concealment of their implementation inside the object"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Creation of a base class by extracting the properties that are common among classes"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Inheritance of the properties of a base class by a subclass"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Encapsulation bundles data and methods and hides the internal implementation details from the outside."
+      },
+      {
+          "id": 31,
+          "question": "Which of the following is a technique that embeds logical expressions that hold true for the relations or conditions between variables at specific points in the execution of a program and verifies the validity of the program?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Assertion check"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Code trace"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Snapshot dump"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Test coverage analysis"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Assertions are logical conditions placed in code that must always be true at that point; if false, it indicates a bug."
+      },
+      {
+          "id": 32,
+          "question": "Which of the following is an appropriate test type that is conducted to ensure that the interfaces and linkages between different software parts work properly?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Acceptance test"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Functional test"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Integration test"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Performance test"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Integration testing verifies the interactions and interfaces between modules or components."
+      },
+      {
+          "id": 33,
+          "question": "Which of the following is a software development model that repeats the development processes from requirements analysis to implementation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Prototyping model"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Relational model"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Spiral model"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Waterfall model"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The Spiral model iterates through development cycles (planning, risk analysis, engineering, evaluation) repeatedly."
+      },
+      {
+          "id": 34,
+          "question": "The software reengineering process can be divided into four sub-processes: program modularization, program structure improvement, reverse engineering, and source code translation. Which of the following is a process that focuses on functional analysis and information extraction?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Program modularization"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Program structure improvement"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Reverse engineering"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Source code translation"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Reverse engineering analyzes software to extract design and functional information."
+      },
+      {
+          "id": 35,
+          "question": "Which of the following is an appropriate tool that implements a deliverable-oriented decomposition of a project into smaller components?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Critical path method (CPM)"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Gantt chart (Gantt)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Program evaluation and review technique (PERT)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Work breakdown structure (WBS)"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team."
+      },
+      {
+          "id": 36,
+          "question": "Which of the following is an appropriate description of scope management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The process of determining and documenting a list of all project goals, tasks, deliverables, deadlines, and budgets as a part of the planning process"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The process of identifying, analyzing, and responding to any risk that arises over the life cycle of a project to help the project remain on track and achieve its goal"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The process of planning, estimating, budgeting, and controlling project costs"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The process of wisely managing the amount of time allocated to a project in order to meet the scheduled delivery date and conclude all work by or before the project completion date"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Scope management defines all the work required (and only the work required) to complete the project successfully."
+      },
+      {
+          "id": 37,
+          "question": "When the triangular distribution formula in the three-point estimation technique is used, which of the following is the expected duration in days required for an activity? The estimates are as shown below. Conditions – Estimates for the duration of the activity Case 1: Two (2) days – if an experienced employee is assigned to this activity Case 2: Four (4) days – if an average employee is assigned to this activity Case 3: Twelve (12) days – if an inexperienced employee is assigned to this activity.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "4"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "5"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "6"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "7"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Triangular distribution average = (Optimistic + Most Likely + Pessimistic) / 3 = (2 + 4 + 12) / 3 = 18 / 3 = 6."
+      },
+      {
+          "id": 38,
+          "question": "The arrow diagram below shows a project’s activities and milestones. Which of the following is the minimum project completion time in days?",
+          image :"../image/m/img8.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "20"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "24"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "25"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "26"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Calculating the critical path max duration through the network yields 26 days (Path: A(3)+E(11)+G(8)+I(4)=26)."
+      },
+      {
+          "id": 39,
+          "question": "IT services are provided under the conditions in the SLA shown below. What is the maximum number of hours of downtime in a month that can satisfy the SLA? [Conditions in the SLA] The number of business days per month is 30. The service hours are from 7 AM to 11 PM on business days. The agreed availability is 99% or more. Maintenance time can be ignored.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "1.2"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "3.0"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "4.8"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "7.2"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Total hours = 30 days * 16 hours/day = 480 hours. 1% downtime allowance = 4.8 hours."
+      },
+      {
+          "id": 40,
+          "question": "In IT service management, which of the following is the most appropriate functional organization that provides a single point of contact and tries to rapidly restore normal service operations to users?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Service desk"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Service management"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Service provider"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Supplier"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The Service Desk is the Single Point of Contact (SPOC) for users and handles incidents and requests."
+      },
+      {
+          "id": 41,
+          "question": "Which of the following is an appropriate description of a checkpoint during the audit of a control for reducing the risk of system trouble regarding the application of a software patch?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A database administrator is appointed and master data management procedures are specified."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Capacity planning procedures are set out."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Hardware maintenance records are created and managed by system administrators."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The system’s operation status is properly checked before commencing full-time operations."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Verifying the operation status ensures the patch was applied successfully and the system is stable."
+      },
+      {
+          "id": 42,
+          "question": "Which of the following is an appropriate description of a UML use case diagram?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It shows the behavior during the object’s life cycle using finite state transitions."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It shows the exchange of messages among objects and objects’ lifelines in a time series."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It shows the flow from one activity to another activity in a system or business process"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It shows the scenarios for how actors, i.e., external users or machines, interact with a system."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Use case diagrams depict actors and their interactions with the system's use cases."
+      },
+      {
+          "id": 43,
+          "question": "In UML 2.0, which of the following is a diagram that represents the interactions between objects in time series?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Activity diagram"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Component diagram"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Sequence diagram"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "State transition diagram"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Sequence diagrams show object interactions arranged in time sequence."
+      },
+      {
+          "id": 44,
+          "question": "Which of the following is a structural design pattern that allows classes with incompatible interfaces to work together?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Adapter"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Factory"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Iterator"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Singleton"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The Adapter pattern converts the interface of a class into another interface clients expect."
+      },
+      {
+          "id": 45,
+          "question": "Which of the following is the most appropriate description of a stack trace that is used for debugging a program?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A trace of call stack methods/functions/subroutines"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Stacking/gathering the traces left by other programs"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The traces left in memory from a stack data structure"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Tracing stack data structure that is used in the program"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A stack trace shows the sequence of function calls that led to a specific point (usually an error) in execution."
+      },
+      {
+          "id": 46,
+          "question": "Among the software development activities, which of the following corresponds to refactoring that is emphasized in agile development?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To improve the maintainability of a program, the internal structure of a program is changed without any change in the external specifications."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To improve the quality of a program, two (2) programmers cooperate and perform the coding of one (1) program."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To obtain feedback from the users, a prototype of the software is created at an early stage."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To promptly develop a program, test cases are set in advance, and then the program is coded."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Refactoring improves internal code structure for maintainability without altering external behavior."
+      },
+      {
+          "id": 47,
+          "question": "In eXtreme Programming (XP), which of the following is advocated as a practice?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Inspection"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Pair programming"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Structured design"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Use case utilization"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Pair programming is a core practice of XP where two developers work together at one workstation."
+      },
+      {
+          "id": 48,
+          "question": "A project consisting of several activities has a single critical path. Which of the following is an appropriate description of critical path activities for the project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Critical path activities can be performed in parallel."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Critical path activities have a non-zero total float time."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "For each critical path activity, the early start date equals the late start date."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The activity with the longest duration in the project is one of the critical path activities."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Activities on the critical path have zero float, so their early start and late start dates are the same."
+      },
+      {
+          "id": 49,
+          "question": "Which of the following is an appropriate description of the Responsibility Assignment Matrix that is used for project human resource management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Allocating work packages to those who are responsible for project work"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Defining the limits of the project sponsor’s responsibilities"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Defining the terms of reference of the project"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Monitoring the current engagement level of stakeholders"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "RAM maps project work packages to the people responsible for completing them."
+      },
+      {
+          "id": 50,
+          "question": "Which of the following is an appropriate purpose for using a WBS (work breakdown structure) in a software development project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To clarify the time sequence of activities and understand the critical path that should be intensively managed"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To decompose a development task into smaller sub-tasks with a manageable size and organize them into a hierarchical structure"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To optimize the total cost when there is a trade-off relationship between the number of days and the costs required for development"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To show the schedule of activities by using bars and clarify the start dates and end dates of the activities as well as the progress at the current point"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "WBS is a hierarchical decomposition of the project scope into smaller, manageable components."
+      },
+      {
+          "id": 51,
+          "question": "Which of the following is an appropriate description for group decision-making techniques used in the estimation process of an activity duration?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The estimates created using these techniques may include contingency reserves, sometimes referred to as time reserves or buffers, in the project schedule to account for schedule uncertainty"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "These are team-based approaches, such as brainstorming, the Delphi, or nominal group techniques, which are useful for engaged team members to improve their estimation accuracy and commit to the estimates."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "These techniques use statistical relationships between historical data and project parameters to calculate an estimate for project cost, budget, or duration."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Using these techniques, a group of experts, guided by historical information, can provide duration estimate information or recommended maximum activity durations from prior similar projects."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Group techniques leverage team wisdom to improve accuracy and buy-in."
+      },
+      {
+          "id": 52,
+          "question": "Which of the following is an appropriate meaning of a mission-critical system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "As with an operating system, it is an indispensable system necessary for operating a business system."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a system that has a significant impact on corporate activities and society when a failure occurs."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a system that is first installed on a trial basis, and if successful, a full-scale installation is implemented."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a system where the operating performance is close to the limit."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Mission-critical systems are essential to business operations; failure causes significant impact."
+      },
+      {
+          "id": 53,
+          "question": "Which of the following is an appropriate description of the relationship between a record of an incident and a record of a problem in IT service management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A cross-reference to the incident that triggered the record of the problem is included in the record of the problem."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "If known errors have been identified at the time of ending the record of the problem, the record of the incident that triggered the record of the problem is deleted."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "One (1) problem record is always associated with one (1) incident record."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Problems are classified and recorded by a different criterion from the classification of incidents."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Linking problems to the incidents that caused them is best practice for tracking and resolution."
+      },
+      {
+          "id": 54,
+          "question": "A system is planned to be operational 22 hours per day. However, there are two (2) failures with downtimes of 0.5 hours and 1.5 hours in 100 days. Which of the following is the approximate MTBF of this system during the period in hours?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.00091"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "1.0"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "2.0"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "1100"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "MTBF = Total Uptime / Number of Failures = (2200 - 2) / 2 = 1099 hours (approx 1100)."
+      },
+      {
+          "id": 55,
+          "question": "Which of the following is the weakest module coupling?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To implement as many functions as possible with a single module"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To pass arguments that control another module’s logic when the module is called"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To pass only required data items as arguments between two (2) modules"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To use a global area to share data items with other modules"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Data coupling (passing only data) is the loosest (best) form of coupling. Global (common) coupling is strong."
+      },
+      {
+          "id": 56,
+          "question": "Which of the following tests verifies the interfaces between two (2) modules or subsystems?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Acceptance test"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Integration test"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Operational test"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Unit test"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Integration testing focuses on the interfaces and interactions between modules."
+      },
+      {
+          "id": 57,
+          "question": "Which of the following is an appropriate explanation of a comprehensive patent crosslicense?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "An agreement to share the necessary costs for patent registration is concluded."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The source code is published free of charge on the Internet or other places, and anyone may improve and redistribute the software."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The use of patent rights is mutually licensed among companies in the specified fields of technologies or products."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To ensure that a company’s patent rights are not violated, the right to stop a counterpart’s manufacturing is exercised"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Cross-licensing is an agreement where parties grant each other rights to their respective patents."
+      },
+      {
+          "id": 58,
+          "question": "Based on the definition of project management process groups in ISO 21500, which of the following is an activity that is to be implemented in the planning process group among the project management processes?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To define scope"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To develop a project charter"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To identify stakeholders"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To perform quality assurance"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Defining scope is a key Planning process activity."
+      },
+      {
+          "id": 59,
+          "question": "In project time management, which of the following descriptions is appropriate for “slack time”?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is the amount of time between the earliest start time and earliest finish time of an activity or between the latest start time and latest finish time of an activity."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is the amount of time for which a non-critical path activity can be deferred without delaying the project."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is the amount of time that an activity can be deferred without delaying the earliest start time of any succeeding activity or violating a schedule constraint."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is the amount of time that an activity can be delayed past its latest start time or latest finish time."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": ""
+      },
+      {
+          "id": 60,
+          "question": "When the duration for painting a house is estimated, which of the following is an appropriate technique that estimates the duration on the basis of the actual duration of a similar painting job in the past of the same house or other historical data from similar work?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Analogous estimate"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Parametric estimate"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Reserve analysis"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Three-point estimate"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Analogous estimation uses historical data from similar activities as a basis for estimation."
+      },
+      {
+          "id": 61,
+          "question": "In system development, when the relationship between person-months and the duration (months) is represented in the approximate expression shown below, and the total person-month is 4096, how many months does it take? Duration = 2.5 * person-months^(1/3)",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "16"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "40"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "64"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "160"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "4096^(1/3) = 16. Duration = 2.5 * 16 = 40 months."
+      },
+      {
+          "id": 62,
+          "question": "An IT service is provided under the conditions that are described below. What is the maximum downtime in hours that can satisfy the SLA during a service time period of one (1) month? Here, the number of business days in one (1) month is 30, and no maintenance or other scheduled downtime of the service is performed during the service time period.<br> <br>[Conditions of the SLA] <br>- The service time period is from 8:00 AM to 10:00 PM on business days. <br>- The availability should be 99.5% or more.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.3"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "2.1"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "3.0"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "3.6"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Total hours = 30 * 14 = 420. Max downtime = 0.5% of 420 = 2.1 hours."
+      },
+      {
+          "id": 63,
+          "question": "Which of the following is the main purpose of a migration test for a system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To confirm that a new system possesses all of the required functions"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To confirm that sufficient performance can be derived from the new system using a copy of the actual data from the existing system"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To confirm the compatibility of the interface between a program of another existing system and a newly developed program"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To confirm the switch procedure from the existing system to the new system and the problems that the switch can cause from the perspective of reliability and efficiency"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Migration testing verifies the process of moving from the old system to the new one."
+      },
+      {
+          "id": 64,
+          "question": "In IT service management, which of the following is handled by incident management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Inquiry regarding the function or usage of the IT service or system"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Long delay in an application response"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Request for providing the IT service to a new business site"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Request for training of recruits on the IT service"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A significant delay in response is a service interruption/degradation, which qualifies as an Incident."
+      },
+      {
+          "id": 65,
+          "question": "When the PDCA methodology is applied to a service management system, which of the following corresponds to Act?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Establishing, documenting, and agreeing the service management system"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Implementing and operating the service management system for the design, transition, delivery, and improvement of services."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Monitoring, measuring, and reviewing the service management system and services against the policies, objectives, plans, and service requirements, and reporting the results"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Taking actions to continually improve the performance of the service management system and services"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Act involves taking corrective actions and improvements based on review results."
+      },
+      {
+          "id": 66,
+          "question": "In the system design stage, which of the following is the point to be checked during the audit of control for reducing the risk of non-fulfillment of user requirements?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "All programming should be performed in accordance with the specified standards and conventions."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The program specifications should be created on the basis of the system design documents."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The test plan should be created on the basis of the system test requirements and must also be approved by the responsible person of the system operations department."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The user department should participate in the review of system design."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "User participation in design reviews ensures requirements are met."
+      },
+      {
+          "id": 67,
+          "question": "When IT controls are classified into preventive controls and detective controls, which of the following is to be classified as a detective control?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A data entry manual is created, and the persons in charge of data entry are trained."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A data entry screen is designed so that operation errors are unlikely to occur."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Access rights are assigned only to the person in charge of data entry."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "An output list resulting from data entry is cross-checked with the input form."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Cross-checking (verification) detects errors after they have occurred."
+      },
+      {
+          "id": 68,
+          "question": "Which of the following UML diagrams is used to represent the user interactions with the system and the functions of the system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Activity diagram"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Class diagram"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Sequence diagram"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Use case diagram"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Use case diagrams represent actors (users) and use cases (functions)."
+      },
+      {
+          "id": 69,
+          "question": "Which of the following is an appropriate description of an acceptance test?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is conducted by developers to verify response time and other performance items."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is conducted by testers to ensure that the interfaces and linkages between different software parts work properly."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is conducted by the project manager to verify whether users’ functional requirements are met or not."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is conducted by users to confirm that the software is complete and meets the business needs that prompted the software to be developed."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Acceptance testing is the final phase where users verify the system meets their needs before accepting it."
+      },
+      {
+          "id": 70,
+          "question": "In the development process, which of the following is an activity that should be performed in software architectural design?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Analyzing the requirements in incremental steps by arranging them in the form of a chart"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Describing the specifications so that the program is clarified on a line-by-line basis"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Obtaining the opinion of the customer and deciding the specifications"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Transforming the requirements for the software into a design that describes its top-level structure and identifies the software components"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Architectural design involves defining the high-level structure and components of the system."
+      },
+      {
+          "id": 71,
+          "question": "Which of the following is an appropriate description concerning test data for black box testing?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Test data is created based on branch coverage."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Test data is created based on condition coverage."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Test data is created based on external specifications."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Test data is created based on program structures."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Black box testing derives test cases from external specifications (requirements) without knowledge of internal code structure."
+      },
+      {
+          "id": 72,
+          "question": "In an agile software development project, when can the customer review the first piece of working software?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "After the completion of the first epic"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "After the completion of the first few releases"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "After the completion of the first iteration"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "After the completion of the whole project"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Agile methodologies aim to deliver working software at the end of every iteration (sprint)."
+      },
+      {
+          "id": 73,
+          "question": "According to the Capability Maturity Model Integration, which of the following is the final and highest level of maturity?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Auditable"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Custom"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Optimizing"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Quantitatively Managed"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "CMMI Level 5 is 'Optimizing'."
+      },
+      {
+          "id": 74,
+          "question": "Which of the following is one of the major responsibilities of a project manager?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Coding programs and debugging errors"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Evaluating the quality of project deliverables"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Organizing project members to achieve a planned result within a budget and schedule"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Providing the user requirements at the beginning of the project"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The Project Manager is responsible for achieving project objectives (results) within constraints (budget, schedule) by managing the team."
+      },
+      {
+          "id": 75,
+          "question": "A project is planned to complete in 12 months and the budget for the completion of the project is $100,000. After six months, it is found that $60,000 was spent, but only 40% of the work has been completed. If the Cost Performance Index (CPI) is not changed, what is the estimated amount (in dollars) required to complete the remaining tasks of the project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "40,000"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "60,000"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "90,000"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "150,000"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "BAC=$100,000. EV=40%=$40,000. AC=$60,000. CPI=EV/AC=0.667. EAC=BAC/CPI=$150,000. ETC=EAC-AC = 150,000-60,000 = $90,000."
+      },
+      {
+          "id": 76,
+          "question": "In project time management, which of the following is the amount of time that the start of a successor activity requires to be delayed after the finish of a predecessor activity?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Free float"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Lag"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Lead"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Total float"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Lag is the amount of time a successor activity will be delayed with respect to a predecessor activity."
+      },
+      {
+          "id": 77,
+          "question": "The activities and nodes of a project are shown in the arrow diagram below. Which of the following is the effect of extending the duration of activity C by 3 days?",
+          image: "../image/m/img9.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The project duration is not affected."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The project duration is extended by 1 day."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The project duration is extended by 2 days."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The project duration is extended by 3 days."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": ""
+      },
+      {
+          "id": 78,
+          "question": "Which of the following corresponds to benchmarking in process improvement of service management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The availability, reliability, and performance are measured at the service level, and a report is sent to the customers."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The current status of IT service management is analyzed from the viewpoint of strengths, weaknesses, opportunities, and threats."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The performance of IT services is measured from the viewpoint of finance, customers, internal processes, and learning and growth, and strategic activities are supported."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The service quality and performance level are evaluated in comparison with the best practices within and outside the industry."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Benchmarking is the comparison of one's business processes and performance metrics to industry bests and best practices from other companies."
+      },
+      {
+          "id": 79,
+          "question": "Among the design techniques that are used in system development, which of the following is an explanation of a decision table?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It represents a combination of conditions and the corresponding operations."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It represents entities by a rectangle and their relationship through connecting lines."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It represents the flow of controls, such as a process or selection, by linear lines or arrows."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It represents the flow of data between an external interface, processes, and data store."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Decision tables map combinations of conditions to actions."
+      },
+      {
+          "id": 80,
+          "question": "Test data about the part of a program shown in the flowchart below is specified by decision condition coverage (branch coverage). When this test data is changed to being specified by multiple-condition coverage, which of the following is the appropriate test data to be added? Here, the part enclosed by parentheses () represents the set of test data.",
+          image: "../image/m/img10.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "(A = 3, B = 0), (A = 7, B = 2)"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "(A = 3, B = 2), (A = 8, B = 0)"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "(A = 4, B = 0), (A = 8, B = 0)"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "(A = 7, B = 0), (A = 8, B = 2)"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Condition is 'A > 6 or B = 0'. Multiple condition coverage requires all T/F combos for components: (T,T), (T,F), (F,T), (F,F). Existing data covers (F,F) and (F,T). Missing are (T,T) and (T,F). Option d provides A=7, B=0 (T,T) and A=8, B=2 (T,F)."
+      },
+      {
+          "id": 81,
+          "question": "Among the different types of software tests, which of the following is a test that is performed with the purpose of checking whether or not a location that must not be affected by changes made for software maintenance is affected?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Integration test"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Operational test"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Regression test"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "System test"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Regression testing ensures that new changes have not introduced new faults in existing functionality."
+      },
+      {
+          "id": 82,
+          "question": "Which of the following is an explanation of reverse engineering of software?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The entire software is reconstructed after analyzing and understanding the existing software."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The existing software is analyzed, and its specification and structure are clarified."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The internal structure of software is changed without changing the behavior seen from the outside."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The source code is created automatically from the design information using a development support tool."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Reverse engineering analyzes software to determine its components and structure, often to create documentation."
+      },
+      {
+          "id": 83,
+          "question": "According to PMBOK, which of the following is the description of scope creep?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Any change to the project scope that requires an adjustment to the project cost or schedule"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The approved version of a scope statement, work breakdown structure (WBS), and its associated WBS dictionary"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The process of monitoring the status of the project and product scope and managing changes to the scope baseline"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The uncontrolled expansion to product or project scope without adjustments to time, cost, and resources"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Scope creep refers to uncontrolled changes or continuous growth in a project's scope."
+      },
+      {
+          "id": 84,
+          "question": "A project with a development period of 10 months and the person-hours required for development as 200 person-months is planned. Which of the following is the number of staff members required during the peak time based on the distribution sheet shown below? Here, the number of staff members does not change from the start till the end of every process.",
+          image: "../image/m/img11.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "18"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "20"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "21"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "22"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Peak staff occurs during the Design phase. Work = 33% of 200 = 66 PM. Duration = 30% of 10 = 3 months. Staff = 66 / 3 = 22."
+      },
+      {
+          "id": 85,
+          "question": "Which of the following is an explanation of the function point method?",
+          
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The development scale is estimated by adding up the number of steps required for each program to be developed."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The development scale is estimated by searching for past examples and then analyzing and evaluating the results and the differences of these examples from the system to be developed."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The development scale is estimated from the counts and characteristics of external inputs and outputs, internal logical files, external inquiries, and external interface files."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The number of person-hours required for each activity is estimated by creating a WBS of the activities required for a development project."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Function points count 5 types of components: External Inputs, External Outputs, External Inquiries, Internal Logical Files, and External Interface Files."
+      },
+      {
+          "id": 86,
+          "question": "In ITIL, the reduction in the index value expressing maintainability is cited as an example of a key performance index (KPI) in availability management. Which of the following corresponds to such an index?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Mean time between failures"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Mean time between service incidents"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Mean time to restore service"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Number of interruptions in a certain period of time"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Maintainability is often measured by Mean Time To Restore Service (MTRS) or Mean Time To Repair (MTTR). A lower value indicates better maintainability."
+      },
+      {
+          "id": 87,
+          "question": "In service management, which of the following is a requirement of service level management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "A capacity plan is created, implemented, and maintained while human, technical, informational, and financial resources are taken into consideration."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "A service catalog and SLA are created for the service to be provided, and they are agreed upon with the customer."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Costs are monitored and reported against the budget; the financial forecasts are reviewed, and costs are managed."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The risks to service continuity and availability of services are assessed and documented."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Service Level Management involves negotiating, agreeing, and documenting appropriate service targets with the customer (SLA)."
+      },
+      {
+          "id": 88,
+          "question": "In the system design stage, which of the following is the point to be checked during the audit of control for reducing the risk of non-fulfillment of user requirements?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Programming must be performed in accordance with the specified conventions."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The program specifications must be created on the basis of the system design."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The test plan must be created on the basis of the system test requirements, and must also be approved by the responsible person in the system operations department."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The user department must participate in the review of the system design."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "User participation in review ensures requirements are met."
+      },
+      {
+          "id": 89,
+          "question": "Among the “four categories” of enterprise architecture, which of the following is the remaining one after business architecture, technology architecture, and application architecture?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Bus architecture"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Data architecture"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Software architecture"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "System architecture"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The four domains of EA are usually Business, Data, Application, and Technology."
+      },
+      {
+          "id": 90,
+          "question": "The figure below shows that the cumulative number of bugs reached the target value, when the number of completed test items was X. Which of the following is an appropriate explanation of the situation shown in this figure?",
+          image: "../image/m/img13.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It indicates that a large number of bugs may still remain internally."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It indicates that desk-checking and simulation were performed satisfactorily prior to testing."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It indicates that the probability of occurrence of bugs after shipping is low, because the target cumulative number of bugs was reached."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It indicates that the testing process was completed successfully."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A saturation curve where the cumulative bugs reach the predicted target and flatten out indicates that most bugs have likely been found, suggesting low post-shipping defects."
+      },
+      {
+          "id": 91,
+          "question": "Which of the following is an appropriate description of an extreme programming (XP) practice?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "After the code is created, and it is confirmed that it can be integrated, test cases are created."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Integration of the code and testing are continuously repeated."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The code that passed the tests is not refactored until the next iteration."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The customer is responsible for the specification of unit tests."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Continuous Integration and testing."
+      },
+      {
+          "id": 92,
+          "question": "According to the 6th edition of the PMBOK Guide, which of the following is an activity for the planning process group in project resource management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Acquire resources"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Control resources"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Develop project team"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Estimate activity resources"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Estimating activity resources is done during planning to determine what is needed."
+      },
+      {
+          "id": 93,
+          "question": "The activities and milestones of a project are shown in the arrow diagram below. Which of the following is an impact of reducing the duration of activity, D, by 3 days?",
+          image: "../image/m/img14.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Project duration is not changed."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Project duration is reduced by 1 day."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Project duration is reduced by 2 days."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Project duration is reduced by 3 days."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Find the original critical path List all possible paths and their durations:Path 1: A → B → E= 6 + 5 + 4 = 15 days Path 2: C → D → E = 7 + 5 + 4 = 16 days ← critical path Path 3: C → (dummy) → F = 7 + 0 + 6 = 13 days So, original project duration = 16 days.Reduce activity D by 3 days D goes from 5 days → 2 days Recalculate the paths:Path 1: A → B → E = 15 days (unchanged) Path 2: C → D → E = 7 + 2 + 4 = 13 days Path 3: C → F = 13 days Now the new critical path is A → B → E, with 15 days. Impact on project duration Original duration: 16 days New duration: 15 day Project duration is reduced by 1 day Correct answer:b) Project duration is reduced by 1 day."
+      },
+      {
+          "id": 94,
+          "question": "The functional size of a new system was estimated to be 500 function points (FP). Apart from development, the project requires 10 person-months in total for installation of the system and education of developers. Additionally, for project management, 10% of the total personmonths of development, installation, and education is required. How many person-months are required in total for this project? Here, the productivity in development is 10 FPs per personmonth.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "51"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "60"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "65"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "66"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Dev = 500/10 = 50 PM. Others = 10 PM. Subtotal = 60 PM. Mgmt = 10% of 60 = 6 PM. Total = 66 PM."
+      },
+      {
+          "id": 95,
+          "question": "Which of the following is used in quality management to help determine whether a process is stable by using plotted time-series data and limit lines?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Brainstorming"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Cause-and-effect diagram"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Control chart"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Run chart"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Control charts use upper and lower control limits to determine process stability."
+      },
+      {
+          "id": 96,
+          "question": "Which of the following is an appropriate definition of the total cost of ownership (TCO) in the context of system cost?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is the total amount of expenses at the time of system installation."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is the total amount of expenses related to the development of business systems."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is the total amount of expenses, including those from system installation through operation and maintenance/management."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is the total amount of operation expenses for systems related to communications and networking."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TCO includes acquisition, installation, operation, maintenance, and disposal costs."
+      },
+      {
+          "id": 97,
+          "question": "In IT service management, which of the following is an activity that is performed for management of incidents and service requests?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Evaluating if customer satisfaction with the service desk meets the agreed service targets and performing a review for identifying improvement opportunities"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Examining measures wherein the amount of free space on a disk is near its threshold"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Investigating the impact of changes made to a program"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Receiving a failure report from a user and checking to see if it corresponds to a known error"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Incident management involves receiving reports and resolving them, often by checking against known errors."
+      },
+      {
+          "id": 98,
+          "question": "Which of the following is the most appropriate description about the backup of data on a disk that is connected to a server?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "All data are backed up on the day the system commences full operations, and only frequently updated data are backed up thereafter to shorten the work time."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Data distributed and stored in multiple files are backed up when a series of update processes to the files are completed."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Data whose frequency of use are low after a certain period of time are deleted from the current disk, and the data that have been backed up are also deleted."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Important data are backed up by overwriting data on the same media, so that the backup media are not mistaken."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Data distributed and stored in multiple files are backed up when a series of update processes to the files are completed."
+      },
+      {
+          "id": 99,
+          "question": "Which of the following is the most appropriate description about a system auditor?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The entire interview must be conducted by one (1) system auditor, because discrepancies may occur in the record if multiple auditors are involved."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The system auditor must instruct the department being audited to implement improvement measures for deficiencies identified during the interview."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The system auditor must make an effort to obtain documents and records that support the information obtained from the department being audited during the interview."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The system auditor must select interviewees from administrators who have been an auditor within the department being audited."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Auditors must base findings on evidence (documents and records)."
+      },
+      {
+          "id": 100,
+          "question": "Which of the following is the most appropriate measure that a management executive must take to secure the appearance of independence for an internal system auditor?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Assigning the system auditor to the internal audit department"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Making it compulsory for the system auditor to undergo continuous learning of IT"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Setting up an auditing-skills training system for the system auditor"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Specifying and publishing the knowledge and experience necessary for the system auditor"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "To ensure independence, the auditor should report to an independent department (Internal Audit) rather than the department being audited."
+      },
+      {
+          "id": 101,
+          "question": "When software asset management is audited, which of the following activities is the most appropriate?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "It is checked to see if compatibility with existing systems is evaluated at the time of installation."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "It is checked to see if evidence, such as a software-license certificate, is properly retained."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "It is checked to see if failures are localized via database partitioning or other methods."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "It is checked to see if the organizational and functional structure of the software provider is considered."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Software asset management involves ensuring compliance with licenses, so checking for retained license certificates is key."
+      },
+      {
+          "id": 102,
+          "question": "In the UML class diagram, which of the following represents the relationship between the classes as shown in the figure below?",
+          image :"../image/m/img15.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Aggregation"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Association"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Composition"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Generalization"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A line with a hollow triangle arrow represents Generalization (Inheritance) in UML."
+      },
+      {
+          "id": 103,
+          "question": "Which of the following is an explanation of encapsulation in object orientation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Abstraction and sorting of several objects that have the same nature"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Combination of the data and procedures that operate the data into a single object, and their concealment from outside the object"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Extraction of the nature shared between classes and creation of a base class"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Inheritance of the nature of a base class by a subclass"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Same question as Q31. Encapsulation bundles data and methods and hides implementation."
+      },
+      {
+          "id": 104,
+          "question": "Which of the following can generally be called a subclass of an “automobile” based on the concept of object orientation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Engine"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Manufacturing number"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Tire"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Truck"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A Truck IS-A Automobile. Engine and Tire are parts (HAS-A)."
+      },
+      {
+          "id": 105,
+          "question": "In the flowchart below, what is the minimum number of test cases that satisfies the decision condition coverage (branch coverage)?",
+          image: "../image/m/img16.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "1"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "2"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "3"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "4"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "To cover all branches: 1 case for first decision True. 2 cases for second decision (True and False) which implies first decision was False. Total 3."
+      },
+      {
+          "id": 106,
+          "question": "Among the software development activities, which of the following corresponds to refactoring, which is also emphasized in agile development?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "To improve the maintainability of a software, the internal structure of a program is changed without any change in the external specifications."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "To improve the quality of a software, two (2) programmers cooperate with each other and perform coding of one (1) program."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "To obtain feedback from the users, a prototype of the software to be provided is created at an early stage."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "To promptly develop a software to be operated, test cases are set in advance, and then the program is coded."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Refactoring is improving internal structure without changing external behavior."
+      },
+      {
+          "id": 107,
+          "question": "Which of the following is an appropriate explanation of the PERT diagram as shown in the figure below?",
+          image: "../image/m/img17.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The critical path is A – C – G."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "This project needs at least 11 days."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "When the activity F becomes unnecessary, the project will end 1 day earlier."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "When the activity H has a delay of 2 days, it will cause the project to be delayed by 2 days."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Activity H is on the critical path. A delay in a critical path activity delays the project."
+      },
+      {
+          "id": 108,
+          "question": "By using the triangular distribution formula of the three-point estimation technique, which of the following is the expected duration (in days) required for an activity? The estimations are as shown below.\nConditions – Estimations for the activity duration\nCase 1: Two (2) days. If an experienced employee is assigned for this activity.\nCase 2: Four (4) days. If a general employee is assigned for this activity.\nCase 3: Twelve (12) days. If an unexperienced employee is assigned for this activity.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "4"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "5"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "6"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "7"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "(2 + 4 + 12) / 3 = 6."
+      },
+      {
+          "id": 109,
+          "question": "A project is planned to complete in 12 months and the budget for the completion of the project is $100,000. After six months, it is found that $60,000 are spent, but only 40% of the work is completed. If the Cost Performance Index (CPI) is not changed, what is the estimated amount (in dollars) required to complete the remaining tasks of the project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "40,000"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "60,000"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "90,000"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "150,000"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Same as Q76. ETC = 90,000."
+      },
+      {
+          "id": 110,
+          "question": "Which of the following is an appropriate cost estimation technique that estimates the cost of an activity or project using the historical data from a similar project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Analogous estimating"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Bottom-up estimating"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Function point method"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Parametric estimating"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Analogous estimating relies on historical data from similar projects."
+      },
+      {
+          "id": 111,
+          "question": "Which of the following is the most appropriate description concerning a backup method for data in a new system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "In consideration of a possible increase in the response time in the business processes, the backup schedule is adjusted so that it does not overlap with the business processes."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "To save the backup data for a long period of time, a random-access medium is used."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "To shorten the time taken for recovery from the backup data, a differential backup is used."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "To shorten the time taken for the backup process, the backup data are placed in the same storage medium as the source data."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Backups consume resources, so scheduling them outside business hours avoids impacting response times."
+      },
+      {
+          "id": 112,
+          "question": "For servers, the total cost of ownership (TCO) is calculated over a period of 5-years. The purchase price of the servers is $120,500 and the other annual costs are listed as below. Area of Cost Annual Cost ($) Insurance 2,030 Maintenance 1,000 Repair (average) 700 Registration 270 What is the TCO of the servers (in dollars)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "28,100"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "120,500"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "140,500"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "622,500"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Annual costs = 2030+1000+700+270 = 4000. 5 years = 20,000. TCO = 120,500 + 20,000 = 140,500."
+      },
+      {
+          "id": 113,
+          "question": "In ITIL, the reduction in the index value expressing the maintainability is cited as an example of a KPI (Key Performance Index) in availability management. Which of the following corresponds to such an index?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Mean time between failures"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Mean time between service incidents"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Mean time to restore service"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Number of interruptions in a certain period"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Lower Mean Time To Restore Service (MTRS) indicates better maintainability."
+      },
+      {
+          "id": 114,
+          "question": "Which of the following is the system audit implementation structure that should be avoided from the standpoint of independence of the system auditors?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "A person, who five (5) years ago was transferred to the audit department from a development manager position in the information systems department, audits the status of the Internet usage in the marketing department."
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "A person in the audit department audits the status of the personal information management in the external contractor to whom personal information handling is outsourced."
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "A person in the general affairs department, who is appointed as a member of the audit team, audits the status of the entrance and exit control in the general affairs department, together with the other members."
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "A person in the legal department, in response to a request by the audit department, cooperates with the auditors in auditing of the validity of the outsourcing contracts."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Option c involves a person auditing their own department (self-audit), which violates the principle of independence."
+      },
+      {
+          "id": 115,
+          "question": "Which of the following is an appropriate activity that is undertaken by a system auditor who audits access control?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Confirmation of the management status of the access control concerning the data"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Creation and storage of a management table for the access control concerning the software"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Establishment of a management policy for the access control concerning the network"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Implementation of the operations management for the access control concerning the hardware"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Auditors verify (confirm) controls; they do not implement or create them (which are management responsibilities)."
+      },
+      {
+          "id": 116,
+          "question": "Which of the following is subject to system audits that evaluate and verify the internal control related to IT?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "The methods for ensuring accuracy in the processes of input and update of a database performed by the sales department"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "The process for the creation of a mid-term business plan by the business planning department"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "The results of the employee personnel evaluations by the personnel department"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "The status of the production equipment review conducted by the manufacturing department for the purpose of reducing defects"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Option a relates directly to IT controls regarding data integrity."
+      },
+      {
+          "id": 117,
+          "question": "Which of the following is a case that enables the customer support operations at a call center to improve the quality by applying a pattern recognition function or machine learning function to the accumulated data?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Deriving the most appropriate response in real time from the related materials and all the previous support history according to the content of the inquiry made by a customer"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Displaying the digital content of a response manual or basic customer information on a pop-up window of a screen for responding to the requests from the operators"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Repeatedly providing a roll play training to new operators from an experienced operator who serves as a lecturer by using the response manual as the teaching material"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Transferring a phone call or the relevant support screen to an experienced operator or a dedicated staff when the operator who is responding to a customer over the phone is unable to provide an answer"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Using ML to analyze history and derive responses is a direct application of AI to improve support quality."
+      },
+      {
+          "id": 118,
+          "question": "When an UML is used for business modeling, which of the following is the diagram that can represent a workflow such as the execution sequence of the business processes and branching based on conditions?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a",
+              "text": "Activity diagram"
+          },
+          {
+              "id": "b",
+              "label": "b",
+              "text": "Class diagram"
+          },
+          {
+              "id": "c",
+              "label": "c",
+              "text": "Component diagram"
+          },
+          {
+              "id": "d",
+              "label": "d",
+              "text": "Object diagram"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Activity diagrams are best suited for modeling workflows, sequences, and branching."
+      }
+      ]
+};
+const ANSWERS = {};
+
+function render() {
+    const root = document.getElementById('quiz-root');
+    DATA.questions.forEach((q) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.innerHTML = `
+        <div class="q-head">
+        <span class="q-num">Question ${q.id}</span>
+        <div class="q-title">${q.question}</div>
+        ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+        </div>
+        <div class="options" id="opts-${q.id}"></div>
+        <div class="explanation" id="exp-${q.id}">
+        <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+        ${q.explanation || "Correct response determined from source."}
+        </div>
+        `;
+        root.appendChild(card);
+        
+        const optBox = document.getElementById(`opts-${q.id}`);
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.innerHTML = `
+            <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+            <div class="opt-txt">${opt.text}</div>
+            `;
+            btn.onclick = () => {
+                ANSWERS[q.id] = opt.id;
+                Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+            };
+            optBox.appendChild(btn);
+        });
+    });
+}
+
+function submit() {
+    let score = 0;
+    DATA.questions.forEach(q => {
+        const box = document.getElementById(`opts-${q.id}`);
+        const exp = document.getElementById(`exp-${q.id}`);
+        exp.style.display = 'block';
+
+        Array.from(box.children).forEach((btn, idx) => {
+            const optId = q.options[idx].id;
+            btn.onclick = null;
+            btn.classList.remove('active');
+
+            if (optId === q.correctAnswerId) btn.classList.add('correct');
+            if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+        });
+
+        if (ANSWERS[q.id] === q.correctAnswerId) score++;
+    });
+
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+document.querySelector('.genre').addEventListener('change', function() {
+    const selectedURL = this.value;
+    if (selectedURL) {
+        window.location.href = selectedURL;
+    }
+});
+render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

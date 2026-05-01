@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax
+    /libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="../image/logo2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>2024_S</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                           <option value="../index.html">Years</option>
+                           <option value="2025S.html">2025_S</option>
+                           <option value="2025A.html">2025_A</option>
+                           <option value="2024S.html"selected>2024_S</option>
+                           <option value="2024A.html">2024_A</option>
+                           <option value="2023S.html">2023_S</option>
+                           <option value="2023A.html">2023_A</option>
+                           <option value="2022S.html">2022_S</option>
+                           <option value="2022A.html">2022_A</option>
+                           <option value="2021S.html">2021_S</option>
+                           <option value="2021A.html">2021_A</option>
+                           <option value="2020S.html">2020_S</option>
+                           <option value="2020A.html">2020_A</option>
+                       </select>
+                   </div>
+
+                   <div class="filter-radios">
+                    <input type="radio" name="grade" id="featured">
+                    <label for="featured"><a href="m.html">Management</a></label>
+
+                    <input type="radio" name="grade" id="popular">
+                    <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                    <input type="radio" name="grade" id="newest">
+                    <label for="newest"><a href="n.html">NetWork</a></label>
+
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="about" style="display: none;">
+        <div class="about">
+            <div class="handle"></div>
+            
+            <div class="header2">
+                <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                
+                <div class="title2">What is this</div>
+            </div>
+            <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+              Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+              Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+          </div>
+      </div>
+  </section>
+  <section>
+      <div class="container2">
+        <div id="quiz-root"></div>
+        <div id="results">
+            <div class="score" id="score-text">0/0</div>
+            <h2 style="margin-bottom: 24px;">Test Result</h2>
+            <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+    </div>
+</section>
+<footer>
+    <div class="footer-copyright">
+        <div class="copyright">
+            <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+        </div>
+
+        <div class="wrapper">
+            <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+            <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+            <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script>
+    const DATA = {
+      "title": "Fundamental IT Engineer Examination (Subject A) - April 2024",
+      "description": "Questions Q1 to Q60 from the April 2024 Fundamental IT Engineer Examination (Subject A).",
+      "questions": [
+      {
+          "id": 1,
+          "question": "What is the decimal representation of the hexadecimal number 123.4?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "83.25"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "83.5"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "291.25"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "291.5"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The hexadecimal number 123.4 can be converted to decimal as follows: (1 * 16^2) + (2 * 16^1) + (3 * 16^0) + (4 * 16^-1) = 256 + 32 + 3 + 0.25 = 291.25."
+      },
+      {
+          "id": 2,
+          "question": "Five people are sitting at a table in a restaurant. Two of them ordered coffee, and the other three ordered tea. The waiter forgets who ordered what and puts the drinks in a random order for the five persons. What is the probability that every person gets the correct drink?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "1/30"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "1/20"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "1/10"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "3/10"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The number of distinct ways to arrange 2 coffees and 3 teas among 5 people is 5! / (2! * 3!) = 120 / (2 * 6) = 10. Since only one arrangement corresponds to the correct order, the probability is 1/10."
+      },
+      {
+          "id": 3,
+          "question": "The expression below is represented in postfix (reverse Polish) notation. What is the resulting value of this expression? Here, the numbers are in decimal, and the symbols ‘+’, ‘−’, ‘*’, and ‘/’ represent addition, subtraction, multiplication, and division operators, respectively.\n\n100 5 6 2 + * 12 4 / − − 36 −",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "5"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "18"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "21"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "27"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Evaluating the stack: \n1. 6 2 + = 8\n2. 5 8 * = 40\n3. 12 4 / = 3\n4. 40 3 - = 37\n5. 100 37 - = 63\n6. 63 36 - = 27."
+      },
+      {
+          "id": 4,
+          "question": "Which of the following is an appropriate explanation of feedback control?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It performs control in a predetermined order."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It performs control to keep the output in line with the target value."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It performs control to prevent external disturbances from affecting the output."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It performs control without using the output."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Feedback control is a process where the system's output is monitored and compared to a target value, and adjustments are made to minimize the error and keep the output in line with the target."
+      },
+      {
+          "id": 5,
+          "question": "Which of the following represents the post-order traversal of the tree below?",
+          image: "../image/2024s/img1.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "2, 3, 4, 7, 8, 10, 13, 15,18"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "2, 4, 8, 7, 3, 15, 18, 13, 10"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "10, 3, 2, 7, 4, 8, 13, 18,15"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "10, 3, 13, 2, 7, 18, 4, 8, 15"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Post-order traversal visits nodes in the order Left-Right-Root. \nLeft subtree of 10: Left(2), Right(7: Left 4, Right 8, Root 7) -> 2, 4, 8, 7, Root(3). Sequence: 2, 4, 8, 7, 3.\nRight subtree of 10: Left(Empty), Right(18: Left 15, Right Empty, Root 18) -> 15, 18, Root(13). Sequence: 15, 18, 13.\nRoot: 10.\nFinal sequence: 2, 4, 8, 7, 3, 15, 18, 13, 10."
+      },
+      {
+          "id": 6,
+          "question": "The flowchart below shows an algorithm that determines the sum (i.e. “1 +3+ 5+ … + (2N-1)”) of the first N odd integers from 1 through 2N-1 (where N ≥ 1) and inserts the result into variable x. Which of the following is an expression to be inserted in blank A ?",
+          image: "../image/2024s/img2.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "i ≥ 2N – 1"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "i ≥ 2N + 1"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "x ≥ 2N – 1"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "x ≥ 2N + 1"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The loop adds odd integers `i` to `x`. The odd integers are 1, 3, ..., 2N-1. The variable `i` starts at 1 and increments by 2 in each iteration. We want to stop the loop after adding `2N-1`. After adding `2N-1`, `i` becomes `2N+1`. Therefore, the condition to exit the loop (go to 'Yes' branch) is when `i` reaches `2N+1`."
+      },
+      {
+          "id": 7,
+          "question": "How many swaps are required in bubble sort when N elements in the array are already sorted in reverse order?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "N(N-1) ÷ 2"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "N^2 ÷ 2"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "N(N-1)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "N^2"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "In the worst-case scenario (reverse sorted order), bubble sort performs a swap for every comparison. The number of comparisons is the sum of the first N-1 integers: (N-1) + (N-2) + ... + 1, which equals N(N-1)/2."
+      },
+      {
+          "id": 8,
+          "question": "There are two microprocessors: a 32-bit CPU capable of executing each of 32-bit, 16-bit, and 8-bit long instructions in 1 cycle, and a 16-bit CPU capable of executing each of 16-bit and 8-bit long instructions in 1 cycle. Additionally, the 16-bit CPU can execute a 32-bit long instruction in 2 cycles. When the appearance ratio of 32-bit long instructions is 40%, of 16-bit long instructions is 40%, and of 8-bit long instructions is 20% respectively, what is the percentage improvement in total execution time with the 32-bit CPU compared to the 16-bit CPU? Here, both the 32-bit and 16-bit CPU operate at the same clock speed and have the same performance except for the executable instruction length in 1 cycle.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "28.57"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "40"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "50"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "71.43"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Average cycles for 32-bit CPU = 1 (for all). Average cycles for 16-bit CPU = (2 * 0.4) + (1 * 0.4) + (1 * 0.2) = 1.4. Improvement = (Time_old - Time_new) / Time_old = (1.4 - 1.0) / 1.4 = 0.4 / 1.4 ≈ 0.2857 (28.57%)."
+      },
+      {
+          "id": 9,
+          "question": "When an HDD has the specifications below, what is the average access time for an HDD to transfer 1 MB of data in ms? Here, the average access time can be calculated as the sum of the average seek time, controller overhead, rotational latency, and transfer time. Other overheads can be ignored.",
+          image: "../image/2024s/img3.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "21.93"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "26.67"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "27.92"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "33.92"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Average rotational latency = 0.5 * (60 sec / 5000 rpm) = 6 ms. Transfer time for 1 MB = 1 MB / 60 MB/s = 1/60 sec ≈ 16.67 ms. Total access time = 4 ms (Seek) + 1.25 ms (Overhead) + 6 ms (Latency) + 16.67 ms (Transfer) = 27.92 ms."
+      },
+      {
+          "id": 10,
+          "question": "Which of the following is the port that can theoretically connect up to 127 peripheral devices, controlled by a PC?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Displayport"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "HDMI"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "SATA"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "USB"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "USB (Universal Serial Bus) architecture allows up to 127 devices to be connected to a single host controller."
+      },
+      {
+          "id": 11,
+          "question": "Which of the following is the design for securing safety and reliability known as “foolproof”?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A redundant configuration, such as duplication, can be used so that even when a device failure occurs, the functions of the overall system are not affected."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Even when the user performs an incorrect operation, a problem does not occur in the system."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "When a device failure occurs, damage can be minimized by enabling the system to stop safely."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "When a device failure occurs, the system runs even if the usable functions are restricted, and the processing efficiency is reduced."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Foolproof design ensures that the system is protected against user errors or misuse, typically by preventing the error from occurring or ensuring no damage results from incorrect operations."
+      },
+      {
+          "id": 12,
+          "question": "There is a system where the operating status is continuously monitored. Which of the following is an appropriate sequence of work items in capacity planning that is conducted when a new task is applied to the system after several years of operation?",
+          image: "../image/2024s/img4.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "(iii), (ii), (iv), (i)"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "(iii), (iv), (ii), (i)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "(iv), (ii), (i), (iii)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "(iv), (iii), (i), (ii)"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The logical sequence is: (iii) Understand current performance baseline, (iv) Gather requirements for the new task, (ii) Propose the necessary system configuration, and (i) Evaluate the proposal."
+      },
+      {
+          "id": 13,
+          "question": "An operating system adopts the priority scheduling algorithm for scheduling processes. There are five processes A, B, C, D and E arriving at the same time with estimated running times of 10, 6, 2, 4, and 8 milliseconds, respectively. Their priorities are 3, 5, 2, 1, and 4, where 1 is the highest priority. What is the mean process turnaround time?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "14"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "16"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "20"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "22"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Execution order by priority (1 to 5): D, C, A, E, B. Completion times: D=4, C=4+2=6, A=6+10=16, E=16+8=24, B=24+6=30. Mean turnaround time = (4+6+16+24+30)/5 = 80/5 = 16."
+      },
+      {
+          "id": 14,
+          "question": "Data is continuously sent for T seconds from the sending task to the receiving task in the diagram below. When the volume of data sent in 1 second is S and the volume of data received in 1 second is R, which of the following is the appropriate relational expression indicating the buffer size L to prevent buffer overflow? Here, the sending task has a higher transfer speed than the receiving task, and there is a sufficient time interval until the start of the next transfer.",
+          image: "../image/2024s/img5.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "L < ( R − S ) × T"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "L < ( S − R ) × T"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "L ≧ ( R − S ) × T"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "L ≧ ( S − R ) × T"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "The accumulation rate in the buffer is the difference between sending rate S and receiving rate R (S - R). Over time T, the total excess data is (S - R) * T. The buffer L must be at least this size."
+      },
+      {
+          "id": 15,
+          "question": "Which of the following is the appropriate explanation of ideal hashing used during a data search?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is advanced search technology that determines the intention of a user’s search request by adding recognition and decision functions to an object that combines data and its processing."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is data search technology that is fast and highly scalable, in which values converted from data with a specific algorithm are used for storage addresses of the data."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is technology and techniques for searching a large volume of accumulated data to identify trends, correlations, patterns, and other information required for management and marketing."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is technology created with the aim of increasing the hit ratio for keyword searches and preventing omissions in searches by using a list of synonyms and equivalent words."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Hashing involves mapping data to storage addresses using a specific algorithm (hash function), providing fast (ideally O(1)) and scalable search capabilities."
+      },
+      {
+          "id": 16,
+          "question": "Which of the following is equivalent to the circuit below? ",
+          image: "../image/2024s/img6.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "AND gate"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "OR gate with inverted inputs"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "AND gate with inverted inputs"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "NAND gate"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "The circuit computes (NOT(x AND y)) OR (NOT z). By De Morgan's laws, (NOT(x AND y)) is (NOT x OR NOT y). So the expression is (NOT x OR NOT y OR NOT z), which is equivalent to NOT(x AND y AND z), i.e., a 3-input NAND gate."
+      },
+      {
+          "id": 17,
+          "question": "In the process of creating animation, which of the following is used to record the natural movement of objects, humans, and animals by using sensors and video cameras?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Key frame method"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Morphing"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Motion capture"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Pixel shader"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Motion capture is the process of recording the movement of objects or people, typically using sensors and cameras, to animate digital 3D characters."
+      },
+      {
+          "id": 18,
+          "question": "Which of the following is a critical step in creating a relational database?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Building a network diagram"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Creating entity-relationship diagrams"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Designing a flowchart"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Programming in C++"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Creating Entity-Relationship (E-R) diagrams is a fundamental step in designing the schema and relationships of a relational database."
+      },
+      {
+          "id": 19,
+          "question": "Which of the following is the appropriate interpretation of the E-R model shown below?",
+          image: "../image/2024s/img7.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A department has many employees, and employees can have multiple dependents."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A department has many employees, where each employee has exactly one dependent."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "An employee can have at most one dependent."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "An employee can work in two departments."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Based on the standard examination context for this diagram, the relationship indicates one Department contains multiple Employees, and one Employee can be associated with multiple Dependents."
+      },
+      {
+          "id": 20,
+          "question": "From the figure below, which of the following is an appropriate set of attributes for the “CatalogProduct” class table?",
+          image: "../image/2024s/img8.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "CatalogID, Price, SpecialPrice"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "CatalogID, ProductID, Price, SpecialPrice"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Price, SpecialPrice"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "ProductID, Price, SpecialPrice"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "CatalogProduct is a link table resolving the many-to-many relationship between Catalog and ProductItem. Therefore, it must include foreign keys from both connected tables (CatalogID and ProductID) in addition to its own attributes (Price, SpecialPrice)."
+      },
+      {
+          "id": 21,
+          "question": "Which of the following is a clause that is inserted into blank A of the SQL statement below that calculates the average scores for each class and subject from the “MidtermTest” table and displays them in ascending order of class and subject?",
+          image: "../image/2024s/img9.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "GROUP BY Class, AverageScore ORDER BY Class, Subject"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "GROUP BY Class, Subject ORDER BY Class, AVG(Score)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "GROUP BY Class, Subject ORDER BY Class, Subject"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "ROUP BY Class, Subject, StudentNumber ORDER BY Class, Subject, AverageScore"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "To calculate aggregates 'for each class and subject', you must `GROUP BY Class, Subject`. To display them in 'ascending order of class and subject', you use `ORDER BY Class, Subject`."
+      },
+      {
+          "id": 22,
+          "question": "Which of the following can change the deadlock state of the transaction back to the normal state?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Commit"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Drop"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Rollback"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Roll Forward"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Rolling back a transaction undoes its changes and releases the locks it holds, which breaks the deadlock and returns the system to a normal state."
+      },
+      {
+          "id": 23,
+          "question": "Which of the following is the network device that makes a forwarding decision on the basis of the destination MAC address in the frame header?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Patch cable"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Repeater hub"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Router"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Switching hub"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A switching hub (or network switch) operates at Layer 2 and uses MAC addresses to forward frames to the correct port."
+      },
+      {
+          "id": 24,
+          "question": "Which of the following is the broadcast address of the network 192.168.10.0/23?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "192.168.10.0"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "192.168.10.255"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "192.168.10.511"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "192.168.11.255"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A /23 subnet mask is 255.255.254.0, which covers 512 addresses. The range starts at 192.168.10.0 and ends at 192.168.11.255. The last address is the broadcast address."
+      },
+      {
+          "id": 25,
+          "question": "Which of the following is the name of a communication standard that is used in mobile phone networks and has the three characteristics described below?",
+          image: "../image/2024s/img18.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "LTE (Long Term Evolution)"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "MAC (Media Access Control)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "MDM (Mobile Device Management)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "VoIP (Voice over Internet Protocol)"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "LTE (Long Term Evolution) is a 3GPP standard for wireless broadband communication that uses packet switching and technologies like MIMO."
+      },
+      {
+          "id": 26,
+          "question": "Which of the following is the network utility that is used to check detailed TCP connection information of the host?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "arp"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "ipconfig"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "netstat"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "ping"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "netstat (network statistics) is a command-line utility that displays network connections (both incoming and outgoing), routing tables, and interface statistics."
+      },
+      {
+          "id": 27,
+          "question": "Which of the following describes a brute force attack aimed at finding the key of symmetric encryption?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Finding the key by observing the ciphertext change when the plaintext is altered by a certain amount"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Finding the key by testing all key combinations sequentially when a set of plaintext and ciphertext is given"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Finding the key by using the algebraic expression representing the relationship between the plaintext, ciphertext, and key as a clue"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Finding the key by using the statistical correlation between a part of the information of the plaintext and part of the information of the ciphertext as a clue"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A brute force attack involves exhaustively trying every possible key combination until the correct one is found."
+      },
+      {
+          "id": 28,
+          "question": "Which of the following is a package of unauthorized programs and tools that has functions such as creating a backdoor on a server and hiding the evidence of intrusion inside the server?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "RFID"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Rootkit"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "TKIP"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Web beacon"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A rootkit is a collection of malicious software designed to enable access to a computer or an area of its software that is not otherwise allowed and often masks its existence or the existence of other malware."
+      },
+      {
+          "id": 29,
+          "question": "Which of the following is a public-key cryptography algorithm whose security depends on the difficulty of factoring extremely large numbers into primes?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "AES"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "DH"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "DSA"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "RSA"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "RSA is a public-key cryptosystem that relies on the computational difficulty of factoring the product of two large prime numbers."
+      },
+      {
+          "id": 30,
+          "question": "Which of the following is the name of an attack where manipulation is employed to place a malicious website near the top of the search results on a search engine?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Cross-site scripting"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "DNS cache poisoning"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "SEO poisoning"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Social engineering"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "SEO (Search Engine Optimization) poisoning is a technique where attackers manipulate search engine rankings to force malicious websites to appear among top search results."
+      },
+      {
+          "id": 31,
+          "question": "Which of the following is an explanation of the timestamp service in information security?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a service that authenticates biometric information, such as fingerprints, voice prints, vein patterns, retina, and iris, by using the date and time when the information is registered in the authentication system."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a service that certifies that electronic data certainly exists on a particular date and time and that the data has not been modified since that date and time."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a service that securely verifies that the date and time information is not falsified midway for setting the clocks of the PCs and servers on the network."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a web service that securely displays the global date and time information used in official records by using encrypted communication."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A timestamping service (TSA) provides proof that a document existed at a specific point in time and has not been altered since then."
+      },
+      {
+          "id": 32,
+          "question": "Which of the following is an appropriate term for an organized and highly skilled team whose mission is to continuously monitor and improve an organization’s security posture while preventing, detecting, analyzing, and responding to cybersecurity incidents, utilizing both technology and well-defined processes and procedures?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Cybersecurity"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Incident Management Center (IMC)"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Network Operations Center (NOC)"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Security Operations Center (SOC)"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A Security Operations Center (SOC) is a facility where an information security team monitors and analyzes an organization's security posture on an ongoing basis."
+      },
+      {
+          "id": 33,
+          "question": "In an OS where permissions for reading, writing, or executing a file can be independently set as attributes of the file, one bit is allocated for each of these three (3) permissions to determine whether they are allowed or not. When these three bits are configured using an octal value from 0 through 7, the trial results below are obtained. Which of the following is an appropriate trial result? ",
+          image: "../image/2024s/img17.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "When 2 is set, reading and execution can be performed."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "When 4 is set, only execution can be performed."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "When 5 is set, only writing can be performed."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "When 6 is set, reading and writing can be performed."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "From result (2), 3 (011 binary) = Read + Write. From result (3), 7 (111 binary) = Read + Write + Execute. The difference is the bit with value 4 (100 binary), which must correspond to 'Execute'. Therefore, when 4 is set, only execution can be performed."
+      },
+      {
+          "id": 34,
+          "question": "Which of the following are components of a UML2.x (including 2.0 and later versions) state diagram?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Message and Activity"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Message and Transition"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "State and Message"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "State and Transition"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A state machine diagram (state diagram) in UML primarily consists of states and transitions between those states."
+      },
+      {
+          "id": 35,
+          "question": "Which of the following represents the appropriate combination of a class and an object in Object Oriented Programming?",
+          image: "../image/2024s/img10.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "In OOP, a class is a blueprint or template defining the properties and behaviors, while an object is a concrete instance of that class."
+      },
+      {
+          "id": 36,
+          "question": "Which of the following is the most appropriate description of polymorphism in object-oriented design?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It allows developers to define classes incrementally by reusing classes defined previously as the basis for new classes."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It allows the analyst to focus on the important dimensions while ignoring nonessential dimensions."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It combines processes and data into a single object."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is the provision of a single interface to entities of different types."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Polymorphism allows objects of different classes to be treated as objects of a common superclass, essentially providing a single interface to entities of different types."
+      },
+      {
+          "id": 37,
+          "question": "There is a program module that is executed only when the integer value of integer x is 25 ≤ x < 50. When testing this module using boundary value analysis, which of the following is an appropriate combination of values to be tested?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "24, 25, 49, 50"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "24, 25, 50, 51"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "25, 26, 49, 50"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "25, 26, 50, 51"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Boundary value analysis involves testing the exact boundary values and values immediately outside the boundaries. For 25 ≤ x < 50, the boundaries are 25 (lower inclusive) and 50 (upper exclusive). The test set should include 25 and 24 (just below) for the lower bound, and 49 (max valid integer) and 50 (just above range) for the upper bound."
+      },
+      {
+          "id": 38,
+          "question": "Which of the following is an appropriate testing type to ensure that the interfaces and linkages between different parts of programs work properly?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Acceptance test"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Integration test"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Qualification test"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Unit test"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Integration testing is specifically designed to expose defects in the interfaces and interaction between integrated components or systems."
+      },
+      {
+          "id": 39,
+          "question": "Which of the following is an explanation of the reverse engineering of software?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The entire software is reconstructed after the existing software is analyzed and understood."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The existing software is analyzed, and its specification and structure are clarified."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The internal structure of the software is changed without any change to the externally observed behavior."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The source code is automatically generated from the design information by a development support tool."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Reverse engineering involves analyzing a subject system to identify its components and their interrelationships and creating representations of the system (like specifications) in another form or at a higher level of abstraction."
+      },
+      {
+          "id": 40,
+          "question": "Which of the following is the appropriate order of the six phases in the SDLC (Software Development Life Cycle) model?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Requirements Analysis -> Design -> Programming -> Deployment -> Testing -> Maintenance"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Requirements Analysis -> Design -> Programming -> Testing -> Deployment -> Maintenance"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Requirements Analysis -> Design -> Programming -> Testing -> Maintenance -> Deployment"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Requirements Analysis -> Programming -> Testing -> Design -> Maintenance -> Deployment"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Note: The option text provided in the exam key (a) seems to have a typo or follows a non-standard order if taken literally (Testing usually comes before Deployment). However, looking at the OCR text for option (a) in standard exams: typically it is Req -> Design -> Prog -> Test -> Deploy -> Maint. Wait, option (a) says Deploy -> Test. Option (b) says Test -> Deploy. Standard Waterfall is Req->Design->Impl->Test->Deploy->Maint. Therefore, option (b) is the correct standard order. **Correction**: The user-provided OCR for option (a) says 'Deployment -> Testing', which is unusual. Option (b) says 'Testing -> Deployment', which is standard. Let's look closer at the OCR text. Ah, the OCR output order for (a) is '...Deployment -> Testing...'. The logic dictates (b) is correct. But let's check the screenshot. In the screenshot, (a) lists 'Programming -> Deployment -> Testing'. (b) lists 'Programming -> Testing -> Deployment'. Standard SDLC is Testing then Deployment. Therefore (b) is the correct answer."
+      },
+      {
+          "id": 41,
+          "question": "The activities and milestones of a project are shown in the arrow diagram below. Which of the following is an appropriate description of the project if the duration of activity B is increased by 5 days?",
+          image: "../image/2024s/img11.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The earliest start time of activity G is delayed by 5 days."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The latest start time of activity F is delayed by 5 days."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The project’s minimum completion time does not change."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The project’s minimum completion time is increased by 5 days."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The critical path is A(10) -> Dummy -> D(25) -> G(15) -> H(15) = 65 days. The path involving B is A(10) -> B(5) -> F(20) -> H(15) = 50 days. Increasing B by 5 days makes the path 55 days, which is still less than the critical path of 65 days. Thus, the project duration does not change."
+      },
+      {
+          "id": 42,
+          "question": "What is the Cost Performance Index (CPI) of the project under the conditions listed below?",
+          image: "../image/2024s/img12.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.25"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "0.8"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "1.0"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "1.25"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Planned Value (PV) at 1 month = 100,000 / 4 = 25,000. Since progress is 'As planned', Earned Value (EV) = PV = 25,000. AC = 20,000. CPI = EV / AC = 25,000 / 20,000 = 1.25."
+      },
+      {
+          "id": 43,
+          "question": "In ITIL 2011 edition, which of the following is the appropriate order for the service lifecycle stages?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Service design -> Continual service improvement -> Service strategy -> Service operation -> Service transition"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Service design -> Service strategy -> Service operation -> Service transition -> Continual service improvement"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Service strategy -> Service design -> Service operation -> Service transition -> Continual service improvement"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Service strategy -> Service design -> Service transition -> Service operation -> Continual service improvement"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "The ITIL Service Lifecycle stages are: Service Strategy -> Service Design -> Service Transition -> Service Operation, with Continual Service Improvement wrapping around all stages. Option (d) reflects the flow from strategy to operation."
+      },
+      {
+          "id": 44,
+          "question": "In IT service management, which of the following is an activity performed for the management of incidents and service requests?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Evaluating if customer satisfaction with the service desk meets the agreed service targets and performing a review to identify improvement opportunities"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Examining measures wherein the amount of free space on a disk is near its threshold"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Investigating the impact of changes made to a program"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Receiving a failure report from a user and checking to see if it corresponds to a known error"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Incident management involves restoring normal service operation as quickly as possible. Receiving a failure report (incident) and checking against known errors is a core activity of incident management."
+      },
+      {
+          "id": 45,
+          "question": "Which of the following is the most appropriate description concerning an interview conducted by a system auditor?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The administrator of the audited department, who has experience in auditing tasks, is selected as the interviewee."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The entire interview is conducted by one (1) system auditor, as discrepancies may occur in the record if multiple auditors are involved."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The system auditor instructs the audited department to take improvement measures for deficiencies found during the interview."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The system auditor makes an effort to obtain documents and records that support the information obtained from the audited department during the interview."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Auditors must gather sufficient and appropriate audit evidence. Obtaining documents and records to corroborate interview information is a standard and necessary practice."
+      },
+      {
+          "id": 46,
+          "question": "Which of the following is a case that enables the customer support operations at a call center to improve quality by applying a pattern recognition function or machine learning function to the accumulated data?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Deriving the most appropriate response in real time from related materials and all the previous support history according to the content of the inquiry made by a customer"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Displaying the digital content of a response manual or basic customer information on a pop-up window of a screen for responding to requests from the operators"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Repeatedly providing role play training to new operators from an experienced operator who serves as a lecturer by using the response manual as the teaching material"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Transferring a phone call or the relevant support screen to an experienced operator or a dedicated staff when the operator who is responding to a customer over the phone is unable to provide an answer"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "This describes the application of AI/ML to analyze past data and provide real-time recommendations, which is a classic use case for improving support quality with pattern recognition."
+      },
+      {
+          "id": 47,
+          "question": "Which of the following is a description of knowledge management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Conduct business by a flat organizational structure that has as few hierarchical levels as possible for quick decision making."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Conduct business by utilizing its core strength in know-how and technology that are unique to the company and cannot be imitated by others."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Conduct business that enhances overall capabilities to solve problems by sharing knowledge that is scattered throughout the company."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Implement management innovation in the company on the basis of a comparative analysis with companies that have achieved superior performance."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Knowledge management involves creating, sharing, using, and managing the knowledge and information of an organization to enhance problem-solving and efficiency."
+      },
+      {
+          "id": 48,
+          "question": "Which of the following is an appropriate description of an RFI?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a document describing the basic policy for the system, including a summary of the system, purpose, necessary functions, system requirements, and contract matters."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a document that is created after an RFP."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a document used by companies looking for the implementation of computerization to request specific system proposals from prospective suppliers such as system vendors."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a document used to request information concerning computerization from prospective suppliers such as system vendors."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "RFI (Request for Information) is used to gather information about the capabilities of various suppliers before issuing a formal RFP (Request for Proposal)."
+      },
+      {
+          "id": 49,
+          "question": "Which of the following is a strategy that concentrates resources in the segment of a specific customer or specific product in order to achieve specialization?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Challenger strategy"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Follower strategy"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Leader strategy"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Niche strategy"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A Niche strategy targets a specific segment of the market to avoid competition with market leaders and to serve distinct needs."
+      },
+      {
+          "id": 50,
+          "question": "Which of the following is an explanation of core competence that is adopted in business administration?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It refers to a qualitative and quantitative understanding of its products, services, and operations through comparisons with the strongest competitor or advanced companies."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It refers to dramatical improvements in the costs, quality, service, and speed of a company by fundamentally reviewing and radically redesigning its business processes."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It refers to the company’s unique skills, technologies, and other strenghts that are superior to other companies, which serve as a source of competitive advantage."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It refers to the management of the allocation of company-wide management resources in an effective and integrated manner so as to achieve an improvement in management efficiency."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Core competence refers to the collective learning and unique capabilities of an organization that provide a competitive advantage."
+      },
+      {
+          "id": 51,
+          "question": "Which of the following is an appropriate explanation of telemarketing?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It refers to direct marketing that includes calling people at home and asking for donations, opinions, or purchases."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It refers to direct marketing that sells products and services and builds customer relationships over the Internet."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It refers to direct marketing that sends offers, announcements, reminders, or other items to a person at a particular address."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It refers to direct marketing that sends sales alerts, links to website updates, appointments, or delivery reminders to large groups of people."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Telemarketing involves contacting potential customers over the telephone to promote or sell products or services."
+      },
+      {
+          "id": 52,
+          "question": "Which of the following is an appropriate explanation of the technology S curve?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It represents the diffusion process of a new technology. It shows that the growth rate of the penetration rate gradually decreases as products applying the technology penetrate the market, by using a frequency distribution curve."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It represents the maturing process of technology. It shows that during the time until the new technology is actually spread, the degree of awareness changes as time passes."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It represents the process of technological progress. It shows that technology advances slowly at the beginning, then advances rapidly, and thereafter, slowly stagnates."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It represents the relationship between production volume and unit cost. It shows the course of reduction in unit cost with an increase in cumulative production volume."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The technology S-curve depicts the lifecycle of an innovation: slow initial progress, followed by rapid improvement, and finally plateauing as the technology matures."
+      },
+      {
+          "id": 53,
+          "question": "Which of the following is an appropriate computing concept that describes the idea of physical objects, such as devices, vehicles, and buildings, that are connected to the Internet and are able to identify themselves to other devices?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Computer networks"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Deep learning"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Internet of things"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Network topology"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Internet of Things (IoT) refers to the network of physical objects embedded with sensors, software, and other technologies to connect and exchange data over the internet."
+      },
+      {
+          "id": 54,
+          "question": "A factory manufactures the three products that are shown in the table below. Which of the following is the maximum possible profit in dollars? Here, there is an upper limit to the monthly demand volume for each product. Also, the factory can only use up to 200 hours per month for the manufacturing process and cannot manufacture more than one products in parallel.",
+
+          image: "../image/2024s/img13.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "26,250"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "30,000"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "31,500"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "33,000"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Total time = 200 hours = 12000 minutes. \nProfit per minute: X=18/6=3, Y=25/10=2.5, Z=30/15=2. \nPrioritize X, then Y, then Z. \n1. Make max X: 1000 units * 6 min = 6000 min. Profit = 1000 * 18 = 18000. Remaining time = 6000 min. \n2. Make max Y with remaining time: 6000 min / 10 min = 600 units. (Limit is 900, so we make 600). Profit = 600 * 25 = 15000. Remaining time = 0. \n3. Z: 0 units. \nTotal Profit = 18000 + 15000 = 33000."
+      },
+      {
+          "id": 55,
+          "question": "Which of the following is an example of Consumer Generated Media (CGM)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A website of a company through which the company publishes information about its management and financial status, as well as performance trends for individual investors"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A website of a company through which the company transmits information about the characteristics and usage methods of its products to the general consumers"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "A website of a government organization through which the organization publishes information about its policies and administrative services to the general public"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "A website such as a blog and SNS, etc. through which an individual transmits information to an unspecified number of people about the evaluation of products, etc. that the person has used"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Consumer Generated Media (CGM) refers to online content (like blogs, wikis, social media) created by consumers rather than by publishers or brands."
+      },
+      {
+          "id": 56,
+          "question": "Which of the following is the maximum value of Z from the constraints that are shown below?",
+          image: "../image/2024s/img16.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "12"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "14"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "16"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "18"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Evaluating Z at the vertices of the feasible region: (0,0) -> Z=0. (4,0) -> Z=12. (0,4) -> Z=16. The maximum value is 16."
+      },
+      {
+          "id": 57,
+          "question": "When a company wants to earn a profit of $42,000, which of following is the number of units that the company must sell under the conditions shown in the table below?",
+          image: "../image/2024s/img14.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "14,000"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "18,200"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "26,000"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "26,200"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Total Fixed Costs = 130,000 + 10,000 = 140,000. Total Variable Cost per unit = 3 + 4 = 7. Contribution Margin = Price - Variable Cost = 17 - 7 = 10. Required Profit = 42,000. Formula: (Fixed Costs + Target Profit) / Contribution Margin = (140,000 + 42,000) / 10 = 182,000 / 10 = 18,200 units. Note: The exam screenshot may highlight a different option, but 18,200 is the mathematically correct answer derived from standard cost-volume-profit analysis."
+      },
+      {
+          "id": 58,
+          "question": "Which of the following is part of total quality management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Designing products and services that meet or exceed customers’ expectations"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Focusing on the appointment of staff with long-term work experience in a similar environment"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Prioritizing central decisions rather than empowerment to ensure the quality of products and services"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Promoting the capability of each department to work independently in a competitive manner"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Total Quality Management (TQM) is a management approach centered on quality, based on the participation of all members of an organization and aiming at long-term success through customer satisfaction."
+      },
+      {
+          "id": 59,
+          "question": "When a relation between the list price of a product and the demand for the product is defined as a linear equation, which of the following is the appropriate numerical value to be inserted into blank A below?",
+          image: "../image/2024s/img15.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "30,000"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "35,000"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "40,000"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "45,000"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Using the equation D = mP + c. \n0 = 30m + c \n60000 = 10m + c \nSubtracting equations gives -60000 = 20m, so m = -3000. \nSubstituted back: c = 90000. \nEquation is D = -3000P + 90000. \nFor P = 15: D = -3000(15) + 90000 = -45000 + 90000 = 45,000."
+      },
+      {
+          "id": 60,
+          "question": "When OSS that is released under GPL is modified and distributed, which of the following is an appropriate action to comply with the GPL?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A recipient who obtains the derivative work must be strictly prohibited from redistributing copies."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The source code of a separate application that is statically linked to the derivative work does not need to be disclosed."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "When the software is modified and distributed, the source code of the distributed copies is made availabe to the recipients."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "When the source code of the derivative work is disclosed, compensation such as related costs cannot be demanded."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The General Public License (GPL) requires that if you distribute copies of the software (modified or not), you must make the source code available to the recipients."
+      }
+      ]
+};
+const ANSWERS = {};
+
+function render() {
+    const root = document.getElementById('quiz-root');
+    DATA.questions.forEach((q) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.innerHTML = `
+        <div class="q-head">
+        <span class="q-num">Question ${q.id}</span>
+        <div class="q-title">${q.question}</div>
+        ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+        </div>
+        <div class="options" id="opts-${q.id}"></div>
+        <div class="explanation" id="exp-${q.id}">
+        <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+        ${q.explanation || "Correct response determined from source."}
+        </div>
+        `;
+        root.appendChild(card);
+        
+        const optBox = document.getElementById(`opts-${q.id}`);
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.innerHTML = `
+            <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+            <div class="opt-txt">${opt.text}</div>
+            `;
+            btn.onclick = () => {
+                ANSWERS[q.id] = opt.id;
+                Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+            };
+            optBox.appendChild(btn);
+        });
+    });
+}
+function submit() {
+    let score = 0;
+    DATA.questions.forEach(q => {
+        const box = document.getElementById(`opts-${q.id}`);
+        const exp = document.getElementById(`exp-${q.id}`);
+        exp.style.display = 'block';
+
+        Array.from(box.children).forEach((btn, idx) => {
+            const optId = q.options[idx].id;
+            btn.onclick = null;
+            btn.classList.remove('active');
+
+            if (optId === q.correctAnswerId) btn.classList.add('correct');
+            if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+        });
+
+        if (ANSWERS[q.id] === q.correctAnswerId) score++;
+    });
+
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+document.querySelector('.genre').addEventListener('change', function() {
+    const selectedURL = this.value;
+    if (selectedURL) {
+        window.location.href = selectedURL;
+    }
+});
+render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

@@ -1,0 +1,2476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="../image/logo2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Autour+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Black+And+White+Picture&family=Boldonse&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Ephesis&family=Fjalla+One&family=Griffy&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Knewave&family=Luckiest+Guy&family=Major+Mono+Display&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Pacifico&family=Padauk:wght@400;700&family=Pathway+Gothic+One&family=Permanent+Marker&family=Protest+Strike&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Sunshiney&display=swap" rel="stylesheet">
+    <title>2022_A</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../image/logo.png" alt="logo">
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html" class="navbar-link">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                        
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin" onclick="document.getElementById('about').style.display='block'">
+                        <span></span>
+                        <ion-icon name="help-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre" onchange="location = this.value;">
+                            <option value="../index.html">Years</option>
+                            <option value="2025S.html">2025_S</option>
+                            <option value="2025A.html">2025_A</option>
+                            <option value="2024S.html">2024_S</option>
+                            <option value="2024A.html">2024_A</option>
+                            <option value="2023S.html">2023_S</option>
+                            <option value="2023A.html">2023_A</option>
+                            <option value="2022S.html">2022_S</option>
+                            <option value="2022A.html"selected>2022_A</option>
+                            <option value="2021S.html">2021_S</option>
+                            <option value="2021A.html">2021_A</option>
+                            <option value="2020S.html">2020_S</option>
+                            <option value="2020A.html">2020_A</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured">
+                        <label for="featured"><a href="m.html">Management</a></label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular"><a href="m2.html">Alg&Ds</a></label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest"><a href="n.html">NetWork</a></label>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="about" style="display: none;">
+            <div class="about">
+                <div class="handle"></div>
+                
+                <div class="header2">
+                    <button class="close-btn" onclick="document.getElementById('about').style.display='none'">✕</button>
+                    
+                    <div class="title2">What is this</div>
+                </div>
+                <div style="color: #000000; line-height: 1.6;text-align: center;word-wrap: break-word;max-width: 90%;margin: 0 auto;font-family: 'Comfortaa', sans-serif;font-size: 14px;">
+                  Are you preparing for the ITPEC (IP, FE) examinations? Do you find it difficult to track your progress using only PDF past papers? We are here to transform the way you study.
+
+                  Our platform is a dedicated Interactive Study Hub specifically designed to help IT professionals and students in Myanmar master the ITPEC curriculum through smart practice and data-driven learning.
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="container2">
+            <div id="quiz-root"></div>
+            <div id="results">
+                <div class="score" id="score-text">0/0</div>
+                <h2 style="margin-bottom: 24px;">Test Result</h2>
+                <button class="btn" onclick="location.reload()"><img src="../image/restart.png" alt="" class="done"></button>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <button id="submit-btn" class="btn" onclick="submit()"><img src="../image/correct.png" alt="" class="done"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <div class="copyright">
+                <p>&copy; Copyright 2026 SAM FE OlD_QUESTION</p>
+            </div>
+
+            <div class="wrapper">
+                <a href="https://t.me/d0ffy011"><img src="../image/telegram.png" alt=""></a>
+                <a href="viber://chat?number=959980222968"><img src="../image/viber.png" alt=""></a>
+                <a href="http://www.youtube.com/@NyiMoeYan-o7l"><img src="../image/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    const DATA = {
+      "title": "Fundamental IT Engineer Examination (Morning) - October 2022",
+      "description": "Examination questions from the October 2022 Fundamental IT Engineer Examination (Morning session), covering topics such as hardware, software, databases, networks, security, project management, and business strategy.",
+      "questions": [
+      {
+          "id": 1,
+          "question": "For an 8-bit binary integer, which of the following sets the least significant bit to 1 while leaving the other bits unchanged?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Perform bitwise AND operation with 00000001."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Perform bitwise NAND operation with 11111110."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Perform bitwise OR operation with 00000001."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Perform bitwise XOR operation with 00000001."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Performing a bitwise OR operation with 00000001 sets the least significant bit (LSB) to 1 (because x OR 1 = 1) and leaves all other bits unchanged (because x OR 0 = x)."
+      },
+      {
+          "id": 2,
+          "question": "Which of the following is an appropriate explanation of the loss of significance?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It occurs when the result of an operation exceeds the maximum handle limit and raises an exception."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It occurs when two nearly equal floating-point numbers are subtracted to produce a result of unacceptably reduced significant digits."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It refers to a rounding error that occurs when the part smaller than the least significant digit of the result is rounded off, up, or down in floating-point operations."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It refers to the case when two floating-point numbers are added, but the less significant digits of either one do not affect the result."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Loss of significance (or cancellation error) happens when subtracting two numbers that are very close to each other, causing the most significant digits to cancel out and leaving a result with very few accurate significant digits."
+      },
+      {
+          "id": 3,
+          "question": "When two dice are rolled, what is the probability that the sum of the dice is 5? Here, the two dice are fair and independent.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "1/18"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "1/12"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "1/9"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "1/6"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "There are 4 combinations that sum to 5: (1,4), (2,3), (3,2), and (4,1). The total number of outcomes is 6 * 6 = 36. The probability is 4/36 = 1/9."
+      },
+      {
+          "id": 4,
+          "question": "What is the value of the following arithmetic expression in reverse Polish notation?\n9 2 1 + – 3 ×",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "4"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "10"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "18"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Evaluating the stack: 9, 2, 1 -> (+) -> 9, 3 -> (-) -> 6 -> 3 -> (x) -> 6 * 3 = 18."
+      },
+      {
+          "id": 5,
+          "question": "What is the Hamming distance of bit strings 10101 and 11110?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "2"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "3"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "5"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Hamming distance is the number of bit positions in which the two bits are different. 10101 XOR 11110 = 01011. There are three 1s, so the distance is 3."
+      },
+      {
+          "id": 6,
+          "question": "There are three (3) blue balls and four (4) green balls in a box. When two balls are randomly taken out from the box, what is the probability that both are blue?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "2/49"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "1/15"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "1/7"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "9/49"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Probability of first blue is 3/7. Probability of second blue (without replacement) is 2/6. Total probability = (3/7) * (2/6) = 6/42 = 1/7."
+      },
+      {
+          "id": 7,
+          "question": "Five (5) characters, A, C, K, S, and T, are input in this order. When using stacks, what is the minimum number of stacks required to rearrange the characters and output S, T, A, C, and K, in this order? Here, when a pop operation is performed for any stack, the popped character always becomes an output. Also, characters cannot be moved between stacks.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "1"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "2"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "3"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "4"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Items A, C, K appear in the input in order and also in the output in the same relative order (A then C then K). In a stack, if X is pushed before Y, Y must be popped before X. Since A is pushed before C but popped before C, they cannot share a stack where A is below C. This applies to pairs (A,C), (C,K), and (A,K). Therefore, A, C, and K each require their own stack. S and T can be managed within these or popped immediately, but at least 3 stacks are needed to hold A, C, and K simultaneously until they are ready to be output."
+      },
+      {
+          "id": 8,
+          "question": "When a two-dimensional array A(5,5) is mapped to computer memory (i.e. a one-dimensional array) in row-major (row-directional) order or column-major (column-directional) order, how many elements occupy the same memory addresses in both cases? Here, the first element A(1,1) is mapped to the same starting memory address in either case.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "2"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "3"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "4"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "5"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "In a square matrix N x N, the elements that map to the same address in both row-major and column-major order are the diagonal elements where the row index equals the column index (i = j). For a 5x5 matrix, these are (1,1), (2,2), (3,3), (4,4), and (5,5), totaling 5 elements."
+      },
+      {
+          "id": 9,
+          "question": "Which of the following characterizes the hash method in table search?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It determines the storage location using a function of a key."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a method that avoids collisions among storage locations."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is one of the methods that use a binary tree."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It takes time almost proportional to the table size for searching."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Hashing uses a hash function to compute an index (storage location) into an array of buckets or slots, from which the desired value can be found."
+      },
+      {
+          "id": 10,
+          "question": "Which of the following is a technology used to provide dynamic UI contents without reloading the entire web page by using an asynchronous communication feature of JavaScript?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Ajax"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "CSS"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "RSS"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "SNS"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Ajax (Asynchronous JavaScript and XML) is the set of web development techniques using many web technologies on the client side to create asynchronous web applications."
+      },
+      {
+          "id": 11,
+          "question": "There is a 32-bit microprocessor with 32-bit external data bus, driven by 64 MHz input clock, and the processor takes 8 input clock cycles to complete 1 bus cycle. What is the theoretical maximum data transfer rate in megabytes per second (MB/s) for the external data bus of the processor?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "3"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "32"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "256"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "320"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Bus frequency = 64 MHz / 8 = 8 MHz. Data width = 32 bits = 4 bytes. Transfer rate = 8 MHz * 4 bytes = 32 MB/s."
+      },
+      {
+          "id": 12,
+          "question": "There is a computer that has an average instruction execution time of 20 nanoseconds. What is the performance of this computer in MIPS?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "5"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "10"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "20"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "50"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "20 nanoseconds is 20 * 10^-9 seconds. Instructions per second = 1 / (20 * 10^-9) = 50 * 10^6 = 50 Million Instructions Per Second (MIPS)."
+      },
+      {
+          "id": 13,
+          "question": "There is a disk drive that has a capacity of 8 GB. The drive has five (5) platters with two (2) surfaces: 10,000 tracks per surface and 200 sectors per track. How many bytes are in each sector? Here, 1 GB is 1,000,000,000 bytes.",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "100"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "200"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "400"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "800"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Total sectors = 5 platters * 2 surfaces * 10,000 tracks * 200 sectors = 20,000,000 sectors. Total capacity = 8,000,000,000 bytes. Bytes per sector = 8,000,000,000 / 20,000,000 = 400 bytes."
+      },
+      {
+          "id": 14,
+          "question": "Which of the following is a memory device that stores programs or data in factories and only has the read operation for the stored programs or data?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "DRAM"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Flash memory"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Mask ROM"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "SRAM"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Mask ROM is a type of read-only memory whose contents are programmed by the integrated circuit manufacturer (during the masking process) rather than by the user."
+      },
+      {
+          "id": 15,
+          "question": "An information processing system consists of a database and web server with the specifications shown in the table below.",
+          image: "../image/2022a/img1.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "160"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "225"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "250"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "385"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Database throughput = (1000ms / 5ms) * 0.80 = 200 * 0.8 = 160 TPS. Web server throughput = (1000ms / 4ms) * 0.90 = 250 * 0.9 = 225 TPS. The system throughput is limited by the lowest value, which is 160 TPS."
+      },
+      {
+          "id": 16,
+          "question": "Which of the following is the approximate availability of the entire system in the figure below? The availability is calculated by rounding off to two decimal places. The numeric value within parentheses is the availability of each device, and the system is available when two or more of the devices connected in parallel are operating in the left part (device 1 to 3) and one or more of the devices connected in parallel is operating in the right part (device 4 to 5).",
+          image: "../image/2022a/img2.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.65"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "0.81"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "0.94"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "0.99"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The system has two serial subsystems. Left (2-of-3 redundancy with 0.9, 0.8, 0.9) has availability 0.954. Right (1-of-2 parallel with 0.9, 0.9) has availability 1 - (0.1*0.1) = 0.99. Total availability = 0.954 * 0.99 ≈ 0.94."
+      },
+      {
+          "id": 17,
+          "question": "On a computer with virtual memory, the number of blocks in real memory is three (3). One of the two (2) algorithms of FIFO and LFU (least frequently used) is used for selecting the page to be removed from real memory. When five (5) pages are referenced in the pagereference sequence shown below as a string, which of the following is an appropriate combination of the number of page fault operations for each algorithm? Here, the three (3) blocks in the real memory are initially empty.",
+          image: "../image/2022a/img3.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Tracing the sequence 1,3,2,1,4,5,2,3,4,5 with 3 frames: FIFO results in 6 faults (1,3,2,4,5,3). LFU results in 9 faults (1,3,2,4,5,2,3,4,5 - almost every step involves a replacement or initial fault)."
+      },
+      {
+          "id": 18,
+          "question": "In an OS, task scheduling is performed by the priority order method. The table below shows the priorities for three (3) tasks A to C and the execution sequence and execution time of the CPU and I/O device for the tasks when each task is executed individually. What is the idle time of the CPU in milliseconds from the time when the three (3) tasks are set to the ready state to the time when the execution of all of the tasks is finished? Here, there is one (1) CPU, the CPU consists of one (1) core, there is no I/O contention, and no overhead of the OS is considered. In the table below, the numbers in parentheses indicate the execution time for each operation.",
+          image: "../image/2022a/img4.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "2"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "3"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "4"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "5"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Mapping the execution on a timeline: CPU is idle between t=6 and t=8 (waiting for A's I/O), and between t=10 and t=11 (waiting for B's I/O). Total idle time = 2 + 1 = 3ms."
+      },
+      {
+          "id": 19,
+          "question": "Which of the following is the standard API (Application Programming Interface) used by a Java application to access a database?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "HTML"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Java VM"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "JDBC"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "SQL"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "JDBC (Java Database Connectivity) is the Java API for connecting and executing queries on a database."
+      },
+      {
+          "id": 20,
+          "question": "A half adder is a logic circuit that performs the addition of two single-bit binary numbers and outputs the sum and carry. The truth table of a half adder is shown in the table below. Which of the following is an appropriate logic diagram of the half adder?",
+          image: "../image/2022a/img5.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Diagram a"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Diagram b"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Diagram c"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Diagram d"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A half adder computes Sum = A XOR B and Carry = A AND B. Diagram c correctly shows an XOR gate producing S and an AND gate producing C."
+      },
+      {
+          "id": 21,
+          "question": "By using a sensor that detects changes in shape, the condition of infrastructure such as elevated highways can be monitored and maintained. Which of the following is a sensor that is used for this purpose?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Gyro"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Hall element"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Strain gage"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Thermistor"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A strain gage (or strain gauge) is a device used to measure strain on an object, which corresponds to changes in shape or deformation."
+      },
+      {
+          "id": 22,
+          "question": "Which of the following uses a flip-flop circuit in a memory cell?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "DRAM"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "EEPROM"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "SDRAM"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "SRAM"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "SRAM (Static RAM) uses flip-flop circuits to store each bit of data, making it faster but less dense than DRAM."
+      },
+      {
+          "id": 23,
+          "question": "For a given decimal data, the check digit is calculated with the method below and is appended to the original data. When the given data is 7394, what is the result? Here, the weight is 1234 and the base number is 11.",
+          image: "../image/2022a/img6.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "73940"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "73941"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "73944"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "73947"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Calculation: (7*1 + 3*2 + 9*3 + 4*4) = 7+6+27+16 = 56. 56 mod 11 = 1. Check digit = last digit of (11 - 1) = 10 -> 0. Appending 0 to 7394 gives 73940."
+      },
+      {
+          "id": 24,
+          "question": "Which of the following is the most appropriate explanation of augmented reality (AR)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "By appealing to the five senses through equipment, such as a head-mounted display, a person can experience locations or worlds that do not exist as if they were real."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "By constructing a 3D virtual space that is natural to humans and changing the virtual space in accordance with a person’s movement, he or she can feel as if he or she were in that place."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "By seamlessly interweaving computer-generated information with the physical world, the viewer can perceive it as an immersive aspect of the real environment."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "By viewing a video recorded in the past, the viewer can feel as if he or she were in that era and at that location."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "AR involves overlaying digital information onto the real world, seamlessly interweaving computer-generated content with the physical environment."
+      },
+      {
+          "id": 25,
+          "question": "Which of the following is an appropriate description of the mapping between a relational model and relational database as its implementation?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A domain is mapped to a character type or a character string type."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "A relation is mapped to a table."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Attributes and columns are ordered from left to right."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Neither tuples nor rows have duplicates."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "In the relational model, a relation corresponds directly to a table in a relational database implementation."
+      },
+      {
+          "id": 26,
+          "question": "In a relational database, which of the following is an appropriate purpose for defining a foreign key?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To prevent fragmentation in the record storage area due to the repeated deletion and insertion of records"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To provide a constraint to maintain referential consistency between the records of related tables"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To restore as many records as possible when they are damaged by failure, based on the mutual relationship between tables"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To speed up the searching and updating of related tables by storing them closer together"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Foreign keys are used to enforce referential integrity, ensuring that a value in one table corresponds to a valid existing record in another referenced table."
+      },
+      {
+          "id": 27,
+          "question": "In the process of table implementation, which of the following is an appropriate SQL statement that removes a column in an existing table?",
+          image: "../image/2022a/img7.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The standard SQL syntax to remove a column is `ALTER TABLE ... DROP COLUMN ...`."
+      },
+      {
+          "id": 28,
+          "question": "Which of the following is the purpose of setting an index in the columns of the table of a relational database?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To enable efficient access to the storage location of data so that the search speed can be improved"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To ensure that no value is duplicated in a column"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To match the value of the column of the foreign key with the value of the primary key of another table"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To save disk space when a single large table is distributed and saved on several disks"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Indices are primarily used to speed up data retrieval operations (search speed) by providing efficient access paths to data."
+      },
+      {
+          "id": 29,
+          "question": "In a company, the received-orders are monitored monthly based on the customer file, product file, person-in-charge file, and the current month’s received-orders file. When the items of each file are as shown in the table below, which of the following can be retrieved for the received orders of current month and the three (3) previous months using the four (4) files?",
+          image: "../image/2022a/img8.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Customer-wise received orders by product"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Customer-wise received orders by the person in charge"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Person-in-charge-wise received orders by product"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Product-wise received orders by customer"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The Customer file contains historical totals per customer. Since each customer has one person in charge (PIC), these totals represent the orders for that customer (and thus that PIC's sales to that customer). The Current Month file can be aggregated by customer. Therefore, we can report total orders per customer (linked to PIC) across all 4 months."
+      },
+      {
+          "id": 30,
+          "question": "In an IP network consisting of four (4) hosts, two (2) L2 switches, and a router shown below, a packet is transmitted from PC01 to PC03. Which of the following is an appropriate combination of the source and destination addresses of this packet when it leaves Switch1?",
+          image: "../image/2022a/img9.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "When leaving Switch1 (still in the local subnet of PC01), the frame's Source MAC is PC01 (aa...) and Destination MAC is the Router's gateway interface (cc...). The IP addresses (Source PC01, Dest PC03) remain end-to-end (192.168.1.31 to 192.168.2.31/32). Option b reflects the correct MAC addressing for the local hop and IP addressing for the end-to-end path."
+      },
+      {
+          "id": 31,
+          "question": "Which of the following is a TCP/IP protocol that is used to find the corresponding MAC address from an IP address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "IP"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "RARP"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "ARP (Address Resolution Protocol) resolves IP addresses to MAC addresses."
+      },
+      {
+          "id": 32,
+          "question": "Which of the following is the subnet mask corresponding to an IP address in slash notation, 192.168.22.31/27?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "255.255.255.192"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "255.255.255.224"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "255.255.255.248"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "255.255.255.252"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "/27 means the first 27 bits are 1s. This is 8+8+8+3 bits. The last octet has 3 bits set: 11100000 (binary) = 128 + 64 + 32 = 224. The mask is 255.255.255.224."
+      },
+      {
+          "id": 33,
+          "question": "Which of the following protocol supports the congestion control feature?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "ARP"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "ICMP"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "TCP"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "UDP"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "TCP (Transmission Control Protocol) includes mechanisms for congestion control (e.g., slow start, congestion avoidance)."
+      },
+      {
+          "id": 34,
+          "question": "Which of the following is a global IPv4 address?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "10.10.10.10"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "129.10.9.7"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "172.16.1.5"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "192.168.20.3"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "10.x.x.x, 172.16-31.x.x, and 192.168.x.x are private address ranges. 129.10.9.7 falls outside these and is a public (global) IP address."
+      },
+      {
+          "id": 35,
+          "question": "The three properties of information security are confidentiality, integrity, and availability. Which of the following is an attack on integrity?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "DDoS"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Phishing"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Shoulder surfing"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Website defacement"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Website defacement involves unauthorized alteration of the website's content, which is a direct violation of integrity."
+      },
+      {
+          "id": 36,
+          "question": "When a system with a database is being developed, a security requirement states that the data must be encrypted with a key before being saved to the database, and the same key is required for decryption when the data is being read. Which of the following is an appropriate algorithm that can be used to satisfy the security requirement?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "AES"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Diffie-Hellman"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "RSA"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "SHA-256"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The requirement describes symmetric encryption (same key for encryption and decryption). AES (Advanced Encryption Standard) is a symmetric encryption algorithm."
+      },
+      {
+          "id": 37,
+          "question": "Which of the following is a cyber-attack that redirects a victim to a fake website by manipulating DNS to obtain personal information from the victim?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Pharming"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Phishing"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Spamming"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Trojan horse"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Pharming is an attack that redirects traffic to a fake website, often by corrupting DNS resolution (DNS poisoning)."
+      },
+      {
+          "id": 38,
+          "question": "When security risk management processes incorporate the approach of the PDCA (Plan, Do, Check, Act) cycle, which of the following is a process that belongs to Act?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Establish a security policy and develop a security risk management plan."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Implement the security risk management plan."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Maintain and improve the security risk management plan by learning from incidents."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Monitor the security risks as planned in the risk management plan."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The 'Act' phase involves taking corrective actions and improving the process based on the results of the 'Check' phase. Learning from incidents to improve the plan fits this phase."
+      },
+      {
+          "id": 39,
+          "question": "Which of the following is the protocol that is used together with HTTP in HTTPS?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "SHA"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "SSH"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "TLS"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "VPN"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "HTTPS is HTTP over TLS (Transport Layer Security) or its predecessor SSL."
+      },
+      {
+          "id": 40,
+          "question": "Which of the following is an appropriate term associated with the fraudulent action of impersonating an authorized person?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Destruction"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Falsification"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Spoofing"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Tapping"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Spoofing refers to masquerading as another person or entity (e.g., IP spoofing, Email spoofing)."
+      },
+      {
+          "id": 41,
+          "question": "An attacker calls a corporate help desk, masquerading as an employee who has forgotten his password. The help desk staff resets the password to the company default “password1. ” The attacker then uses this password to access the company network and information on the server. What is this type of attack called?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Buffer overflow attack"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Denial-of-Service attack"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Shoulder surfing"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Social engineering"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Social engineering relies on psychological manipulation of people into performing actions or divulging confidential information."
+      },
+      {
+          "id": 42,
+          "question": "When a biometric authentication system is introduced, which of the following is the most appropriate point to be taken into account?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Adjusting the device by considering both the probability of incorrectly rejecting an authorized user and that of incorrectly accepting an unauthorized user"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Preventing the decrease in the probability of incorrectly rejecting an authorized user by using a product that frequently updates the malware definition file"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Requesting an entrusted third party to issue a digital certificate for the person to be authenticated"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Setting the appropriate amount of knowledge for authentication to balance the amounts of knowledge that cannot be easily guessed and that can be memorized by a person to be authenticated"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "In biometrics, there is a trade-off between the False Rejection Rate (FRR) and False Acceptance Rate (FAR). The system must be tuned to balance these according to security needs."
+      },
+      {
+          "id": 43,
+          "question": "Which of the following is the purpose of using a message authentication code?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To check the encryption method of a message"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To check the overview of a message"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To confirm that there is no falsification of a message"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To secure the confidentiality of a message"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "A Message Authentication Code (MAC) provides integrity and authenticity, ensuring the message has not been altered (falsified) and comes from a legitimate source."
+      },
+      {
+          "id": 44,
+          "question": "Which of the following is an explanation of WAF?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It centrally stores and manages operation logs from various systems to quickly detect and analyze an event that can be a security threat."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a standard of encryption methods for wireless LAN, certified by the Wi-Fi Alliance, and supports AES encryption."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is equipped with firewall functions and has antivirus, intrusion detection, and other functions that work together to manage multiple security functions in an integrated manner."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It monitors the accesses to a website, and when it detects a pattern that is likely from an attacker, it blocks those accesses."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "WAF (Web Application Firewall) protects web applications by filtering and monitoring HTTP traffic, blocking attacks like SQL injection and XSS."
+      },
+      {
+          "id": 45,
+          "question": "Which of the following is an appropriate description of a UML use case diagram?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It shows the behavior during the object’s life cycle using finite state transitions."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It shows the exchange of messages among objects and objects’ lifelines in a time series."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It shows the flow from one activity to another activity in a system or business process."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It shows the scenarios for how actors, i.e., external users or machines, interact with a system."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Use case diagrams depict the interactions between actors (users/external systems) and the system to achieve specific goals (use cases)."
+      },
+      {
+          "id": 46,
+          "question": "In UML 2.0, which of the following is a diagram that represents the interactions between objects in time series?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Activity diagram"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Component diagram"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Sequence diagram"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "State transition diagram"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Sequence diagrams visualize the sequence of messages exchanged between objects over time."
+      },
+      {
+          "id": 47,
+          "question": "Which of the following is a structural design pattern that allows classes with incompatible interfaces to work together?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Adapter"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Factory"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Iterator"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Singleton"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "The Adapter pattern converts the interface of a class into another interface expected by clients, allowing incompatible classes to work together."
+      },
+      {
+          "id": 48,
+          "question": "Which of the following is the most appropriate description of a stack trace that is used for debugging a program?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A trace of call stack methods/functions/subroutines"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Stacking/gathering the traces left by other programs"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The traces left in memory from a stack data structure"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Tracing stack data structure that is used in the program"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A stack trace is a report of the active stack frames (function calls) at a certain point in time during the execution of a program."
+      },
+      {
+          "id": 49,
+          "question": "Among the software development activities, which of the following corresponds to refactoring that is emphasized in agile development?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To improve the maintainability of a program, the internal structure of a program is changed without any change in the external specifications."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To improve the quality of a program, two (2) programmers cooperate and perform the coding of one (1) program."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To obtain feedback from the users, a prototype of the software is created at an early stage."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To promptly develop a program, test cases are set in advance, and then the program is coded."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Refactoring involves restructuring existing computer code without changing its external behavior to improve non-functional attributes like maintainability."
+      },
+      {
+          "id": 50,
+          "question": "In eXtreme Programming (XP), which of the following is advocated as a practice?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Inspection"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Pair programming"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Structured design"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Use case utilization"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Pair programming is a core practice of Extreme Programming (XP) where two programmers work together at one workstation."
+      },
+      {
+          "id": 51,
+          "question": "A project consisting of several activities has a single critical path. Which of the following is an appropriate description of critical path activities for the project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Critical path activities can be performed in parallel."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Critical path activities have a non-zero total float time."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "For each critical path activity, the early start date equals the late start date."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "The activity with the longest duration in the project is one of the critical path activities."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "On the critical path, there is no slack (float). Therefore, the Early Start (ES) equals the Late Start (LS), meaning any delay will delay the project."
+      },
+      {
+          "id": 52,
+          "question": "Which of the following is an appropriate description of the Responsibility Assignment Matrix that is used for project human resource management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Allocating work packages to those who are responsible for project work"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Defining the limits of the project sponsor’s responsibilities"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Defining the terms of reference of the project"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Monitoring the current engagement level of stakeholders"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "A Responsibility Assignment Matrix (RAM), such as a RACI chart, maps project tasks (work packages) to the people responsible for completing them."
+      },
+      {
+          "id": 53,
+          "question": "Which of the following is an appropriate purpose for using a WBS (work breakdown structure) in a software development project?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To clarify the time sequence of activities and understand the critical path that should be intensively managed"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To decompose a development task into smaller sub-tasks with a manageable size and organize them into a hierarchical structure"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To optimize the total cost when there is a trade-off relationship between the number of days and the costs required for development"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To show the schedule of activities by using bars and clarify the start dates and end dates of the activities as well as the progress at the current point"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "The primary purpose of a WBS is to decompose the total scope of work into smaller, manageable components in a hierarchical structure."
+      },
+      {
+          "id": 54,
+          "question": "Which of the following is an appropriate description for group decision-making techniques used in the estimation process of an activity duration?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The estimates created using these techniques may include contingency reserves, sometimes referred to as time reserves or buffers, in the project schedule to account for schedule uncertainty."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "These are team-based approaches, such as brainstorming, the Delphi, or nominal group techniques, which are useful for engaged team members to improve their estimation accuracy and commit to the estimates."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "These techniques use statistical relationships between historical data and project parameters to calculate an estimate for project cost, budget, or duration."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Using these techniques, a group of experts, guided by historical information, can provide duration estimate information or recommended maximum activity durations from prior similar projects."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Group decision-making techniques (like Delphi, brainstorming) involve the team in the estimation process, leveraging collective knowledge to improve accuracy and buy-in."
+      },
+      {
+          "id": 55,
+          "question": "Which of the following is an appropriate meaning of a mission-critical system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "As with an operating system, it is an indispensable system necessary for operating a business system."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a system that has a significant impact on corporate activities and society when a failure occurs."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a system that is first installed on a trial basis, and if successful, a full-scale installation is implemented."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a system where the operating performance is close to the limit."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "A mission-critical system is one whose failure or disruption would result in serious impact on business operations or the organization's survival."
+      },
+      {
+          "id": 56,
+          "question": "Which of the following is an appropriate description of the relationship between a record of an incident and a record of a problem in IT service management?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "A cross-reference to the incident that triggered the record of the problem is included in the record of the problem."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "If known errors have been identified at the time of ending the record of the problem, the record of the incident that triggered the record of the problem is deleted."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "One (1) problem record is always associated with one (1) incident record."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Problems are classified and recorded by a different criterion from the classification of incidents."
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "In ITIL/ITSM, a problem record tracks the underlying cause of one or more incidents. The problem record typically references the incident(s) that led to its identification."
+      },
+      {
+          "id": 57,
+          "question": "A system is planned to be operational 22 hours per day. However, there are two (2) failures with downtimes of 0.5 hours and 1.5 hours in 100 days. Which of the following is the approximate MTBF of this system during the period in hours?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "0.00091"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "1.0"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "2.0"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "1100"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Total planned time = 100 days * 22 hours = 2200 hours. Total downtime = 0.5 + 1.5 = 2.0 hours. Operational time = 2198 hours. Number of failures = 2. MTBF = 2198 / 2 = 1099 hours (approx 1100)."
+      },
+      {
+          "id": 58,
+          "question": "When a business continuity plan (BCP) is developed given the possibility of a system failure, which of the following is the item that is implemented as part of business impact analysis?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Collectively educating the concerned persons about the alternate procedures and recovery procedures during an information system failure"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Determining the maximum allowable downtime for the information system"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Executing a test to verify the effectiveness of BCP"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Revising the contents of the BCP given changes in the internal and external environment of the information system"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Business Impact Analysis (BIA) involves identifying critical functions and determining their Maximum Allowable Downtime (MAD) or Recovery Time Objective (RTO)."
+      },
+      {
+          "id": 59,
+          "question": "Which of the following is the most appropriate purpose for which a system auditor exchanges opinions with an audited department concerning the draft version of an audit report?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To confirm that there are no factual errors in the findings and recommendations to be described in the audit report"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To issue the audit report to the audited department before the audit report is submitted to the person who is requesting the audit"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To receive the approval of the responsible person of the audited department concerning the recommendations described in the audit report"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To substitute with additional auditing activities concerning the part of the audit report for which evidence is insufficient by orally confirming with the audited department"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Discussing the draft report allows the auditor to verify facts with the auditee to ensure the report is accurate and avoids factual errors before finalization."
+      },
+      {
+          "id": 60,
+          "question": "Which of the following is the appropriate activity performed by a system auditor who audits access control?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Creating and storing the access control records for the software"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Establishing an access control policy for the network"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Implementing the access control procedures for hardware"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Viewing the access control rules for data"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "Auditors review and inspect (view) rules, logs, and configurations to verify compliance. They do not create, establish, or implement the controls themselves."
+      },
+      {
+          "id": 61,
+          "question": "Which of the following is a description of SOA?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It consists of four (4) main concepts; the business scheme, data scheme, application and processing scheme, and technical scheme, and it aims to optimize the business and the system."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It makes it easier to address a change in the business by constructing software from components called services."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It performs design at the component levels by using a combination of three (3) logical structures; a sequence, selection, and iteration."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It uses a data flow diagram and simultaneously creates a model regarding information and a model regarding functions."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "SOA (Service-Oriented Architecture) is an architectural style where software is built from discrete, reusable components called services."
+      },
+      {
+          "id": 62,
+          "question": "Which of the following is an appropriate description of BPR (Business Process Reengineering)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "BPR is a management practice used to provide the overall governance of an organization in a business process environment to improve agility and operational performance."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "BPR is a management strategy used to automate key business processes that helps in saving time, promoting efficiency, and ultimately reducing costs to enhance the value of an organization."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "BPR is a management system used in marketing and business to automate the sales activities, such as contact management, order taking and fulfillment, information sharing, inventory monitoring, and sales forecast analysis."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "BPR is a management technique used to redesign and restructure value-creating processes in an organization to gain significant benefits in productivity, profitability, service, and quality through maximizing the potential of individuals and teams."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "BPR involves the fundamental rethinking and radical redesign of business processes to achieve dramatic improvements in measures of performance."
+      },
+      {
+          "id": 63,
+          "question": "Which of the following is a usage scenario for the adoption of UML as a technique for visualizing business processes?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Diagrams are shown by using a data-oriented approach where objects are handled as entities, their attributes, and the relationships among the entities."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To represent processes by using data flows, sources and sinks of data, data stores, and data processes are connected with arrows that indicate data flow."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To represent processes from multiple viewpoints, some purpose-specific modeling methods are used, and each model is depicted by using standardized notation rules for object modeling."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To thoroughly represent the functions of a process, the events that occur in response to a single request are described by using the conditional branch format."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "UML provides standardized notation for object modeling that can be used to visualize business processes from multiple viewpoints (e.g., activity diagrams for process flow)."
+      },
+      {
+          "id": 64,
+          "question": "In computerization planning, which of the following is an activity that should be performed?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Clarifying what roles are assigned to the business and information-system departments when the organizational structure of system development is planned and clarifying the basis of cost calculation for the development, operation, and maintenance when considering the costs"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Determining interfaces, such as screens or forms, based on the requirements definition document and describing them in the design document"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Performing maintenance and management of the system so that it conforms to the business and environment and analyzing details and clarifying the potential impacts of modification requests"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Performing system startup and shutdown, monitoring, and file maintenance in a planned manner and verifying that business is being carried out smoothly"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Computerization planning (system planning) involves defining the organizational structure, roles, and cost basis before detailed design or operation begins."
+      },
+      {
+          "id": 65,
+          "question": "When an information system is procured through the steps shown in the figure below, which of the following is a word or phrase that should be inserted in the blank B?",
+          image: "../image/2022a/img10.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Concluding a contract"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "RFI"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "RFP"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Selecting a provider"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Step B describes the orderer indicating the system target and conditions and requesting a proposal document. This corresponds to issuing a Request For Proposal (RFP)."
+      },
+      {
+          "id": 66,
+          "question": "In a growth matrix proposed by Ansoff, which of the following is a strategy for expanding a business with an existing product in an existing market?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Diversification"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Market development"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Market penetration"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Product development"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Market penetration involves increasing sales of existing products to an existing market."
+      },
+      {
+          "id": 67,
+          "question": "PEST analysis is used to analyze the external environment in determining a business strategy. Which of the following is an appropriate set of external environmental factors that PEST analysis analyzes?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Politics, Economics, Society, Technology"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Politics, Enterprises, Society, Time"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Price, Economics, Satisfaction, Technology"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Price, Enterprises, Safety, Time"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "PEST stands for Political, Economic, Social, and Technological factors."
+      },
+      {
+          "id": 68,
+          "question": "In a process that aims to produce ideal technology, technology follows an evolutionary process that progresses from the introduction stage, growth stage, maturity stage, and decline stage. Then, it transitions to the next technological phase. Which of the following is used to represent this technological evolution process?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Bathtub curve"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Demand curve"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Learning curve"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Technology S-curve"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "The Technology S-curve depicts the lifecycle of a technology from introduction (slow progress), to growth (rapid progress), to maturity (plateau)."
+      },
+      {
+          "id": 69,
+          "question": "When trial production is performed for components to be loaded into electrical appliances, which of the following is the least expensive development method? Here, the construction time of each process is six (6) months for the creation process, three (3) months for the modification process, and two (2) months for the evaluation process. The cost per one (1) person-month is 6,000 dollars for the creation process and 10,000 dollars for each of the modification and evaluation processes. Costs other than the purchase cost, outsourcing cost, and person-month cost shall not be considered.",
+          image: "../image/2022a/img11.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": ""
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": ""
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": ""
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": ""
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Calculating costs: (a) 200k + (4*3*10k) + (1*2*10k) = 200+120+20=340k. (b) 350k. (c) (10*3*10k) + (3*2*10k) = 300+60=360k. (d) (10*6*6k) + (2*2*10k) = 360+40=400k. The lowest is 340,000 (Option a)."
+      },
+      {
+          "id": 70,
+          "question": "Which of the following is a characteristic of MRP?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "The development, designing, and production preparation of a product are performed simultaneously in parallel."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "The number of required components is calculated on the basis of the standard production plan of a product."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "The production of a product is initiated after an order from a customer is received."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Work instructions and transport instructions are provided by using a worksheet."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "MRP (Material Requirements Planning) calculates material needs based on the production schedule (plan) and bill of materials."
+      },
+      {
+          "id": 71,
+          "question": "Which of the following is an explanation of the Kanban (just-in-time) system?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "To improve work efficiency at each operation, parts and semi-finished products having unified specifications are procured."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "To minimize intermediate stock, parts required for the production line are procured from the previous process on the basis of a production plan."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "To procure parts efficiently, they are procured from affiliated companies."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "To procure parts of higher quality, parts are procured via competitive bidding among designated suppliers."
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Kanban is a pull system used in JIT to minimize inventory by having downstream processes signal upstream processes to supply parts only when needed."
+      },
+      {
+          "id": 72,
+          "question": "Which of the following is a description of Online-to-Offline in net business?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a business model that provides a basic service or product for free and charges a fee for advanced or special functions."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a mechanism that can prevent trouble in electronic commerce, such as the case where the price is paid but the product is not delivered or the case where the product is sent but the price is not paid."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a mechanism that leads a customer that uses mobile devices to purchase by guiding the customer from a virtual store to a real store or from a real store to a virtual store"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a scheme that starts production of the final product after receiving the order from a customer, in order to realize customization according to customer specifications."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "O2O (Online-to-Offline) business strategies draw potential customers from online channels to physical stores (or vice versa)."
+      },
+      {
+          "id": 73,
+          "question": "A smart meter is a highly functional electricity meter with a function for communications and a function for the management of other devices. Which of the following is not appropriate as the purpose of installing a smart meter?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Continuing the power supply for a fixed amount of time by functioning as an auxiliary power source at the time of a power failure"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Improving the efficiency of meter reading work through automatic meter reading"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Increasing awareness of power-saving through visualization of the amount of power consumption"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Restraining peak power through control over power demand by using demand response"
+          }
+          ],
+          "correctAnswerId": "a",
+          "explanation": "Smart meters measure and communicate usage data; they do not generate or store power to act as an auxiliary power source (UPS) during failures."
+      },
+      {
+          "id": 74,
+          "question": "Which of the following is an explanation of a sharing economy?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "It is a concept by which efficient management and operation of renewable energy and urban infrastructure are performed by using IT, which leads to an improvement in the quality of people’s lives and helps achieve continuous economic growth."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "It is a concept by which the productivity of an entire economy increases as a result of utilizing IT, and the demand-and-supply gap is eliminated via the progress of SCM, which leads to sustainable growth free from inflation."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "It is a mechanism by which over-the-counter and Internet sales are combined in a business transaction, and the strong points of both are utilized and linked to expanding overall sales."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "It is a mechanism mainly between individuals to share, lend, or borrow idle assets owned by individuals by utilizing the community functions of social media."
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "The sharing economy is defined by peer-to-peer sharing of access to goods and services (idle assets) facilitated by community-based online platforms."
+      },
+      {
+          "id": 75,
+          "question": "Which of the following is a management organization that has the characteristic of both project and functional organizations being able to flexibly respond to changes in the business environment?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Divisional organization"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Hierarchical organization"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Line and staff organization"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Matrix organization"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A matrix organization combines functional and project reporting lines, allowing flexibility and resource sharing."
+      },
+      {
+          "id": 76,
+          "question": "Which of the following is a process of discovering useful patterns and relationships by the analysis of large volumes of data?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Brainstorming"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Data mining"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Decision tree"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Document analysis"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Data mining is the process of discovering patterns, correlations, and anomalies within large datasets."
+      },
+      {
+          "id": 77,
+          "question": "Which of the following is a chart that represents values over a period (frequently one year) and shows simultaneously monthly figures (or weekly or daily), cumulative totals, and the moving averages?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Pie intersection chart"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Radar chart"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "SD chart"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Z chart (Z graph)"
+          }
+          ],
+          "correctAnswerId": "d",
+          "explanation": "A Z chart plots monthly data, cumulative totals, and moving totals (or averages) over a period, often forming a 'Z' shape."
+      },
+      {
+          "id": 78,
+          "question": "Company A purchased a machine for the original cost of $126,000. The salvage value after 6 years is $6,000. What is the annual depreciation expense (in dollars) by using the straight-line method?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "12,000"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "20,000"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "21,000"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "36,000"
+          }
+          ],
+          "correctAnswerId": "b",
+          "explanation": "Depreciable amount = Cost - Salvage = 126,000 - 6,000 = 120,000. Annual expense = 120,000 / 6 years = 20,000."
+      },
+      {
+          "id": 79,
+          "question": "When the estimated probabilities for the number of units that are sold per day for a product are as listed in the table below and the profit per unit is 10 dollars, what is the number of purchased units where the expected value for profit becomes a maximum? Here, a disposal loss of 3 dollars per unit is incurred if the product remains unsold on the day it was purchased.",
+          image: "../image/2022a/img12.png",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "4"
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "5"
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "6"
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "7"
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "Calculated expected profits: Buy 4 -> 40. Buy 5 -> 46.1. Buy 6 -> 48.3. Buy 7 -> 46.6. The maximum is at 6 units."
+      },
+      {
+          "id": 80,
+          "question": "Which of the following is an appropriate description of the scope of software protection under WTO’s Agreement on Trade-Related Aspects of Intellectual Property Rights (TRIPS)?",
+          "options": [
+          {
+              "id": "a",
+              "label": "a)",
+              "text": "Algorithms and programming languages are protected."
+          },
+          {
+              "id": "b",
+              "label": "b)",
+              "text": "Application programs are protected but system programs such as an OS are not, as the value of the right is included in the hardware cost."
+          },
+          {
+              "id": "c",
+              "label": "c)",
+              "text": "Both source programs and object programs are protected."
+          },
+          {
+              "id": "d",
+              "label": "d)",
+              "text": "Documents that describe algorithms are protected, but programs created by using the algorithms are not."
+          }
+          ],
+          "correctAnswerId": "c",
+          "explanation": "The TRIPS agreement requires that computer programs, whether in source or object code, shall be protected as literary works under the Berne Convention."
+      }
+      ]
+};
+const ANSWERS = {};
+
+function render() {
+    const root = document.getElementById('quiz-root');
+    DATA.questions.forEach((q) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.innerHTML = `
+        <div class="q-head">
+        <span class="q-num">Question ${q.id}</span>
+        <div class="q-title">${q.question}</div>
+        ${q.image ? `<div class="q-img"><img src="${q.image}" alt="question-img" style="max-width: 100%; height: auto; "></div>` : ''}
+        </div>
+        <div class="options" id="opts-${q.id}"></div>
+        <div class="explanation" id="exp-${q.id}">
+        <strong style="display: block; font-size: 11px; margin-bottom: 4px; color: var(--primary);">ANSWER KEY:</strong>
+        ${q.explanation || "Correct response determined from source."}
+        </div>
+        `;
+        root.appendChild(card);
+        
+        const optBox = document.getElementById(`opts-${q.id}`);
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.innerHTML = `
+            <div class="opt-bullet">${opt.id.toUpperCase()}</div>
+            <div class="opt-txt">${opt.text}</div>
+            `;
+            btn.onclick = () => {
+                ANSWERS[q.id] = opt.id;
+                Array.from(optBox.children).forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+            };
+            optBox.appendChild(btn);
+        });
+    });
+}
+
+function submit() {
+    let score = 0;
+    DATA.questions.forEach(q => {
+        const box = document.getElementById(`opts-${q.id}`);
+        const exp = document.getElementById(`exp-${q.id}`);
+        exp.style.display = 'block';
+
+        Array.from(box.children).forEach((btn, idx) => {
+            const optId = q.options[idx].id;
+            btn.onclick = null;
+            btn.classList.remove('active');
+
+            if (optId === q.correctAnswerId) btn.classList.add('correct');
+            if (ANSWERS[q.id] === optId && optId !== q.correctAnswerId) btn.classList.add('wrong');
+        });
+
+        if (ANSWERS[q.id] === q.correctAnswerId) score++;
+    });
+
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').innerText = score + ' / ' + DATA.questions.length;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+        // လက်ရှိ render() function ရဲ့ အောက်မှာ ဒါကို ထည့်ပေးပါ
+document.querySelector('.genre').addEventListener('change', function() {
+    const selectedURL = this.value;
+    if (selectedURL) {
+        window.location.href = selectedURL;
+    }
+});
+render();
+</script>
+</body>
+<script src="../js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
